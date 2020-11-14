@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,700&display=swap');
+*{
+  padding: 0%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  position: relative;
+  width: 1140px;
+  margin: 0 auto;
+}
+nav {
+  display: flex ;
+  justify-content: space-between;
+  height: 76px;
+  align-items: center;
+}
+
+.nav-brand {
+  font-size: 24px;
+  color: #2681E6;
+  font-weight: 700;
+}
+.nav-items {
+  color: #132943;
+  display: flex;
+  justify-content: space-between;
+  width: 43%;
+}
+.nav-links {
+  transition: all 0.3s ease 0s;
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  list-style: none;
+  font-weight: 600;
+  align-items: center ;
+}
+.nav-link {
+  color: #132943;
+  text-decoration: none;
+  font-size: 16px;
+}
+.nav--links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav__links li a {
+  color: #2681E6;
+}
+.nav-link.active {
+  font-weight: 600;
+  border-bottom: 3px solid #2681E6;
+}
+
+button.button {
+  cursor: pointer;
+  padding: 8px 10px;
+  border: none;
+  background-color: #2681E6;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease 0s;
+}
+button.button :hover {
+  background-color: #132943
+}
+/*--HOME --*/
+section.home {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+
+}
+.text-section {
+  padding: 13%;
+}
+
+.text-section h1.large-title {
+  font-size: 50px ;
+  line-height: 70px;
+  margin-bottom: 34px;
+  top: 172px;
+  color: #132943;
+}
+.text-section span {
+  color: #2681E6;
+}
+.text-section p.text-p {
+margin-bottom: 35px;
+color: #132943;
+}
+
+/*--HOME SOCIAL--*/
+.home__social{
+  position: absolute ;
+  height: 26px;
+  left: 99px;
+  top: 618px;
+  flex-direction: row;
+  align-self: flex-end;
+  font-size: 25px;
+}
+.home__social-icon{
+  margin-bottom: 0;
+  margin-right: 2rem;
+  color: #132943;
+}
+
+/*--HOME GAMBAR--*/
+
+.column-ilustration {
+  position: absolute;
+  height: 504px;
+  left: 678px;
+  top: 108px;
+  padding: 40px;
+  margin-right: 60px ;
+}
+
+/* BERITA */
+.box {
+  max-width : 510px ;
+  /* margin : auto ; */
+  height: 159px ;
+  display : grid ;
+  column-gap: 2px ;
+  margin : 10px auto ;
+  grid-template-columns: 0.3fr 1fr;
+  grid-template-areas: "thumbnail judul" "thumbnail isi" ;
+  background-color: rgb(255, 255, 255) ;
+  text-align: left ;
+  box-sizing: border-box ;
+  box-shadow: 0px 3px 3px 2px rgba(0, 0, 0, 0.3);
+  font-family: 'Rubik', sans-serif;
+}
+
+.box img {
+  grid-area: thumbnail ;
+  margin-top: 10px ;
+  margin-left: 10px ;
+  border-radius: 5px ;
+  width: 100px;
+}
+
+.box a {
+  font-size : 15px ;
+  grid-area: judul ;
+  margin-top: 10px ;
+  margin-bottom: 15px;
+  text-decoration: none ;
+  color : #1e71cf ;
+  font-weight: bold ;
+}
+
+.box p {
+  grid-area: isi ;
+  font-size: 13px ;
+  margin-top: -15px ;
+}
+
+.box .tanggal {
+  margin-left: 10px ;
+}
+
+.box i {
+  margin: 10px 0px ;
+  font-size: 13px ;
+}
+
+/* mobile */
+
+@media only screen and (max-width : 700px ) {
+  .box {
+      max-width : auto ;
+      grid-row: 0.8fr 1fr;
+      column-gap: 5px ;
+      float: auto;
+  }
+
+  .box a {
+      margin-top: 8px ;
+      font-size: 11px ;
+  }
+
+  .box p {
+      font-size : 9px ;
+  }
+
+  .box i {
+      font-size: 10px ;
+  }
+}
+/* END BERITA */

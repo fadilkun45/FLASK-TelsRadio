@@ -1,0 +1,225 @@
+
+/* bagian trending,berita,ads */
+.container-utama {
+    display : flex ;
+    justify-content: space-between;
+    width : 1130px  ;
+    margin: auto ;
+}
+
+.container-berita {
+    width: 673.46px ;
+    margin-left : 50px ;
+    margin-top: 70px ;
+    display: block ;
+}
+
+.berita-a {
+    width : 550px ;
+    position: relative;
+}
+
+.berita-a img {
+    width : 550px ;
+    height : 400px ;
+    position: absolute ;
+    border-radius: 10px ;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%);
+}
+
+.berita-a a {
+    position: absolute ;
+    z-index : 99999 ;
+    margin-top: 270px ;
+    margin-left: 10px ;
+    margin-right: 10px ;
+    color : #FFFFFF;
+    font-size: 25px ;
+    font-family: 'Poppins';
+    font-weight : normal;
+    text-decoration: none ;
+}
+
+.ads a {
+    z-index: 999999999 ;
+    position: absolute ;
+    margin-top: 450px ;
+    margin-left: 70px ;
+    
+}
+
+.ads a img {
+    width : 400px ;
+    height: 60px ;
+    margin-bottom: 50px ;
+}
+
+.berita-b {
+    width : 550px ;
+    position: absolute;
+    margin-top: 590px ;
+    padding-bottom: 500px ;
+}
+
+.berita-b img {
+    width : 550px ;
+    height : 400px ;
+    position: absolute ;
+    border-radius: 10px ;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0,25%);
+}
+
+.berita-b a {
+    position: absolute ;
+    z-index : 99999 ;
+    margin-top: 270px ;
+    margin-left: 10px ;
+    margin-right: 10px ;
+    color : #FFFFFF;
+    font-size: 25px ;
+    font-family: 'Poppins';
+    font-weight : normal;
+    text-decoration: none ;
+}
+
+.sidebar {
+    display: flex ;
+    flex-direction: column ;
+    margin-top: 70px ;
+}
+
+
+.site {
+    max-width : 500px ;
+    /* margin : auto ; */
+    height: 150px ;
+    display : grid ;
+    column-gap: 2px ;
+    margin : 1px auto ;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-areas: "thumbnail judul" ;
+    text-align: left ;
+    box-sizing: border-box ;
+    font-family: 'Rubik', sans-serif;
+}
+
+.site img {
+    grid-area: thumbnail ;
+    margin-top: 10px ;
+    margin-left: 10px ;
+    border-radius: 5px ;
+    width : 100px ;
+    height : 100px ;
+}
+
+.site a {
+    font-size : 15px ;
+    grid-area: judul ;
+    margin-top: 10px ;
+    text-decoration: none ;
+    color : #000000 ;
+    font-weight: bold ;
+    margin-left: 10px ;
+}
+
+.sidebar h3 {
+    font-family: 'Poppins';
+    font-size: 18px ;
+    color: #FFFFFF;
+    background-color: #2681E6 ;
+    border-radius: 10px ;
+    width: 150px ;
+    padding : 3px 5px ;
+    margin-bottom: 10px ;
+    text-align: center ;
+}
+
+.telstream {
+    margin-top: 20px ;
+}
+
+.telstream iframe {
+    width : 312px ;
+    height: 163px ;
+    margin-top: 20px ;
+}
+
+.sosmed h3 {
+    margin-top: 20px ;
+}
+
+.sosmed img {
+    width : 40px ;
+    height: 20px ;
+}
+
+
+
+.container-utamaB {
+    margin: 100px auto ;
+    width : 500px ;
+}
+
+.garis {
+    border-bottom : #3589C6 1px solid ;
+}
+
+.container-utamaB h3 {
+    width : 161px ;
+    height: 25px ;
+    border-radius: 10px ;
+    text-align: center ;
+    font-family: 'Poppins';
+    color: #FFFFFF;
+    background-color: #2681E6 ;
+    margin: 20px auto;
+    padding: 4px ;
+    
+}
+
+.artikel2 {
+    max-width : 500px ;
+    /* margin : auto ; */
+    height: 150px ;
+    display : grid ;
+    column-gap: 2px ;
+    margin : 1px auto ;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-areas: "thumbnail judul" ;
+    text-align: left ;
+    box-sizing: border-box ;
+    font-family: 'Rubik', sans-serif;
+}
+
+.artikel2 img {
+    grid-area: thumbnail ;
+    margin-top: 10px ;
+    margin-left: 10px ;
+    border-radius: 5px ;
+    width : 100px ;
+    height : 100px ;
+}
+
+.artikel2 a {
+    font-size : 15px ;
+    grid-area: judul ;
+    margin-top: 10px ;
+    text-decoration: none ;
+    color : #000000 ;
+    font-weight: bold ;
+    margin-left: 10px ;
+}
+
+footer {
+    display: flex ;
+    flex-direction: row ;
+    margin: auto ;
+    width : 200px ;
+}
+
+footer img {
+width : 20px ;
+height: 20px ;
+margin : 0 10px  ;
+}
+

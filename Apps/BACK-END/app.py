@@ -24,11 +24,11 @@ def index():
     berita_2 = cur_2.fetchall()
 
     cur_3 = conn.cursor()
-    cur_3.execute('SELECT * FROM berita WHERE id IN (3,4,5,6);')
+    cur_3.execute('SELECT * FROM berita WHERE id IN (3,4,5,6,7);')
     berita_3 = cur_3.fetchall()
 
     cur_4 = conn.cursor()
-    cur_4.execute('SELECT * FROM berita WHERE id IN (7,8,9,10);')
+    cur_4.execute('SELECT * FROM berita WHERE id IN (8,9,10,11);')
     berita_4 = cur_4.fetchall()
     
     return render_template(

@@ -3,9 +3,10 @@ import requests
 import bs4
 from bs4 import BeautifulSoup
 
-#SCARPING
+#SCRAPING WINPOIN
 url     = requests.get('https://winpoin.com/')
-if url.status_code == 200:
+url_2   = requests.get('https://winpoin.com/page/2/')
+if url.status_code and url_2.status_code == 200:
     try:
         soup    = bs4.BeautifulSoup(url.text,'html.parser')
         #BERITA 1
@@ -48,7 +49,12 @@ if url.status_code == 200:
         post_10    = soup.find_all('div','item-details')[9].find('a').get_text()
         link_10    = soup.find_all('div','item-details')[9].find('a')['href']
         thumbnail_10 = soup.find_all('div','td-module-thumb')[11].find('img')['src']
-
+        #BERITA 11
+        soup_2    = bs4.BeautifulSoup(url_2.text,'html.parser')
+        post_11   = soup_2.find_all('div','item-details')[0].find('a').get_text()
+        link_11    = soup_2.find_all('div','item-details')[0].find('a')['href']
+        thumbnail_11 = soup_2.find_all('div','td-module-thumb')[0].find('img')['src']
+        #MYSQL KONFIGURASI
         mydb = mysql.connector.connect(
             host='localhost',
             user='root',
@@ -68,7 +74,8 @@ if url.status_code == 200:
             (thumbnail_7,link_7,post_7,7),
             (thumbnail_8,link_8,post_8,8),
             (thumbnail_9,link_9,post_9,9),
-            (thumbnail_10,link_10,post_10,10)
+            (thumbnail_10,link_10,post_10,10),
+            (thumbnail_11,link_11,post_11,11)
             ]
         mycursor.executemany(sql,tup_thumbnail)
         mydb.commit()

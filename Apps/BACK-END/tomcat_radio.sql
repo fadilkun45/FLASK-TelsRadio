@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 14 Nov 2020 pada 04.18
+-- Waktu pembuatan: 17 Nov 2020 pada 17.29
 -- Versi server: 10.4.14-MariaDB
 -- Versi PHP: 7.3.21
 
@@ -39,16 +39,17 @@ CREATE TABLE `berita` (
 --
 
 INSERT INTO `berita` (`id`, `thumbnail`, `link`, `judul`) VALUES
-(1, 'https://winpoin.com/wp-content/uploads/2020/11/Textorcist.jpg', 'https://winpoin.com/ayo-download-epic-games-store-gratiskan-game-the-textorcist/', 'Ayo Download, Epic Games Store Gratiskan Game The Textorcist!'),
-(2, 'https://winpoin.com/wp-content/uploads/2020/11/Ini-Jawaban-Microsoft-Mengenai-Asap-Yang-Keluar-Dari-Xbox-Series-X-1.jpg', 'https://winpoin.com/ini-jawaban-microsoft-mengenai-asap-yang-keluar-dari-xbox-series-x/', 'Ini Jawaban Microsoft Mengenai Asap Yang Keluar Dari Xbox Series X'),
-(3, 'https://winpoin.com/wp-content/uploads/2020/11/Microsoft-Catat-Detail-Fitur-Yang-Ditambahkan-ke-OneDrive-Pada-Bulan-Oktober-2020-2-218x150.jpg', 'https://winpoin.com/microsoft-catat-detail-fitur-yang-ditambahkan-ke-onedrive-pada-bulan-oktober-2020/', 'Microsoft Catat Detail Fitur Yang Ditambahkan ke OneDrive Pada Bulan Oktober 2020'),
-(4, 'https://winpoin.com/wp-content/uploads/2020/10/skype-218x150.jpg', 'https://winpoin.com/skype-8-66-dirilis-peningkatan-panggilan-grup-hingga-100-orang-kini-tersedia-untuk-seluruh-pengguna/', 'Skype 8.66 Dirilis, Peningkatan Panggilan Grup hingga 100 Orang Kini Tersedia Untuk Seluruh Pengguna'),
-(5, 'https://winpoin.com/wp-content/uploads/2020/11/Youtube-Tidak-Akan-Youtube-Rewind-2020-1-218x150.jpg', 'https://winpoin.com/youtube-tidak-akan-youtube-rewind-2020/', 'Youtube : Tidak Akan Youtube Rewind 2020!'),
-(6, 'https://winpoin.com/wp-content/uploads/2018/07/Outlook-Windows-10-218x150.jpg', 'https://winpoin.com/microsoft-bug-di-outlook-sebabkan-email-yang-dihapus-muncul-kembali/', 'Microsoft : Bug di Outlook Sebabkan Email Yang Dihapus, Muncul Kembali!'),
-(7, 'https://winpoin.com/wp-content/uploads/2018/09/diskcleanup-218x150.jpg', 'https://winpoin.com/microsoft-konfirmasi-bug-folder-windows-old-yang-tidak-bisa-dihapus/', 'Microsoft Konfirmasi Bug Folder Windows.old Yang Tidak Bisa Dihapus!'),
-(8, 'https://winpoin.com/wp-content/uploads/2019/10/windowslight1-1200x800-218x150.jpg', 'https://winpoin.com/microsoft-rilis-windows-10-insider-preview-build-20257/', 'Microsoft Rilis Windows 10 Insider Preview Build 20257'),
-(9, 'https://winpoin.com/wp-content/uploads/2020/11/Windows-7-Standard-Embedded-Akan-Mencapai-Akhir-Dukungan-13-Oktober-2020-1-218x150.jpg', 'https://winpoin.com/windows-7-standard-embedded-akan-mencapai-akhir-dukungan-13-oktober-2020/', 'Windows 7 Standard Embedded Sudah Mencapai Akhir Dukungan 13 Oktober 2020 Lalu'),
-(10, 'https://winpoin.com/wp-content/uploads/2020/11/Mulai-Juni-2021-Tidak-Ada-Lagi-Unlimited-Storage-di-Google-Photos-2-218x150.jpg', 'https://winpoin.com/mulai-juni-2021-tidak-ada-lagi-unlimited-storage-di-google-photos/', 'Mulai Juni 2021, Tidak Ada Lagi Unlimited Storage di Google Photos');
+(1, 'https://winpoin.com/wp-content/uploads/2020/11/Image-38.jpg', 'https://winpoin.com/aplikasi-whatsapp-di-windows-10-kini-mendukung-fitur-disappear-messages/', 'Aplikasi WhatsApp di Windows 10 kini Mendukung Fitur Disappear Messages'),
+(2, 'https://winpoin.com/wp-content/uploads/2020/11/Butcher.jpg', 'https://winpoin.com/dapatkan-game-butcher-gratis-di-gog-store/', 'Dapatkan Game Butcher Gratis di GOG Store'),
+(3, 'https://winpoin.com/wp-content/uploads/2020/06/OneDrive-Windows-10-218x150.jpg', 'https://winpoin.com/bulan-depan-onedrive-akan-dapat-fitur-exclude-untuk-sinkronisasi-files/', 'Bulan Depan, OneDrive Akan Dapat Fitur Exclude Untuk Sinkronisasi Files'),
+(4, 'https://winpoin.com/wp-content/uploads/2020/11/Microsoft-Perbarui-Perangkat-Lunaknya-Untuk-Dukungan-iPhone-12-1-218x150.jpg', 'https://winpoin.com/microsoft-perbarui-perangkat-lunaknya-untuk-dukungan-iphone-12/', 'Microsoft Perbarui Perangkat Lunaknya Untuk Dukungan iPhone 12'),
+(5, 'https://winpoin.com/wp-content/uploads/2020/11/Microsoft-Tingkatkan-Fungsi-Badge-Notifications-di-PWA-Edge-Chromium-1-218x150.jpg', 'https://winpoin.com/microsoft-tingkatkan-fungsi-badge-notifications-di-edge-chromium/', 'Microsoft Tingkatkan Fungsi Badge Notifications di Edge Chromium'),
+(6, 'https://winpoin.com/wp-content/uploads/2020/11/Inilah-Efek-Samping-Dari-Update-KB4577586-Untuk-Hapus-Flash-Player-7-218x150.jpg', 'https://winpoin.com/inilah-efek-samping-dari-update-kb4577586-untuk-hapus-flash-player/', 'Inilah Efek Samping Dari Update KB4577586 Untuk Hapus Flash Player'),
+(7, 'https://winpoin.com/wp-content/uploads/2020/11/Firefox-Ganti-Nama-master-Password-Menjadi-primary-Password-3-218x150.jpg', 'https://winpoin.com/firefox-ganti-nama-master-password-menjadi-primary-password/', 'Firefox Ganti Nama “Master” Password Menjadi “Primary” Password'),
+(8, 'https://winpoin.com/wp-content/uploads/2020/11/Paket-Kompatibilitas-OpenCL-and-OpenGL-Tersedia-Untuk-Windows-10-di-Microsoft-Store-2-218x150.jpg', 'https://winpoin.com/paket-kompatibilitas-opencl-and-opengl-tersedia-untuk-windows-10-di-microsoft-store/', 'Paket Kompatibilitas OpenCL and OpenGL Tersedia Untuk Windows 10 di Microsoft Store'),
+(9, 'https://winpoin.com/wp-content/uploads/2020/11/Masalah-Pada-Update-KB4586781-Mulai-Gagal-Install-Hingga-BSOD-3-218x150.jpg', 'https://winpoin.com/masalah-pada-update-kb4586781-mulai-gagal-install-hingga-bsod/', 'Masalah Pada Update KB4586781, Mulai Gagal Install Hingga BSOD'),
+(10, 'https://winpoin.com/wp-content/uploads/2020/11/Mengenal-Bug-In-Place-Upgrade-di-Windows-10-20H2-4-1-218x150.jpg', 'https://winpoin.com/mengenal-bug-in-place-upgrade-di-windows-10-20h2/', 'Mengenal Bug In Place Upgrade di Windows 10 20H2'),
+(11, 'https://winpoin.com/wp-content/uploads/2020/11/WhatsApp-Akhiri-Dukungan-Untuk-Microsoft-Edge-Legacy-2-218x150.jpg', 'https://winpoin.com/whatsapp-akhiri-dukungan-untuk-microsoft-edge-legacy/', 'WhatsApp Akhiri Dukungan Untuk Microsoft Edge Legacy');
 
 --
 -- Indexes for dumped tables
@@ -68,7 +69,7 @@ ALTER TABLE `berita`
 -- AUTO_INCREMENT untuk tabel `berita`
 --
 ALTER TABLE `berita`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

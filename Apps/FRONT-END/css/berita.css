@@ -235,17 +235,23 @@
 
 /* footer */
 
-
 footer {
-    display: flex ;
-    flex-direction: row ;
-    margin: auto ;
-    width : 200px ;
-    margin-top : 10px ;
+    background-color: #2681E6 ;
+    color : #FFFFFF ;
+    padding : 10px 0;
 }
 
-footer img {
+.copyright {
+    display: flex ;
+    flex-direction: row ;
+    margin: 0 auto ;
+    width : 200px ;
+}
+
+.copyright img {
 width : 20px ;
 height: 20px ;
 margin : 0 10px  ;
 }
+
+

@@ -235,17 +235,26 @@
 
 /* footer */
 
-
 footer {
+    background-color: #2681E6 ;
+    color : #FFFFFF ;
+    padding : 5px 0;
+}
+
+.copyright {
     display: flex ;
     flex-direction: row ;
-    margin: auto ;
+    margin: 0 auto ;
     width : 200px ;
-    margin-top : 10px ;
+    font-size: 13px ;
 }
 
-footer img {
-width : 20px ;
-height: 20px ;
-margin : 0 10px  ;
+.copyright img {
+    width : 10px ;
+    height: 10px ;
+    margin : 0 10px  ;
+    padding-top: 5px ;
 }
+
+
+

@@ -1,4 +1,4 @@
-from flask import (Flask, redirect, url_for, request, render_template)
+from flask import (Flask, render_template)
 from flask_mysql_connector import MySQL
 
 app = Flask(__name__)
@@ -30,13 +30,18 @@ def index():
     cur_4 = conn.cursor()
     cur_4.execute('SELECT * FROM berita WHERE id IN (8,9,10,11);')
     berita_4 = cur_4.fetchall()
+
+    cur_youtube = conn.cursor()
+    cur_youtube.execute('SELECT * FROM youtube;')
+    api_youtube = cur_youtube.fetchall()
     
     return render_template(
         'berita.html',
         berita_1=berita_1,
         berita_2=berita_2,
         berita_3=berita_3,
-        berita_4=berita_4
+        berita_4=berita_4,
+        api_youtube=api_youtube
         )
 
 

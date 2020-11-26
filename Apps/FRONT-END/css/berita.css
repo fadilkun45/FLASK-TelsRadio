@@ -40,21 +40,19 @@
     position: absolute ;
     z-index : 99999 ;
     margin-top: 290px ;
-    margin-left: 10px ;
-    margin-right: 10px ;
+    padding : 17.5px 20px ;
     color : #FFFFFF;
     font-size: 25px ;
     font-family: 'Poppins';
     font-weight : normal;
     text-decoration: none ;
+    background-image: linear-gradient(rgba(0,0,0,0) , rgba(0,0,0,0.7));
+    border-radius: 10px ;
 }
 
 .ads a {
-    z-index: 999999999 ;
     position: absolute ;
     margin-top: 450px ;
-    /* margin-left: 70px ; */
-    
 }
 
 .ads a img {
@@ -84,13 +82,14 @@
     position: absolute ;
     z-index : 99999 ;
     margin-top: 290px ;
-    margin-left: 10px ;
-    margin-right: 10px ;
+    padding : 17.5px 20px ;
     color : #FFFFFF;
     font-size: 25px ;
     font-family: 'Poppins';
     font-weight : normal;
     text-decoration: none ;
+    background-image: linear-gradient(rgba(0,0,0,0) , rgba(0,0,0,0.7));
+    border-radius: 10px ;
 }
 
 .container-beritaB {

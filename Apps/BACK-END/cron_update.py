@@ -1,13 +1,18 @@
 import mysql.connector
-import requests
+import requests,json
 import bs4
 from bs4 import BeautifulSoup
 
-#SCARPING
-url     = requests.get('https://winpoin.com/')
-if url.status_code == 200:
+#SCRAPING WINPOIN
+url_winpoin     = requests.get('https://winpoin.com/')
+url_winpoin2   = requests.get('https://winpoin.com/page/2/')
+#API YOUTUBE
+url_youtube = requests.get('https://youtube.googleapis.com/youtube/v3/activities?part=snippet%2CcontentDetails&channelId=UCSJ4gkVC6NrvII8umztf0Ow&maxResults=3&key=AIzaSyDZYK9dchWnI4L6e_UDA4HCsG_JzNS2ZT4')
+
+
+if url_winpoin.status_code and url_winpoin2.status_code and url_youtube.status_code == 200:
     try:
-        soup    = bs4.BeautifulSoup(url.text,'html.parser')
+        soup    = bs4.BeautifulSoup(url_winpoin.text,'html.parser')
         #BERITA 1
         post_1    = soup.find_all('div','item-details')[0].find('a').get_text()
         link_1    = soup.find_all('div','item-details')[0].find('a')['href']
@@ -48,7 +53,18 @@ if url.status_code == 200:
         post_10    = soup.find_all('div','item-details')[9].find('a').get_text()
         link_10    = soup.find_all('div','item-details')[9].find('a')['href']
         thumbnail_10 = soup.find_all('div','td-module-thumb')[11].find('img')['src']
-
+        #BERITA 11
+        soup_2    = bs4.BeautifulSoup(url_winpoin2.text,'html.parser')
+        post_11   = soup_2.find_all('div','item-details')[0].find('a').get_text()
+        link_11    = soup_2.find_all('div','item-details')[0].find('a')['href']
+        thumbnail_11 = soup_2.find_all('div','td-module-thumb')[0].find('img')['src']
+        #LINK YOUTUBE 1
+        link_youtube_1 = url_youtube.json()['items'][0]['contentDetails']['upload']['videoId']
+        #LINK YOUTUBE 2
+        link_youtube_2 = url_youtube.json()['items'][1]['contentDetails']['upload']['videoId']
+        #LINK YOUTUBE 3
+        link_youtube_3 = url_youtube.json()['items'][2]['contentDetails']['upload']['videoId']
+        #MYSQL KONFIGURASI
         mydb = mysql.connector.connect(
             host='localhost',
             user='root',
@@ -57,8 +73,9 @@ if url.status_code == 200:
         )
         mycursor = mydb.cursor()
 
-        sql = "UPDATE berita SET thumbnail = %s, link =%s ,judul = %s WHERE id=%s;"
-        tup_thumbnail = [
+        sql_winpoin = "UPDATE berita SET thumbnail = %s, link =%s ,judul = %s WHERE id=%s;"
+        sql_youtube = "UPDATE youtube SET link = %s WHERE id=%s"
+        tup_winpoin = [
             (thumbnail_1,link_1,post_1,1),
             (thumbnail_2,link_2,post_2,2),
             (thumbnail_3,link_3,post_3,3),
@@ -68,11 +85,19 @@ if url.status_code == 200:
             (thumbnail_7,link_7,post_7,7),
             (thumbnail_8,link_8,post_8,8),
             (thumbnail_9,link_9,post_9,9),
-            (thumbnail_10,link_10,post_10,10)
+            (thumbnail_10,link_10,post_10,10),
+            (thumbnail_11,link_11,post_11,11)
             ]
-        mycursor.executemany(sql,tup_thumbnail)
+        tup_youtube = [
+            (link_youtube_1,1),
+            (link_youtube_2,2),
+            (link_youtube_3,3)
+        ]
+        mycursor.executemany(sql_winpoin,tup_winpoin)
+        print(mycursor.rowcount, "Artikel Diperbarui") 
+        mycursor.executemany(sql_youtube,tup_youtube)
         mydb.commit()
-        print(mycursor.rowcount, "was inserted.") 
+        print(mycursor.rowcount, "Link Youtube Diperbarui") 
     except IndexError:
         exit()
 else:

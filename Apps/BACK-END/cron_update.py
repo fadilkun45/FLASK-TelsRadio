@@ -1,17 +1,45 @@
-import mysql.connector
-import requests,json
-import bs4
+import requests,json,bs4,mysql.connector,spotipy
 from bs4 import BeautifulSoup
+from spotipy.oauth2 import SpotifyClientCredentials
 
 #SCRAPING WINPOIN
 url_winpoin     = requests.get('https://winpoin.com/')
 url_winpoin2   = requests.get('https://winpoin.com/page/2/')
 #API YOUTUBE
 url_youtube = requests.get('https://youtube.googleapis.com/youtube/v3/activities?part=snippet%2CcontentDetails&channelId=UCSJ4gkVC6NrvII8umztf0Ow&maxResults=3&key=AIzaSyDZYK9dchWnI4L6e_UDA4HCsG_JzNS2ZT4')
-
+#API SPOTIFY
+sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id="ba14c47606e84674926f6ee76677909c",
+                                                          client_secret="d91188d76f794b128d0317d166f34fd8"))
 
 if url_winpoin.status_code and url_winpoin2.status_code and url_youtube.status_code == 200:
     try:
+        count = 0
+        while count < 10:
+            count = count + 1
+
+            #Parsing API
+            link = sp.new_releases(country='ID', limit=11)['albums']['items'][count]['artists'][0]['external_urls']['spotify']
+            images = sp.new_releases(country='ID', limit=11)['albums']['items'][count]['images'][0]['url']
+            name = sp.new_releases(country='ID', limit=11)['albums']['items'][count]['artists'][0]['name']
+            result = [name, link, images]
+
+            #Membuat File Hasil Parsing
+            file = open('SPOTIFY.txt','a')
+            file.write(f"{name};{link};{images}\n")
+            file.close
+
+        #Membaca list
+        listFile = open('SPOTIFY.txt','r').readlines()
+        singerList = []
+        linkList = []
+        imagesList = []
+
+        #Loop List
+        for x in listFile:
+            singerList.append(x.split(";")[0])
+            linkList.append(x.split(";")[1])
+            imagesList.append(x.split(";")[2])
+        #Parsing Winpoin
         soup    = bs4.BeautifulSoup(url_winpoin.text,'html.parser')
         #BERITA 1
         post_1    = soup.find_all('div','item-details')[0].find('a').get_text()
@@ -58,6 +86,8 @@ if url_winpoin.status_code and url_winpoin2.status_code and url_youtube.status_c
         post_11   = soup_2.find_all('div','item-details')[0].find('a').get_text()
         link_11    = soup_2.find_all('div','item-details')[0].find('a')['href']
         thumbnail_11 = soup_2.find_all('div','td-module-thumb')[0].find('img')['src']
+
+        #Parsing Youtube
         #LINK YOUTUBE 1
         link_youtube_1 = url_youtube.json()['items'][0]['contentDetails']['upload']['videoId']
         #LINK YOUTUBE 2
@@ -74,7 +104,8 @@ if url_winpoin.status_code and url_winpoin2.status_code and url_youtube.status_c
         mycursor = mydb.cursor()
 
         sql_winpoin = "UPDATE berita SET thumbnail = %s, link =%s ,judul = %s WHERE id=%s;"
-        sql_youtube = "UPDATE youtube SET link = %s WHERE id=%s"
+        sql_youtube = "UPDATE youtube SET link = %s WHERE id=%s;"
+        sql_spotify = "UPDATE spotify SET singer=%s, link=%s, images=%s WHERE id=%s;"
         tup_winpoin = [
             (thumbnail_1,link_1,post_1,1),
             (thumbnail_2,link_2,post_2,2),
@@ -93,11 +124,25 @@ if url_winpoin.status_code and url_winpoin2.status_code and url_youtube.status_c
             (link_youtube_2,2),
             (link_youtube_3,3)
         ]
+        tup_spotify = [
+            (singerList[0],linkList[0],imagesList[0],1),
+            (singerList[1],linkList[1],imagesList[1],2),
+            (singerList[2],linkList[2],imagesList[2],3),
+            (singerList[3],linkList[3],imagesList[3],4),
+            (singerList[4],linkList[4],imagesList[4],5),
+            (singerList[5],linkList[5],imagesList[5],6),
+            (singerList[6],linkList[6],imagesList[6],7),
+            (singerList[7],linkList[7],imagesList[7],8),
+            (singerList[8],linkList[8],imagesList[8],9),
+            (singerList[9],linkList[9],imagesList[9],10)
+        ]
         mycursor.executemany(sql_winpoin,tup_winpoin)
         print(mycursor.rowcount, "Artikel Diperbarui") 
         mycursor.executemany(sql_youtube,tup_youtube)
-        mydb.commit()
         print(mycursor.rowcount, "Link Youtube Diperbarui") 
+        mycursor.executemany(sql_spotify,tup_spotify)
+        print(mycursor.rowcount, "New Music") 
+        mydb.commit()
     except IndexError:
         exit()
 else:

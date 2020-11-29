@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 28 Nov 2020 pada 11.28
+-- Waktu pembuatan: 29 Nov 2020 pada 03.02
 -- Versi server: 10.4.14-MariaDB
 -- Versi PHP: 7.3.21
 
@@ -69,16 +69,11 @@ CREATE TABLE `spotify` (
 --
 
 INSERT INTO `spotify` (`id`, `singer`, `link`, `images`) VALUES
-(1, 'Nathan Dawe', 'https://open.spotify.com/artist/2gduEC76ry33RVurAvT05p', 'https://i.scdn.co/image/ab67616d0000b273bdedb94e1631ee5523385584\n'),
-(2, 'Rina Sawayama', 'https://open.spotify.com/artist/2KEqzdPS7M5YwGmiuPTdr5', 'https://i.scdn.co/image/ab67616d0000b273bb57d74e709f65720a537849\n'),
-(3, 'Taylor Swift', 'https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02', 'https://i.scdn.co/image/ab67616d0000b2734e265291f29fd8686d3dc3b4\n'),
-(4, 'CHUNG HA', 'https://open.spotify.com/artist/2PSJ6YriU7JsFucxACpU7Y', 'https://i.scdn.co/image/ab67616d0000b273c11c8a87693f2083114729be\n'),
-(5, 'Sheryl Sheinafia', 'https://open.spotify.com/artist/1lfMGY3PXMmj6qgwiPqp06', 'https://i.scdn.co/image/ab67616d0000b273867481cce3a317078aac1b7f\n'),
-(6, 'Rinni Wulandari', 'https://open.spotify.com/artist/3rFmw91W5mxZHH6r40GGWh', 'https://i.scdn.co/image/ab67616d0000b273cadaff713b0a998c5f4fa442\n'),
-(7, 'RAYHAN NOOR', 'https://open.spotify.com/artist/5jLL1YM0DNKKhnLl0oSlUA', 'https://i.scdn.co/image/ab67616d0000b2737d4c9f06231e51975e7d3722\n'),
-(8, 'Armand Maulana', 'https://open.spotify.com/artist/1HHKUckpOnrE6c6YlbYzZb', 'https://i.scdn.co/image/ab67616d0000b27320f20bc0099e9b42ba87c489\n'),
-(9, 'Aminda', 'https://open.spotify.com/artist/43wimUBzWxzNqiebyt1sG4', 'https://i.scdn.co/image/ab67616d0000b273db71596484c5932373a9f0b0\n'),
-(10, 'Nathan Dawe', 'https://open.spotify.com/artist/2gduEC76ry33RVurAvT05p', 'https://i.scdn.co/image/ab67616d0000b273bdedb94e1631ee5523385584\n');
+(1, 'Miley Cyrus', 'https://winpoin.com/inilah-bocoran-gambar-surface-laptop-4-dan-surface-pro-8/', 'https://i.scdn.co/image/ab67616d0000b2738cffb7c6c40759eaf8a5a142'),
+(2, 'Nathan Dawe', 'https://winpoin.com/project-latteproject-yang-bawa-aplikasi-android-di-windows-10/', 'https://i.scdn.co/image/ab67616d0000b273bdedb94e1631ee5523385584'),
+(3, 'Rina Sawayama', 'https://winpoin.com/samsung-kembangkan-aplikasi-screen-recorder-baru-yang-akan-hadir-di-microsoft-store/', 'https://i.scdn.co/image/ab67616d0000b273bb57d74e709f65720a537849'),
+(4, 'Taylor Swift', 'https://winpoin.com/cara-mencegah-redirect-situs-dari-internet-explorer-ke-microsoft-edge-chromium/', 'https://i.scdn.co/image/ab67616d0000b2734e265291f29fd8686d3dc3b4'),
+(5, 'CHUNG HA', 'https://winpoin.com/ayo-download-epic-games-store-gratiskan-game-mudrunner/', 'https://i.scdn.co/image/ab67616d0000b273c11c8a87693f2083114729be');
 
 -- --------------------------------------------------------
 
@@ -96,9 +91,9 @@ CREATE TABLE `youtube` (
 --
 
 INSERT INTO `youtube` (`id`, `link`) VALUES
-(1, 'z6lRK67CuzU'),
-(2, '5M_I3Zatkpc'),
-(3, 'l__PHAF-q_8');
+(1, 'd1ro0OdM-yI'),
+(2, 'z6lRK67CuzU'),
+(3, '5M_I3Zatkpc');
 
 --
 -- Indexes for dumped tables

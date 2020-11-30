@@ -11,14 +11,14 @@
 .container-utama {
     display : flex ;
     justify-content: space-between;
-    width : 1100px  ;
+    width : 1140px  ;
     margin: auto ;
     flex-direction: column ;
 }
 
 .container-berita {
     width: 675px ;
-    /* margin-left : 50px ; */
+    margin-left : 50px ;
     margin-top: 40px ;
     display: block ;
 }
@@ -26,27 +26,32 @@
 .berita-a {
     width : 550px ;
     position: relative;
+    z-index: 2000 ;
+    display: block ;
 }
+
 
 .berita-a img {
     width : 550px ;
     height : 400px ;
     position: absolute ;
     border-radius: 10px ;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%);    
 }
 
 .berita-a a {
     position: absolute ;
-    z-index : 99999 ;
+    z-index : 1000 ;
     margin-top: 290px ;
-    padding : 17.5px 20px ;
+    /* margin-left: 10px ; */
+    /* margin-right: 10px ; */
     color : #FFFFFF;
     font-size: 25px ;
     font-family: 'Poppins';
     font-weight : normal;
+    padding : 17.5px 20px ;
     text-decoration: none ;
-    background-image: linear-gradient(rgba(0,0,0,0) , rgba(0,0,0,0.7));
+    background-image: linear-gradient(rgba(0,0,0,0) , rgba(0,0,0,0.6));
     border-radius: 10px ;
 }
 
@@ -82,6 +87,8 @@
     position: absolute ;
     z-index : 99999 ;
     margin-top: 290px ;
+    /* margin-left: 10px ;
+    margin-right: 10px ; */
     padding : 17.5px 20px ;
     color : #FFFFFF;
     font-size: 25px ;
@@ -93,7 +100,8 @@
 }
 
 .container-beritaB {
-    margin: 0 0 ;
+    margin: 0 auto ;
+    margin-left: 40px ;
     width : 500px ;
     margin-top : 1000px ;
 }
@@ -113,12 +121,13 @@
 }
 
 /* berita terkini */
+
 .artikel2 {
     max-width : 500px ;
     height: 150px ;
     display : grid ;
     column-gap: 2px ;
-    margin : 1px auto ;
+    margin : 0 auto ;
     grid-template-columns: 0.3fr 1fr;
     grid-template-areas: "thumbnail judul" ;
     text-align: left ;
@@ -150,7 +159,6 @@
     transform: scale(110%);
 }
 
-
 .sidebar {
     display: flex ;
     flex-direction: column ;
@@ -160,7 +168,7 @@
 
 /* berita trending */
 .site {
-    width : 520px ;
+    max-width : 500px ;
     height: 150px ;
     display : grid ;
     column-gap: 10px ;
@@ -237,8 +245,11 @@
 footer {
     background-color: #2681E6 ;
     color : #FFFFFF ;
-    padding : 5px 0;
+    position: absolute ;
+    left: 0 ;
+    right: 0 ;
 }
+
 
 .copyright {
     display: flex ;
@@ -249,11 +260,265 @@ footer {
 }
 
 .copyright img {
-    width : 10px ;
-    height: 10px ;
-    margin : 0 10px  ;
-    padding-top: 5px ;
+width : 10px ;
+height: 10px ;
+margin : 20px 10px  ;
+margin-top: 15px ;
+
 }
 
 
 
+/* media breakpoint */
+/* atau pengubah ukuran sesuai ukuran layar yang ditentukan */
+
+@media only screen and (max-width : 800px ){
+
+    .pengatur-sidebar {
+        flex-direction: column ;
+        width: 560px ;
+    }
+
+    .container-utama {
+        width : 560px ;
+    }
+
+    .container-berita {
+        width: 560px ;
+        margin: 0 auto ;
+    }
+
+    .berita-a {
+        width : 550px ;
+    }
+
+    .berita-a img {
+        width: 550px ;
+        height: 400px ;
+    }
+
+    .container-beritaB {
+        width: 550px ;
+        margin-left: 0 ;
+    }
+
+    .container-beritaB h3 {
+        margin: 0 auto ;
+        margin-bottom: 20px ;
+    }
+
+
+    .sidebar {
+        width: 550px ;
+        margin: auto ;
+    }
+
+    .sidebar h3 {
+        margin: 40px auto ;
+        margin-top: -30px ;
+    }
+
+    .telstream h3 {
+        margin-top: 15px ;
+        margin-bottom: 20px ;
+    }
+
+    .telstream {
+        width: 550px ;
+        margin: auto ;
+    }
+
+    .telstream iframe {
+        display: flex ;
+        flex-direction: column ;
+        margin: 20px auto ;
+    }
+
+    .sosmed h3 {
+        margin-top: 30px ;
+        grid-area: judul ;
+    }
+
+    .sosmed {
+        width: 550px ;
+    }
+
+    .sosmed img {
+        display: inline-block ;
+       position: relative ;
+       left: 30% ;
+       right: 30% ;
+       margin: 20px 10px ;
+       margin-top: -29px ;
+    }
+
+    footer {
+        margin: 0 ;
+    }
+
+    .copyright {
+        display: flex ;
+        font-size: 15px ;
+    }
+
+    .copyright img {
+        margin-top: 20px ;
+    }
+
+}
+
+@media only screen and (max-width : 580px ){
+
+    body {
+        overflow-x: hidden ;
+    }
+
+    .pengatur-sidebar {
+        width: 350px ;
+        margin-top: 140px ;
+    }
+
+    .container-utama {
+        width : 350px ;
+    }
+
+    .container-berita {
+        width: 350px ;
+        margin: 0 auto ;
+    }
+
+    .berita-a {
+        width : 340px ;
+    }
+
+    .berita-a img {
+        width: 340px ;
+        height: 0 ;
+    }
+
+    .berita-a a {
+        margin-top: 145px;
+        padding-bottom: 9.5px ;
+        font-size: 24px ;
+    }
+
+    .ads a img {
+        width: 340px ;
+    }
+
+    .ads {
+        margin-top: -125px ;
+    }
+
+    .berita-b {
+        width : 340px ;
+        z-index: 3000 ;
+    }
+
+
+    .berita-b img {
+        width: 340px ;
+        height: 0 ;
+    }
+
+   .berita-b a {
+   font-size: 24px ;
+   margin-top : 145px ;
+   padding-bottom: 9.5px ;
+   }
+
+   .container-beritaB {
+       width : 340px ;
+   }
+
+   .container-beritaB h3 {
+        font-size: 15px ;
+   }
+
+    .artikel2 {
+        margin-left: -10px ;
+        column-gap: 10px ;
+    }
+
+    .artikel2 img {
+        width : 100px ;
+        height : 100px ;
+    }
+
+    .container-beritaB h3 {
+        margin-top : -250px;
+    }
+
+    .sidebar h3 {
+        margin : 0 auto ;
+        margin-top : -10px ;
+        margin-bottom: 30px ;
+        font-size: 15px ;
+    }
+
+    .sidebar {
+        width : 340px ;
+        margin: auto ;
+    }
+
+    .site {
+        margin-left: -15px ;
+    }
+
+    .telstream {
+        width: 340px ;
+        margin : 0 auto ;
+    }
+
+    .telstream h3 {
+        margin : 0 auto ;
+    }
+
+    .telstream iframe {
+        width: 320px ;
+        height : 270px ;
+    }
+
+    .sosmed {
+        width: 340px ;
+    }
+
+    .sosmed h3 {
+        margin-top : 10px ;
+        margin-bottom: 20px ;
+        margin: auto ;
+    }
+
+    .sosmed img {
+        margin : 0 7px  ;
+        margin-top: 20px ;
+        margin-bottom: 20px ;
+        width: 25px ;
+        left: 25% ;
+        right: 30%  ;
+    }
+
+    footer {
+        left: 0 ;
+        right: 0 ; 
+    }
+
+    .copyright {
+        display: flex ;
+        justify-content: center ;
+
+    }
+
+    .site a:hover {
+        color: lightblue ;
+    }
+
+    .artikel2 a:hover {
+        color: lightblue ;
+    }
+    
+    .site ,.artikel2 {
+        transform: scale(100%) ;
+    }
+
+}

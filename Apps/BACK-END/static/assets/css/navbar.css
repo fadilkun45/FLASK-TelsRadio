@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,700&display=swap');
+
+
+nav {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-brand {
+    font-size: 24px;
+    color: #2681E6;
+    font-weight: 700;
+}
+  
+.nav-brand img {
+    width : 120px ;
+    height : 10x ;
+}
+  
+.nav-items {
+    color: #132943;
+    display: flex;
+    justify-content: space-between;
+    width: 43%;
+}
+
+.nav-links {
+    transition: all 0.3s ease 0s;
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    list-style: none;
+    font-weight: 600;
+    align-items: center ;
+}
+
+.nav-link {
+    color: #132943;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav--links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a {
+    color: #2681E6;
+}
+
+.nav-link.active {
+    font-weight: 600;
+    border-bottom: 3px solid #2681E6;
+}
+
+button {
+    cursor: pointer;
+    width: 130px ;
+    margin: 10px ;
+    border: none;
+    background-color: #2681E6;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.3s ease 0s;
+    font-family: 'Poppins', sans-serif;
+}
+
+button.button :hover {
+    background-color: #132943
+}
+
+
+/* tombol */
+
+.toggle-button {
+    display: none ;
+}
+
+.toggle-button {
+    display : none ;
+    flex-direction: column ;
+    height: 18px ;
+    justify-content: space-between ;
+    position: relative ;
+}
+
+.toggle-button span {
+    display: block ;
+    width: 25px ;
+    height: 4px ;
+    background-color:  #2681E6 ;
+    border-radius: 3px ;
+    transition: 0.5s ;
+}
+
+.toggle-button input {
+    position: absolute ;
+    width: 40px ;
+    height: 3px ;
+    opacity: 0 ;
+    z-index: 3 ;
+    left: -5px ;
+    top: 3px ;
+    cursor: pointer;
+}
+
+/* animasi tombol */
+
+.toggle-button span:nth-child(2) {
+    transform-origin: 0 0 ;
+}
+
+.toggle-button span:nth-child(4){
+    transform-origin: 0 100% ;
+}
+
+.toggle-button input:checked ~ span:nth-child(2){
+    background-color:  #2681E6 ;
+    transform: rotate(40deg) translate(-1px, -1px) ;
+}
+
+.toggle-button input:checked ~ span:nth-child(3){
+    opacity: 0 ;
+    transform: scale(0);
+}
+
+.toggle-button input:checked ~ span:nth-child(4){
+    background-color:  #2681E6 ;
+    transform: rotate(-40deg) translate(-1px, 0);
+}
+
+
+/* media breakpoint */
+
+ 
+/* handphone */
+@media only screen and (max-width : 800px ){
+
+    nav {
+        width: 100% ;
+    }
+
+    .nav-items {
+        width: 80% ;
+    }
+    .nav-link {
+        font-size : 15px ;
+        justify-content: space-around ;
+    }
+
+    .nav-brand {
+        margin-left: 10px ;
+    }
+
+    .nav-brand img {
+        width: 150px ;
+        height: 90px ;
+    }
+
+
+    .nav-items button {
+        font-size: 13px ;
+        width: 90px ;
+        margin-right: 10px ;
+        margin-left: 10px ;
+        height: 50px ;
+    } 
+}
+
+@media only screen and (max-width : 580px ){
+
+    nav {
+        /* margin-top: -10px ;
+        margin-right: 10px ;
+        margin-left: -20px ; */
+        position: fixed ;
+        z-index: 6000 ;
+        left: 0 ;
+        right: 0 ;
+        top: 0 ; 
+        height: 30px ;
+        padding-top: 5px;
+        background-color: white ;
+    }
+
+    .nav-brand {
+        margin-left: 25px ;
+        margin-left : 10px ;
+        margin-top: 2px ;
+    }
+
+    .nav-brand img {
+        width: 100px ;
+        height: 26px ;
+    }
+
+    .nav-items {
+        display: flex ;
+        position: absolute ;
+        justify-content: space-evenly ;
+        flex-direction: column ; 
+        transform: translateY(-100%);
+        top: 0 ;
+        align-items: center ;
+        background-color: white  ;
+        transition: all 1s ;
+        width: 104% ;
+        opacity: 0 ;
+        z-index : 5000 ;
+        margin: 0 auto ;
+        margin-top: -10px ;
+        /* border: 1px solid black ; */
+    }
+
+    .nav-links {
+        justify-content: space-around ;
+        flex-direction: column ; 
+        display: flex ;
+        margin: auto ;
+    }
+
+    .nav-links li {
+        margin: 20px 0 ;
+        text-align: center ;
+        margin-left: -45px ;
+    }
+
+    .nav-items button {
+        position: relative;
+        font-size: 13px ;
+        margin-top: 10px ;
+        width: 250px ;
+        left: 6px ;
+        justify-content: space-around ;
+        display: flex ;
+        text-align: center ;
+        height: 40px ;
+        margin-bottom: 20px ;
+        padding-top: 10px ;
+    } 
+
+    .toggle-button {
+        display: flex ;
+        position: relative ;
+        z-index: 50001;
+        margin-right: 20px ;
+        margin-top: -4px ;
+        height: 20px ;
+    }
+
+    .slide {
+        opacity: 1 ;
+        transform: translateY(0%);
+    }
+
+
+}

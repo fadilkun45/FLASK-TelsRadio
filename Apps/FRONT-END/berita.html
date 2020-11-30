@@ -4,34 +4,39 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>telsradio</title>
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/berita.css">
     </head>
     <body>
-        <div class="container">
-            <nav>
-                <div class="nav-brand">
-                     <img src="img/logo telsradio.svg">
-                </div>
-                <div class="nav-items">
-                    <ul class="nav-links">
-                        <li>
-                            <a href="#" class="nav-link">Telsradio</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">Tentang</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">Musik</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link active">Berita</a>
-                        </li>
-                    </ul>
-                    <button class="button"> Dengerin Yuk !</button>    
-                </div>
-            </nav>
-        </div>
+        <nav>
+            <div class="nav-brand">
+                <img src="img/logo telsradio.svg">
+            </div>
+            <div class="nav-items">
+                <ul class="nav-links">
+                    <li>
+                        <a href="#" class="nav-link">Telsradio</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Tentang</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Musik</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link active">Berita</a>
+                    </li>
+                </ul>
+                <button class="button"> Dengerin Yuk !</button>    
+            </div>
+            
+            <div class="toggle-button">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
 
         <div class="pengatur-sidebar">
             <div class="container-utama">
@@ -39,7 +44,7 @@
 
                     <!-- berita a -->
                     <div class="berita-a">
-                        <img src="https://dummyimage.com/673x505/18ada8/080808.png" alt="berita">
+                        <img src="https://dummyimage.com/672x505/18ada8/080808.png" alt="berita">
                         <a href="#">
                             Microsoft Rilis Known Issues Untuk Xbox Series S dan X
                         </a>
@@ -52,7 +57,7 @@
                     
                     <!-- berita b -->
                     <div class="berita-b">
-                        <img src="https://dummyimage.com/673x505/black/080808.png" alt="#">
+                        <img src="https://dummyimage.com/672x505/black/080808.png" alt="#">
                         <a href="#">Update KB4586859 Dirilis Untuk Windows 10 1903/1909 Via WSUS</a>
                     </div>
                 </div>
@@ -137,6 +142,7 @@
                 
                 <!-- iframe -->
                 <div class="telstream">
+                    
                     <h3>TELS STREAM</h3>
                     <!-- frame 1 -->
                     <iframe width="853" height="480" src="https://www.youtube.com/embed/vEDgALv2SPk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -160,11 +166,15 @@
         </div>
         
         <footer>
-           <div class="copyright">
+            <div class="copyright">
             <p>©Winpoin</p>
             <img src="img/hati.svg" alt="#">
             <p>TelsRadio</p>
-            </div> 
+            </div>
         </footer>
+
+        <!-- script -->
+       <script src="js/navbar.js"></script> 
+
     </body>
 </html>

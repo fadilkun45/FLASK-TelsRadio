@@ -272,7 +272,7 @@ margin-top: 15px ;
 /* media breakpoint */
 /* atau pengubah ukuran sesuai ukuran layar yang ditentukan */
 
-@media only screen and (max-width : 760px ){
+@media only screen and (max-width : 800px ){
 
     .pengatur-sidebar {
         flex-direction: column ;
@@ -367,7 +367,7 @@ margin-top: 15px ;
 
 }
 
-@media only screen and (max-width : 599px ){
+@media only screen and (max-width : 580px ){
 
     body {
         overflow-x: hidden ;

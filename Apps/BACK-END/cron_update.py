@@ -1,17 +1,48 @@
-import mysql.connector
-import requests,json
-import bs4
+import requests,json,bs4,mysql.connector,spotipy
 from bs4 import BeautifulSoup
+from spotipy.oauth2 import SpotifyClientCredentials
 
 #SCRAPING WINPOIN
 url_winpoin     = requests.get('https://winpoin.com/')
 url_winpoin2   = requests.get('https://winpoin.com/page/2/')
+
 #API YOUTUBE
 url_youtube = requests.get('https://youtube.googleapis.com/youtube/v3/activities?part=snippet%2CcontentDetails&channelId=UCSJ4gkVC6NrvII8umztf0Ow&maxResults=3&key=AIzaSyDZYK9dchWnI4L6e_UDA4HCsG_JzNS2ZT4')
 
+#API SPOTIFY
+sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id="ba14c47606e84674926f6ee76677909c",
+                                                          client_secret="d91188d76f794b128d0317d166f34fd8"))
 
 if url_winpoin.status_code and url_winpoin2.status_code and url_youtube.status_code == 200:
     try:
+
+        '''
+        PARSING API SPOTIFY
+        '''
+        #New Release 1
+        link_1 = sp.new_releases(country='ID', limit=10)['albums']['items'][0]['artists'][0]['external_urls']['spotify']
+        images_1 = sp.new_releases(country='ID', limit=10)['albums']['items'][0]['images'][0]['url']
+        singer_1 = sp.new_releases(country='ID', limit=10)['albums']['items'][0]['artists'][0]['name']
+        #New Release 2
+        link_2 = sp.new_releases(country='ID', limit=10)['albums']['items'][1]['artists'][0]['external_urls']['spotify']
+        images_2 = sp.new_releases(country='ID', limit=10)['albums']['items'][1]['images'][0]['url']
+        singer_2 = sp.new_releases(country='ID', limit=10)['albums']['items'][1]['artists'][0]['name']
+        #New Release 3
+        link_3 = sp.new_releases(country='ID', limit=10)['albums']['items'][2]['artists'][0]['external_urls']['spotify']
+        images_3 = sp.new_releases(country='ID', limit=10)['albums']['items'][2]['images'][0]['url']
+        singer_3 = sp.new_releases(country='ID', limit=10)['albums']['items'][2]['artists'][0]['name']
+        #New Release 4
+        link_4 = sp.new_releases(country='ID', limit=10)['albums']['items'][3]['artists'][0]['external_urls']['spotify']
+        images_4 = sp.new_releases(country='ID', limit=10)['albums']['items'][3]['images'][0]['url']
+        singer_4 = sp.new_releases(country='ID', limit=10)['albums']['items'][3]['artists'][0]['name']
+        #New Release 5
+        link_5 = sp.new_releases(country='ID', limit=10)['albums']['items'][4]['artists'][0]['external_urls']['spotify']
+        images_5 = sp.new_releases(country='ID', limit=10)['albums']['items'][4]['images'][0]['url']
+        singer_5 = sp.new_releases(country='ID', limit=10)['albums']['items'][4]['artists'][0]['name']
+
+        '''
+        PARSING SCRAP WINPOIN
+        '''
         soup    = bs4.BeautifulSoup(url_winpoin.text,'html.parser')
         #BERITA 1
         post_1    = soup.find_all('div','item-details')[0].find('a').get_text()
@@ -58,13 +89,20 @@ if url_winpoin.status_code and url_winpoin2.status_code and url_youtube.status_c
         post_11   = soup_2.find_all('div','item-details')[0].find('a').get_text()
         link_11    = soup_2.find_all('div','item-details')[0].find('a')['href']
         thumbnail_11 = soup_2.find_all('div','td-module-thumb')[0].find('img')['src']
+
+        '''
+        PARSING API YOUTUBE
+        '''
         #LINK YOUTUBE 1
         link_youtube_1 = url_youtube.json()['items'][0]['contentDetails']['upload']['videoId']
         #LINK YOUTUBE 2
         link_youtube_2 = url_youtube.json()['items'][1]['contentDetails']['upload']['videoId']
         #LINK YOUTUBE 3
         link_youtube_3 = url_youtube.json()['items'][2]['contentDetails']['upload']['videoId']
-        #MYSQL KONFIGURASI
+
+        '''
+        MYSQL CONFIG
+        '''
         mydb = mysql.connector.connect(
             host='localhost',
             user='root',
@@ -74,7 +112,9 @@ if url_winpoin.status_code and url_winpoin2.status_code and url_youtube.status_c
         mycursor = mydb.cursor()
 
         sql_winpoin = "UPDATE berita SET thumbnail = %s, link =%s ,judul = %s WHERE id=%s;"
-        sql_youtube = "UPDATE youtube SET link = %s WHERE id=%s"
+        sql_youtube = "UPDATE youtube SET link = %s WHERE id=%s;"
+        sql_spotify = "UPDATE spotify SET singer=%s, link=%s, images=%s WHERE id=%s;"
+
         tup_winpoin = [
             (thumbnail_1,link_1,post_1,1),
             (thumbnail_2,link_2,post_2,2),
@@ -88,18 +128,29 @@ if url_winpoin.status_code and url_winpoin2.status_code and url_youtube.status_c
             (thumbnail_10,link_10,post_10,10),
             (thumbnail_11,link_11,post_11,11)
             ]
+
         tup_youtube = [
             (link_youtube_1,1),
             (link_youtube_2,2),
             (link_youtube_3,3)
         ]
+        tup_spotify = [
+            (singer_1,link_1,images_1,1),
+            (singer_2,link_2,images_2,2),
+            (singer_3,link_3,images_3,3),
+            (singer_4,link_4,images_4,4),
+            (singer_5,link_5,images_5,5)
+        ]
+
         mycursor.executemany(sql_winpoin,tup_winpoin)
         print(mycursor.rowcount, "Artikel Diperbarui") 
         mycursor.executemany(sql_youtube,tup_youtube)
-        mydb.commit()
         print(mycursor.rowcount, "Link Youtube Diperbarui") 
+        mycursor.executemany(sql_spotify,tup_spotify)
+        print(mycursor.rowcount, "New Music") 
+        mydb.commit()
+
     except IndexError:
         exit()
 else:
     exit()
-

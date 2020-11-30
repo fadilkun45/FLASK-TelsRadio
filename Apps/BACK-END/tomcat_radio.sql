@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 22 Nov 2020 pada 22.05
+-- Waktu pembuatan: 29 Nov 2020 pada 03.02
 -- Versi server: 10.4.14-MariaDB
 -- Versi PHP: 7.3.21
 
@@ -39,17 +39,41 @@ CREATE TABLE `berita` (
 --
 
 INSERT INTO `berita` (`id`, `thumbnail`, `link`, `judul`) VALUES
-(1, 'https://winpoin.com/wp-content/uploads/2020/11/Siap-Siap-Edge-Add-ons-Akan-Menyediakan-Theme-Store-nya-Sendiri-2.jpg', 'https://winpoin.com/siap-siap-edge-add-ons-akan-menyediakan-theme-store-nya-sendiri/', 'Siap Siap, Edge Add-ons Akan Menyediakan Theme Store-nya Sendiri'),
-(2, 'https://winpoin.com/wp-content/uploads/2020/11/Elite-Dangerous.jpg', 'https://winpoin.com/ayo-download-epic-games-store-gratiskan-game-elite-dangerous-dan-the-world-next-door/', 'Ayo Download, Epic Games Store Gratiskan Game Elite Dangerous dan The World Next Door!'),
-(3, 'https://winpoin.com/wp-content/uploads/2020/11/Waspada-Ekstensi-Palsu-di-Microsoft-Edge-Store-Mengandung-Malware-2-218x150.jpg', 'https://winpoin.com/waspada-ekstensi-palsu-di-microsoft-edge-store-mengandung-malware/', 'Waspada, Ekstensi Palsu di Microsoft Edge Store Mengandung Malware'),
-(4, 'https://winpoin.com/wp-content/uploads/2020/11/7c2f345bdfcadb8a3faf483ebaa2e9aea712bbdb-218x150.jpg', 'https://winpoin.com/microsoft-merilis-windows-10-build-20262-1010-ke-insider-dev-channel/', 'Microsoft Merilis Windows 10 Build 20262.1010 ke Insider Dev Channel'),
-(5, 'https://winpoin.com/wp-content/uploads/2020/04/Google-Kini-Kembangkan-Fitur-Media-History-Untuk-Google-Chrome-1-218x150.jpg', 'https://winpoin.com/google-perpanjang-dukungan-chrome-untuk-windows-7-hingga-tahun-2022/', 'Google Perpanjang Dukungan Chrome Untuk Windows 7 Hingga Tahun 2022'),
-(6, 'https://winpoin.com/wp-content/uploads/2020/08/Cara-Nonaktifkan-ALT-Tab-Behavior-Baru-di-Windows-10-20H2-4-218x150.jpg', 'https://winpoin.com/fungsi-alt-tab-error-di-windows-10-20h2-tenang-kamu-tidak-sendirian/', 'Fungsi ALT + Tab Error di Windows 10 20H2?, Tenang Kamu Tidak Sendirian!'),
-(7, 'https://winpoin.com/wp-content/uploads/2019/07/windowslight-218x150.jpg', 'https://winpoin.com/microsoft-rilis-preview-update-kb4586819-untuk-pengguna-windows-10-1903-1909/', 'Microsoft Rilis Preview Update KB4586819 Untuk Pengguna Windows 10 1903 & 1909'),
-(8, 'https://winpoin.com/wp-content/uploads/2020/11/Giveaway-Multcloud-Quarterly-Backupper-Pro-dan-MBackuper-Pro-Dari-AOMEI-Tersedia-Secara-Gratis-2-218x150.jpg', 'https://winpoin.com/giveaway-multcloud-quarterly-backupper-pro-dan-mbackuper-pro-dari-aomei-tersedia-secara-gratis/', 'Giveaway : Multcloud Quarterly, Backupper Pro dan MBackuper Pro Dari AOMEI Tersedia Secara Gratis'),
-(9, 'https://winpoin.com/wp-content/uploads/2020/03/firefox-74-ubuntu-gylang-218x150.jpg', 'https://winpoin.com/mozilla-akan-tinggalkan-flash-player-mulai-dari-firefox-85/', 'Mozilla Akan Tinggalkan Flash Player Mulai dari Firefox 85'),
-(10, 'https://winpoin.com/wp-content/uploads/2020/11/Microsoft-Rilis-Microsoft-Edge-Chromium-87-Apa-Saja-Fitur-Barunya-3-218x150.jpg', 'https://winpoin.com/microsoft-rilis-microsoft-edge-chromium-87-apa-saja-fitur-barunya/', 'Microsoft Rilis Microsoft Edge Chromium 87, Apa Saja Fitur Barunya?'),
-(11, 'https://winpoin.com/wp-content/uploads/2019/01/windowslight-218x150.jpg', 'https://winpoin.com/microsoft-rilis-security-update-kb4594440-kb4594443-untuk-windows-windows-10/', 'Microsoft Rilis Security Update KB4594440, KB4594443, Untuk Windows Windows 10');
+(1, 'https://winpoin.com/wp-content/uploads/2020/11/Inilah-Bocoran-Gambar-Surface-Laptop-4-dan-Surface-Pro-8-1.jpg', 'https://winpoin.com/inilah-bocoran-gambar-surface-laptop-4-dan-surface-pro-8/', 'Inilah Bocoran Gambar Surface Laptop 4 dan Surface Pro 8'),
+(2, 'https://winpoin.com/wp-content/uploads/2018/02/caramemindahkanfotodariiphoneandroidkelaptop_2.jpg', 'https://winpoin.com/project-latteproject-yang-bawa-aplikasi-android-di-windows-10/', 'Project Latte, Project Yang Bawa Aplikasi Android di Windows 10'),
+(3, 'https://winpoin.com/wp-content/uploads/2020/11/Samsung-Kembangkan-Aplikasi-Screen-Recorder-Baru-Yang-Akan-Hadir-di-Microsoft-Store-1-218x150.jpeg', 'https://winpoin.com/samsung-kembangkan-aplikasi-screen-recorder-baru-yang-akan-hadir-di-microsoft-store/', 'Samsung Kembangkan Aplikasi Screen Recorder Baru Yang Akan Hadir di Microsoft Store'),
+(4, 'https://winpoin.com/wp-content/uploads/2020/11/Cara-Mencegah-Redirect-Situs-Dari-Internet-Explorer-ke-Microsoft-Edge-Chromium-5-218x150.jpg', 'https://winpoin.com/cara-mencegah-redirect-situs-dari-internet-explorer-ke-microsoft-edge-chromium/', 'Cara Mencegah Redirect Situs Dari Internet Explorer ke Microsoft Edge Chromium'),
+(5, 'https://winpoin.com/wp-content/uploads/2020/11/Mudrunner-218x150.jpg', 'https://winpoin.com/ayo-download-epic-games-store-gratiskan-game-mudrunner/', 'Ayo Download, Epic Games Store Gratiskan Game MudRunner!'),
+(6, 'https://winpoin.com/wp-content/uploads/2018/09/Spotify-218x150.jpg', 'https://winpoin.com/hati-hati-lebih-dari-300-000-akun-spotify-di-hack/', 'Hati Hati, Lebih Dari 300.000 Akun Spotify Di Hack!'),
+(7, 'https://winpoin.com/wp-content/uploads/2020/11/Cara-Block-Welcome-Screen-di-Windows-10-0-218x150.jpg', 'https://winpoin.com/cara-block-welcome-screen-di-windows-10/', 'Cara Block Welcome Screen di Windows 10'),
+(8, 'https://winpoin.com/wp-content/uploads/2020/11/1606415181_adduplex_november_2020-218x150.jpg', 'https://winpoin.com/adduplex-jumlah-pengguna-windows-10-1909-meningkat/', 'AdDuplex : Jumlah Pengguna Windows 10 1909 Meningkat!'),
+(9, 'https://winpoin.com/wp-content/uploads/2020/11/Apa-Itu-WinREAgent-Amankah-Untuk-Dihapus-1-218x150.jpg', 'https://winpoin.com/apa-itu-folder-winreagent-amankah-untuk-dihapus/', 'Apa Itu Folder $WinREAgent, Amankah Untuk Dihapus?'),
+(10, 'https://winpoin.com/wp-content/uploads/2019/11/windows10wallpaper-218x150.jpg', 'https://winpoin.com/rumor-windows-10-21h1-adalah-minor-update-kini-benar-benar-terjadi/', 'Rumor Windows 10 21H1 Adalah Minor Update Kini Benar Benar Terjadi!'),
+(11, 'https://winpoin.com/wp-content/uploads/2019/10/Windows-10X-1-218x150.jpg', 'https://winpoin.com/windows-10x-masuk-rtm-bulan-desember-dan-peluncuran-penuh-akan-tersedia-tahun-depan/', 'Windows 10X Masuk RTM Bulan Desember dan Peluncuran Penuh Akan Tersedia Tahun Depan!');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `spotify`
+--
+
+CREATE TABLE `spotify` (
+  `id` int(11) NOT NULL,
+  `singer` varchar(255) NOT NULL,
+  `link` varchar(255) NOT NULL,
+  `images` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `spotify`
+--
+
+INSERT INTO `spotify` (`id`, `singer`, `link`, `images`) VALUES
+(1, 'Miley Cyrus', 'https://winpoin.com/inilah-bocoran-gambar-surface-laptop-4-dan-surface-pro-8/', 'https://i.scdn.co/image/ab67616d0000b2738cffb7c6c40759eaf8a5a142'),
+(2, 'Nathan Dawe', 'https://winpoin.com/project-latteproject-yang-bawa-aplikasi-android-di-windows-10/', 'https://i.scdn.co/image/ab67616d0000b273bdedb94e1631ee5523385584'),
+(3, 'Rina Sawayama', 'https://winpoin.com/samsung-kembangkan-aplikasi-screen-recorder-baru-yang-akan-hadir-di-microsoft-store/', 'https://i.scdn.co/image/ab67616d0000b273bb57d74e709f65720a537849'),
+(4, 'Taylor Swift', 'https://winpoin.com/cara-mencegah-redirect-situs-dari-internet-explorer-ke-microsoft-edge-chromium/', 'https://i.scdn.co/image/ab67616d0000b2734e265291f29fd8686d3dc3b4'),
+(5, 'CHUNG HA', 'https://winpoin.com/ayo-download-epic-games-store-gratiskan-game-mudrunner/', 'https://i.scdn.co/image/ab67616d0000b273c11c8a87693f2083114729be');
 
 -- --------------------------------------------------------
 
@@ -67,9 +91,9 @@ CREATE TABLE `youtube` (
 --
 
 INSERT INTO `youtube` (`id`, `link`) VALUES
-(1, '5M_I3Zatkpc'),
-(2, 'l__PHAF-q_8'),
-(3, 'SmBLBgPxYO8');
+(1, 'd1ro0OdM-yI'),
+(2, 'z6lRK67CuzU'),
+(3, '5M_I3Zatkpc');
 
 --
 -- Indexes for dumped tables
@@ -79,6 +103,12 @@ INSERT INTO `youtube` (`id`, `link`) VALUES
 -- Indeks untuk tabel `berita`
 --
 ALTER TABLE `berita`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `spotify`
+--
+ALTER TABLE `spotify`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -96,6 +126,12 @@ ALTER TABLE `youtube`
 --
 ALTER TABLE `berita`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
+
+--
+-- AUTO_INCREMENT untuk tabel `spotify`
+--
+ALTER TABLE `spotify`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT untuk tabel `youtube`

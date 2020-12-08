@@ -57,11 +57,11 @@
 
 .ads a {
     position: absolute ;
-    margin-top: 410px ;
+    margin-top: 400px ;
 }
 
 .ads a img {
-    margin-top: 40px ;
+    margin-top: 58px ;
     width : 550px ;
     height : 60px ;
     margin-bottom: 50px ;
@@ -376,7 +376,7 @@ margin-top: 15px ;
 
     .pengatur-sidebar {
         width: 350px ;
-        margin-top: 140px ;
+        margin-top: 60px ;
     }
 
     .container-utama {

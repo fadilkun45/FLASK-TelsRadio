@@ -26,32 +26,38 @@
 .berita-a {
     width : 550px ;
     position: relative;
-    z-index: 2000 ;
+    z-index: 1000 ;
     display: block ;
+	position : relative ;
+	
 }
 
 
-.berita-a img {
+.berita-a a img {
     width : 550px ;
     height : 400px ;
     position: absolute ;
     border-radius: 10px ;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%);    
+	top : 0 ;
+	margin-top : -288px ;
+	z-index : -2000 ;
+	margin-left : -20px ;
+	opacity : 0.9 ;
+	
 }
 
 .berita-a a {
     position: absolute ;
-    z-index : 1000 ;
+    z-index : 50000 ;
     margin-top: 290px ;
-    /* margin-left: 10px ; */
-    /* margin-right: 10px ; */
     color : #FFFFFF;
     font-size: 25px ;
     font-family: 'Poppins';
     font-weight : normal;
     padding : 17.5px 20px ;
     text-decoration: none ;
-    background-image: linear-gradient(rgba(0,0,0,0) , rgba(0,0,0,0.6));
+	background-image: linear-gradient(rgba(0,0,0,0) , rgba(0,0,0,0.6));
     border-radius: 10px ;
 }
 
@@ -71,17 +77,22 @@
 
 .berita-b {
     width : 550px ;
-    position: absolute;
+    position: relative ;
     margin-top: 560px ;
     padding-bottom: 500px ;
+	z-index : 2000 ;
 }
 
-.berita-b img {
+.berita-b a img {
     width : 550px ;
     height : 400px ;
     position: absolute ;
     border-radius: 10px ;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0,25%);
+	margin-top : -308px ;
+	margin-left : -24px ;
+	z-index : -9999 ;
+	opacity : 0.9 ;
 }
 
 .berita-b a {
@@ -90,13 +101,13 @@
     margin-top: 290px ;
     /* margin-left: 10px ;
     margin-right: 10px ; */
-    padding : 17.5px 20px ;
+	padding : 17.5px 25px ; 
     color : #FFFFFF;
     font-size: 25px ;
     font-family: 'Poppins';
     font-weight : normal;
     text-decoration: none ;
-    background-image: linear-gradient(rgba(0,0,0,0) , rgba(0,0,0,0.7));
+    background-image: linear-gradient(rgba(0,0,0,0) , rgba(0,0,0,0.6)) ;
     border-radius: 10px ;
 }
 
@@ -104,7 +115,7 @@
     margin: 0 auto ;
     margin-left: 40px ;
     width : 500px ;
-    margin-top : 1000px ;
+    margin-top : -60px ;  
 }
 
 
@@ -123,7 +134,7 @@
 
 /* berita terkini */
 
-.artikel2 {
+.artikel2 a {
     max-width : 500px ;
     height: 150px ;
     display : grid ;
@@ -135,9 +146,10 @@
     box-sizing: border-box ;
     font-family: 'Rubik', sans-serif;
     transition: all 0.5s ;
+	text-decoration: none ;
 }
 
-.artikel2 img {
+.artikel2 a img {
     grid-area: thumbnail ;
     margin-top: 10px ;
     margin-left: 10px ;
@@ -146,11 +158,10 @@
     height : 100px ;
 }
 
-.artikel2 a {
+.artikel2 a p {
     font-size : 15px ;
     grid-area: judul ;
     margin-top: 10px ;
-    text-decoration: none ;
     color : #000000 ;
     font-weight: bold ;
     margin-left: 10px ;
@@ -168,7 +179,7 @@
 }
 
 /* berita trending */
-.site {
+.site a {
     max-width : 500px ;
     height: 150px ;
     display : grid ;
@@ -180,13 +191,14 @@
     box-sizing: border-box ;
     font-family: 'Rubik', sans-serif;
     transition: all 0.5s ;
+	text-decoration: none ;
 }
 
 .site:hover {
     transform: scale(110%);
 }
 
-.site img {
+.site a img {
     grid-area: thumbnail ;
     margin-top: 10px ;
     margin-left: 10px ;
@@ -195,11 +207,10 @@
     height : 100px ;
 }
 
-.site a {
+.site a p {
     font-size : 15px ;
     grid-area: judul ;
     margin-top: 10px ;
-    text-decoration: none ;
     color : #000000 ;
     font-weight: bold ;
     margin-left: 10px ;
@@ -371,12 +382,12 @@ margin-top: 15px ;
 @media only screen and (max-width : 580px ){
 
     body {
-        overflow-x: hidden ;
+       /* overflow-x: hidden ; */ 
     }
 
     .pengatur-sidebar {
         width: 350px ;
-        margin-top: 60px ;
+        margin-top : 60px ;
     }
 
     .container-utama {
@@ -384,24 +395,31 @@ margin-top: 15px ;
     }
 
     .container-berita {
-        width: 350px ;
-        margin: 0 auto ;
+        width : 350px ;
+        margin : 0 auto ;
     }
 
     .berita-a {
         width : 340px ;
-
+		margin-top : 130px ;
+		/* margin : auto ; */
+		z-index : 5001 ;
     }
 
-    .berita-a img {
-        width: 340px ;
-        height: 300px ;
+    .berita-a a img {
+        width : 340px ;
+        height : 300px ;
+		z-index : -9 ;
+		margin-top : -170px ;
     }
 
     .berita-a a {
-        margin-top: 165px;
+        margin-top: 50px;
         padding-bottom: 9.5px ;
         font-size: 24px ;
+		z-index : 8000 ;
+		position : absolute ;
+		opacity : 1 ;
     }
 
     .ads a img {
@@ -409,30 +427,32 @@ margin-top: 15px ;
     }
 
     .ads {
-        margin-top: -100px ;
-        margin-bottom: 25px ;
+        margin-top: -250px ;
+        margin-bottom: 30px ;
     }
 
     .berita-b {
-        margin-top: 550px ;
         width : 340px ;
-        z-index: 3000 ;
+        z-index: 5000 ;
+		margin : auto ; 
     }
 
 
-    .berita-b img {
+    .berita-b a img {
+		margin-top : -172px ;
         width: 340px ;
         height: 300px ;
+		z-index : -999 ;
     }
 
    .berita-b a {
    font-size: 24px ;
-   margin-top : 155px ;
+   margin-top : 700px ;
    padding-bottom: 18px ;
    }
 
    .container-beritaB {
-       margin-top: 1050px ;
+       margin-top: 650px ;
        width : 340px ;
    }
 

@@ -2,7 +2,7 @@
 
 
 nav {
-    width: 1050px;
+    width: 1144px;
     margin: 0 auto;
     display: flex ;
     justify-content: space-between ;
@@ -36,6 +36,7 @@ nav {
     list-style: none;
     font-weight: 600;
     align-items: center ;
+     margin: auto ;
 }
 
 .nav-link {
@@ -69,6 +70,7 @@ button {
     font-weight: 500;
     transition: all 0.3s ease 0s;
     font-family: 'Poppins', sans-serif;
+  
 }
 
 button.button :hover {
@@ -228,7 +230,9 @@ button.button :hover {
     .nav-links li {
         margin: 20px 0 ;
         text-align: center ;
-        margin-left: -45px ;
+        position: relative;
+        left: 0 ;
+        right: 0 ;
     }
 
     .nav-items button {
@@ -243,6 +247,9 @@ button.button :hover {
         height: 40px ;
         margin-bottom: 20px ;
         padding-top: 10px ;
+        position: relative;
+        left: 0 ;
+        right: 0 ;
     } 
 
     .toggle-button {

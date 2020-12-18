@@ -26,16 +26,26 @@ nav button {
     grid-column:  "0.5fr , 1fr";
 }
 
-.sec-pertama h1 {
-    grid-area: judul ;
-    margin-bottom: -140px ;
-    margin-top: 20px ;
-    color: #132943 ;
+.sec-pertama h1 span {
+    border : 2px solid #2681E6 ;
+    width: 150px ;
+    margin : 10px 0 ;
+    margin-bottom: 10px ;
 }
 
-.sec-pertama p:nth-child(2) {
+.sec-pertama h1 {
+    grid-area: judul ;
+    margin-bottom: -130px ;
+    margin-top: 20px ;
+    color: #526174 ;
+    display: flex ;
+    flex-direction: column ;
+}
+
+
+.sec-pertama p:nth-child(2)  {
     grid-area: about ;
-    margin-top: -80px ;
+    margin-top: -60px ;
 }
 
 .sec-pertama img {

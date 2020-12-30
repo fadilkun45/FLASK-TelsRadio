@@ -7,7 +7,7 @@ url_winpoin     = requests.get('https://winpoin.com/')
 url_winpoin2   = requests.get('https://winpoin.com/page/2/')
 
 #API YOUTUBE
-url_youtube = requests.get('https://youtube.googleapis.com/youtube/v3/activities?part=snippet%2CcontentDetails&channelId=UCSJ4gkVC6NrvII8umztf0Ow&maxResults=3&key=AIzaSyDZYK9dchWnI4L6e_UDA4HCsG_JzNS2ZT4')
+url_youtube = requests.get('https://youtube.googleapis.com/youtube/v3/activities?part=snippet%2CcontentDetails&channelId=UCjsTHbWeujQU82uljWS_U6g&maxResults=3&key=AIzaSyDZYK9dchWnI4L6e_UDA4HCsG_JzNS2ZT4')
 
 #API SPOTIFY
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id="ba14c47606e84674926f6ee76677909c",

@@ -1,197 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>telsradio</title>
-        <link rel="stylesheet" href="static/assets/css/navbar.css">
-        <link rel="stylesheet" href="static/assets/css/berita.css">
-        <link rel="stylesheet" href="static/assets/css/footer.css">
-    </head>
-    <body>
-        <nav>
-            <div class="nav-brand">
-                <img src="static/assets/img/logo telsradio.svg">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>telsradio</title>
+	<link rel="stylesheet" href="static/assets/css/navbar.css">
+	<link rel="stylesheet" href="static/assets/css/berita.css">
+	<link rel="stylesheet" href="static/assets/css/footer.css">
+</head>
+
+<body>
+	<nav>
+		<div class="nav-brand">
+			<img src="static/assets/img/logo telsradio.svg">
+		</div>
+		<div class="nav-items">
+			<ul class="nav-links">
+				<li> <a href="#" class="nav-link">Telsradio</a>
+				</li>
+				<li> <a href="#" class="nav-link">Tentang</a>
+				</li>
+				<li> <a href="#" class="nav-link">Musik</a>
+				</li>
+				<li> <a href="#" class="nav-link active">Berita</a>
+				</li>
+			</ul>
+			<button class="button">Dengerin Yuk !</button>
+		</div>
+		<div class="toggle-button">
+			<input type="checkbox"> <span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</nav>
+	<div class="pengatur-sidebar">
+		<div class="container-utama">
+			<div class="container-berita">
+                <!-- berita a -->
+                {% for row in berita_1 %}
+				<div class="berita-a">
+					<a href="{{row.2}}">
+						<img src="{{row.1}}" alt="berita">{{row.3}}</a>
+                </div>
+                {% endfor %}
+				<!-- iklan -->
+				<div class="ads">
+					<a href="#">
+						<img src="https://dummyimage.com/550x60/18ada8/080808.png" alt="ads">
+					</a>
+				</div>
+                <!-- berita b -->
+                {% for row in berita_2 %}
+				<div class="berita-b">
+					<a href="{{row.2}}">
+						<img src="{{row.1}}" alt="#">{{row.3}}</a>
+                </div>
+                {% endfor %}
             </div>
-            <div class="nav-items">
-                <ul class="nav-links">
-                    <li>
-                        <a href="#" class="nav-link">Telsradio</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link">Tentang</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link">Musik</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link active">Berita</a>
-                    </li>
-                </ul>
-                <button class="button"> Dengerin Yuk !</button>    
+			<!--Berita Terkini-->
+			<div class="container-beritaB">
+                <h3>BERITA TERKINI</h3>
+                {% for row in berita_4 %}
+				<div class="artikel2">
+					<a href="{{row.2}}">
+						<img src="{{row.1}}" alt="thumbnail">
+						<!-- max 12 kalimat -->
+						<p>{{row.3}}</p>
+					</a>
+                </div>
+                {% endfor %}
+			</div>
+		</div>
+		<div class="sidebar">
+			<!--Trending Now-->
+			<h3>TRENDING NOW</h3>
+            <!-- trending 1 -->
+            {% for row in berita_3 %}
+			<div class="site">
+				<a href="{{row.2}}">
+					<img src="{{row.1}}" alt="thumbnail">
+					<p>{{row.3}}</p>
+				</a>
             </div>
-            
-            <div class="toggle-button">
-                <input type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>
+            {% endfor %}
+			<!-- iframe -->
+			<div class="telstream">
+                <h3>TELS STREAM</h3>
+                {% for row in api_youtube %}
+				<!-- frame 1 -->
+				<iframe width="853" height="480" src="https://www.youtube.com/embed/{{row.1}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                {% endfor %}
             </div>
-        </nav>
+			<!-- Sicial Media -->
+			<div class="sosmed">
+				<h3>SOCIAL MEDIA</h3>
+				<a href="#">
+					<img src="static/assets/img/facebook.svg">
+				</a>
+				<a href="#">
+					<img src="static/assets/img/instagram.svg">
+				</a>
+				<a href="#">
+					<img src="static/assets/img/twitter.svg">
+				</a>
+				<a href="#">
+					<img src="static/assets/img/youtube.svg">
+				</a>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container-footer">
+			<h1>Telsradio</h1>
+			<div class="submenu-footer"> <a href="#">Telsradio</a>
+				<a href="#">Tentang</a>
+				<a href="#">Musik</a>
+				<a href="#">Berita</a>
+				<a href="#">Dengerin Yuk !</a>
+			</div>
+			<div class="garis-footer"></div>
+			<div class="sec-bawah-footer">
+				<p>© 2020 TomcatSquad. All rights reserved</p>
+				<div class="sosmed-footer">
+					<a href="#">
+						<img src="static/assets/img/browser footer.svg" alt="">
+					</a>
+					<a href="#">
+						<img src="static/assets/img/Twitter footer.svg" alt="">
+					</a>
+					<a href="#">
+						<img src="static/assets/img/Youtube footer.svg" alt="">
+					</a>
+					<a href="#">
+						<img src="static/assets/img/ig footer.svg" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- script -->
+	<script src="static/assets/js/navbar.js"></script>
+</body>
 
-        <div class="pengatur-sidebar">
-            <div class="container-utama">
-                <div class="container-berita">
-
-                    <!-- berita a -->
-                    <div class="berita-a">
-                        <a href="https://google.com">
-						    <img src="https://winpoin.com/wp-content/uploads/2020/12/Pillars-Tyranny.jpg" alt="berita">
-                            Microsoft Rilis Known Issues Untuk Xbox Series S dan X
-                        </a>
-                    </div>
-                    
-                    <!-- iklan -->
-                    <div class="ads">
-                        <a href="#"><img src="https://dummyimage.com/550x60/18ada8/080808.png" alt="ads"></a>
-                    </div>
-                    
-                    <!-- berita b -->
-                    <div class="berita-b">
-                        <a href="https://google.com">
-						<img src="https://dummyimage.com/672x505/black/080808.png" alt="#">
-						Update KB4586859 Dirilis Untuk Windows 10 1903/1909 Via WSUS</a>
-                    </div>
-                </div>
-                
-                <!--Berita Terkini-->
-                <div class="container-beritaB">
-                    <h3>BERITA TERKINI</h3>
-
-                    <div class="artikel2">
-                        <a href="#">
-						    <img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
-                            <!-- max 12 kalimat -->
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
-                        </a>
-                    </div>
-
-                    <div class="artikel2">
-                        <a href="#">
-						   <img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
-                            <!-- max 12 kalimat -->
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
-                        </a>
-                    </div>
-
-                    <div class="artikel2">
-                        <a href="#">
-                            <!-- max 12 kalimat -->
-						<img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
-						</a>
-                    </div>
-
-                    <div class="artikel2">
-                        <a href="#">
-						<img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
-                            <!-- max 12 kalimat -->
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
-						</a>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="sidebar">
-                 <!--Trending Now--> 
-                <h3>TRENDING NOW</h3>
-                <!-- trending 1 -->
-                <div class="site">
-                    <a href="#">
-					    <img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
-                       <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nihil soluta pariatur suscipit fuga? Voluptate, repellat nisi.</p>
-                    </a>
-                </div>
-                <!-- trending 2 -->
-                <div class="site">
-                    <a href="#">
-					<img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
-                    </a>
-                </div>
-                <!-- trending 3 -->
-                <div class="site">
-                    <a href="#">
-					    <img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
-                       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
-                    </a>
-                </div>
-                <!-- trending 4 -->
-                <div class="site">
-                    <a href="#">
-					<img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
-                      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
-                    </a>
-                </div>
-                <!-- trending 5 -->
-                <div class="site">
-                    <a href="#">
-					<img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
-                        <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
-                    </a>
-                </div>
-                
-                <!-- iframe -->
-                <div class="telstream">
-                    
-                    <h3>TELS STREAM</h3>
-                    <!-- frame 1 -->
-                    <iframe width="853" height="480" src="https://www.youtube.com/embed/vEDgALv2SPk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                    <!-- frame 2 -->
-                    <iframe width="853" height="480" src="https://www.youtube.com/embed/k-nw7IaWFO4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                    <!-- frame 3 -->
-                    <iframe width="853" height="480" src="https://www.youtube.com/embed/nl7GfuvFNWQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                
-                <!-- Sicial Media -->
-                <div class="sosmed">
-                    <h3>SOCIAL MEDIA</h3>
-                    <a href="#"><img src="static/assets/img/facebook.svg"></a>
-                    <a href="#"><img src="static/assets/img/instagram.svg"></a>
-                    <a href="#"><img src="static/assets/img/twitter.svg"></a>
-                    <a href="#"><img src="static/assets/img/youtube.svg"></a>
-                </div>
-            </div>
-        </div>
-        
-        <footer>
-            <div class="container-footer">
-                <h1>Telsradio</h1>
-                <div class="submenu-footer">
-                  <a href="#">Telsradio</a>
-                  <a href="#">Tentang</a>
-                  <a href="#">Musik</a>
-                  <a href="#">Berita</a>
-                  <a href="#">Dengerin Yuk !</a>
-                </div>
-                <div class="garis-footer"></div>
-                <div class="sec-bawah-footer">
-                    <p>© 2020 TomcatSquad. All rights reserved</p>
-                    <div class="sosmed-footer">
-                    <a href="#"><img src="static/assets/img/browser footer.svg" alt=""></a>
-                    <a href="#"><img src="static/assets/img/Twitter footer.svg" alt=""></a>
-                    <a href="#"><img src="static/assets/img/Youtube footer.svg" alt=""></a>
-                    <a href="#"><img src="static/assets/img/ig footer.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-         </footer>
-
-        <!-- script -->
-       <script src="static/assets/js/navbar.js"></script> 
-
-    </body>
-</html> 
+</html>

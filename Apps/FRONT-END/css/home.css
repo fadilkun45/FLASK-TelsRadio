@@ -5,10 +5,6 @@
     margin: 0 ;
 }
 
-nav button {
-    padding : 7px 5px ;
-}
-
 .container {
     display: flex ;
     flex-direction: column ;
@@ -24,34 +20,39 @@ nav button {
     margin: auto ;
     grid-column-gap : 20px ;
     grid-column:  "0.5fr , 1fr";
+    margin-left: 0 ;
+    width: 1050px ;
+    position: relative ;
 }
 
 .sec-pertama h1 span {
     border : 2px solid #2681E6 ;
-    width: 150px ;
+    width: 190px ;
     margin : 10px 0 ;
-    margin-bottom: 10px ;
+    margin-top: -1px ;
+    margin-bottom: 40px ;
 }
 
 .sec-pertama h1 {
     grid-area: judul ;
-    margin-bottom: -130px ;
+    margin-bottom: -30px ;
     margin-top: 20px ;
-    color: #526174 ;
+    font-size: 50px ;
+    color: #132943 ;
     display: flex ;
     flex-direction: column ;
 }
 
-
 .sec-pertama p:nth-child(2)  {
     grid-area: about ;
-    margin-top: -60px ;
+    margin-top: -100px ;
 }
 
 .sec-pertama img {
     grid-area: gambar ;
-    width: 400px ;
-    height: 400px ;
+    width: 500px ;
+    height: 504px;
+    margin-right: -140px ;
 }
 
 .sec-pertama button {
@@ -61,7 +62,7 @@ nav button {
     height: 40px ;
     display: flex ;
     flex-direction: row ;
-    margin-top: -160px ;
+    margin-top: -120px ;
     margin-left: -7px ;
     border-radius: 50px ;
 }
@@ -79,7 +80,7 @@ nav button {
 .sosial-media-sec-1 {
     grid-area: sosmed ;
     display: inline-block ;
-    margin-top: -80px ;
+    margin-top: -50px ;
 }
 
 .sosial-media-sec-1 a img {
@@ -96,8 +97,9 @@ margin-left: -25px ;
     display: grid ;
     grid-template-areas: "gambar judul" "gambar about" "button button";
     margin: auto ;
-    margin-top: 20px ;
-    column-gap: 30px ;
+    margin-top: 60px ;
+    margin-bottom: 80px ;
+    column-gap: 50px ;
 }
 
 .sec-kedua h1 {
@@ -108,6 +110,7 @@ margin-left: -25px ;
 width: 300px ;
 display: flex ;
 flex-direction: column ;
+margin-bottom: 50px ;
 }
 
 .sec-kedua h1 span {
@@ -115,9 +118,10 @@ border : 2px solid #2681E6 ;
 width: 150px ;
 }
 
-.sec-kedua p {
+.sec-kedua p:nth-child(2) {
     grid-area : about ;
     margin-top: -60px ;
+    font-size: 20px ;
 }
 
 .sec-kedua p span {
@@ -127,14 +131,14 @@ width: 150px ;
 
 .sec-kedua img {
     grid-area: gambar ;
-    width: 400px ;
-    height: 400px ;
+    width: 500px ;
+    height: 500px ;
 }
 
 .sec-kedua button {
     grid-area : button ;
-    margin-left : 430px ;
-    margin-top: -100px ;
+    margin-left : 550px ;
+    margin-top: -50px ;
     height : 40px ;
     /* line-height: 15px ; */
     width: 150px ;
@@ -168,9 +172,10 @@ width: 150px ;
 .sec-3 {
     display: grid ;
     grid-template-areas: "  judul judul judul judul" "sec-a sec-b sec-c sec-d";
+    margin-top: 70px ;
     row-gap: 30px ;
     column-gap: 20px ;
-    margin-bottom: 30px ;
+    margin-bottom: 180px ;
     text-align: center ;
 }
 
@@ -239,11 +244,13 @@ width: 150px ;
 .sec-empat {
     display: grid ;
     grid-template-areas: "judul gambar" "about gambar" "button button";
-    margin : 40px auto ;
+    margin-top: 60px ;
+    margin-bottom: 160px ;
     width: 100% ;
 }
 
 .sec-empat h1 {
+    font-size: 40px ;
     grid-area: judul ;
     display: flex ;
     flex-direction: column ;
@@ -254,25 +261,26 @@ width: 150px ;
     width: 80px ;
 }
 
-.sec-empat p {
+.sec-empat p:nth-child(2) {
     grid-area: about ;
     width: 600px ;
-    margin-top: -100px ;
+    margin-top: -180px ;
+    font-size: 20px ;
 }
 
 .sec-empat img {
     grid-area: gambar ;
-    width: 300px ;
-    height: 300px ;
-    margin-left: 170px ;
+    width: 500px ;
+    height: 500px ;
+    margin-left: 50px ;
 }
 
 .sec-empat button {
     grid-area : button ;
     height : 40px ;
-    margin-top: -80px ;
+    margin-top: -180px ;
     margin-left: -10px ;
-    width: 150px ;
+    width: 130px ;
     background-color : #2681E6 ;
     border-radius: 20px;
     box-sizing: border-box ;
@@ -301,49 +309,54 @@ width: 150px ;
 }
 
 .sec-kelima {
+    margin-top: 80px ;
     display: grid ;
-    grid-template-areas: "gambar judul" "gambar p1" "gambar p2" "button button" ;
+    grid-template-areas: "gambar aside";
     column-gap: 30px ;
+    margin-bottom: 150px ;
 }
 
-.sec-kelima h1 {
-    grid-area: judul ;
+.sec-kelima img {
+    width: 400px ;
+    height: 400px ;
+    grid-area: gambar ;
+}
+
+.sec-kelima aside {
+    grid-area: aside ;
+
+}
+
+.sec-kelima aside h1 {
     display: flex ;
     flex-direction: column ;
     height: 40px ;
+    font-size: 40px;
 }
 
-.sec-kelima h1 span {
+.sec-kelima aside h1 span {
     border : 2px solid #2681E6 ;
     width: 100px ;
 }
 
 
-.sec-kelima p:nth-child(2) {
-    grid-area: p1 ;
+.sec-kelima aside p:nth-child(2) {
     color: #2681E6 ;
-    margin-top: -10px ;
+    margin-top: 30px ;
     font-size: 12px ;
 }
 
-.sec-kelima p:nth-child(3) {
-    grid-area: p2 ;
-    margin-top: -50px ;
+.sec-kelima aside p:nth-child(3) {
+    margin-top: 20px ;
     color: #18191F ;
+    font-size: 20px;
 }
 
-.sec-kelima img {
-    grid-area: gambar ;
-    width: 300px ;
-    height: 300px ;
-}
 
-.sec-kelima button {
-    grid-area : button ;
+
+.sec-kelima aside button {
     height : 40px ;
-    margin-top: -60px ;
-    position: relative ;
-    left: 320px ;
+    margin-top: 50px ;
     width: 140px ;
     background-color : #2681E6 ;
     border-radius: 20px;
@@ -354,7 +367,7 @@ width: 150px ;
     color: #FFFFFF;
 }
 
-.sec-kelima button p {
+.sec-kelima aside button p {
     margin-top: 10px ;
     margin-left: 10px ;
     
@@ -372,3 +385,360 @@ width: 150px ;
     padding-right: 7px ;
 }
 
+
+@media only screen and (max-width : 800px ){
+    .container {
+        width : 580px ;
+        margin: auto ;
+        margin-top : 10px ;
+    }
+    
+    .sec-pertama {
+        display: grid ;
+        grid-template-areas:  "judul " "about " "button" ; 
+        margin: auto ;
+        width: 580px ;
+        margin-bottom: 100px ;
+    }
+
+    .sosial-media-sec-1 {
+        display: none ;
+    }
+
+    .sec-pertama h1 span {
+        width: 150px ;
+        margin : 10px 0 ;
+        margin-top: -8px ;
+    }
+
+    .sec-pertama h1 {
+        margin-top: -20px ;
+        margin-bottom: 30px ;
+    }
+
+    .sec-pertama p:nth-child(2)  {
+        margin-top: 0px ;
+    }
+    
+    .sec-pertama img {
+        display: none ;
+    }
+    
+    .sec-pertama button {
+        width: 135px ;
+        margin-top: 40px ;
+        line-height: 23px ;
+    }
+    
+    .sec-pertama button img {
+        width: 30px ;
+        height: 20px ;
+        display: block ;
+    }
+
+    .sec-kedua {
+        display: grid ;
+        margin-top: 20px ;
+        grid-template-areas: "gambar " "judul" "about" "button";
+    }
+
+    .sec-kedua img {
+        margin: auto ;
+        margin-bottom : 40px ;
+    }
+
+    .sec-kedua h1 {
+        text-align: center ;
+        margin: 0 auto ;
+        margin-bottom: 150px ;
+    }
+
+    .sec-kedua h1 span {
+        margin: auto ;
+        width: 130px ;
+    }
+
+    .sec-kedua p {
+        margin-top: 300px ;
+    }
+    
+    .sec-kedua button {
+        margin-top: 20px ;
+        margin-left: 0 ;
+    }
+
+    .sec-3 {
+        margin-top: 100px ;
+        grid-template-areas: "judul judul" "sec-a sec-b" "sec-c sec-d";
+    }
+
+    .sec-3 h1 {
+        width: 300px ;
+        margin: auto ;
+        margin-bottom: 30px ;
+    }
+
+    .sec-empat {
+        grid-template-areas: "gambar" "judul" "about" "button";
+        margin: 30px auto ;
+    }
+
+    .sec-empat img {
+        margin-bottom : 30px  ;
+    }
+
+    .sec-empat h1 {
+        text-align: center ;
+        margin-top: 10px ;
+        margin-bottom: 200px ;
+    }
+
+    .sec-empat h1 span {
+        width: 70px ;
+        margin: auto ;
+    }
+
+    .sec-empat p {
+        margin-top: 200px ;
+    }
+
+    .sec-empat button {
+        margin-top : 30px ;
+    }
+
+    .sec-kelima {
+        margin-top: 20px ;
+        grid-template-areas: "gambar" "aside" ;
+        margin: auto ;
+    }
+
+    .sec-kelima aside {
+
+    }
+
+    .sec-kelima img {
+        margin : auto ;
+        margin-top: 50px ;
+    }
+
+    .sec-kelima aside h1 {
+        margin-top: 10px ;
+        text-align: center ;
+        margin-bottom: 10px ;
+    }
+
+    .sec-kelima aside h1 span {
+        margin: auto ;
+        width: 80px ;
+        margin-top: -4px ;
+    }
+
+    .sec-kelima aside p:nth-child(2){
+        text-align: center ;
+        margin-top: 30px ;
+    }
+
+    .sec-kelima aside p:nth-child(3){
+        margin-top: 10px ;
+    }
+
+    .sec-kelima aside button {
+        margin-top: 20px ;
+        margin-left: 0px ;
+        margin-bottom: 30px ;
+    }
+
+}
+
+@media only screen and (max-width : 600px ){
+    .container {
+        width : 360px ;
+        margin: auto ;
+        margin-top : 60px ;
+    }
+    
+    .sec-pertama {
+        display: grid ;
+        grid-template-areas:  "judul " "about " "button" ; 
+        margin: auto ;
+        width: 350px ;
+        margin-top : 10px ;
+        margin-left: 10px ;
+    }
+
+    .sosial-media-sec-1 {
+        display: none ;
+    }
+
+    .sec-pertama h1 span {
+        width: 110px ;
+        margin : 10px 0 ;
+        margin-top: -8px ;
+    }
+
+    .sec-pertama h1 {
+        margin-bottom: 10px ;
+        font-size : 30px ;
+    }
+
+    .sec-pertama p:nth-child(2)  {
+        margin-top: 0px ;
+        font-size: 12px ;
+    }
+    
+    .sec-pertama img {
+        display: none ;
+    }
+    
+    .sec-pertama button {
+        width: 150px ;
+        margin-top: 30px ;
+    }
+    
+    .sec-pertama button img {
+        width: 30px ;
+        height: 20px ;
+        display: block ;
+    }
+
+    .sec-kedua {
+        display: grid ;
+        margin-top: 20px ;
+        grid-template-areas: "gambar " "judul" "about" "button";
+    }
+
+    .sec-kedua img {
+        margin: auto ;
+        margin-bottom : 40px ;
+        width: 350px ;
+        height: 350px ;
+    }
+
+    .sec-kedua h1 {
+        text-align: center ;
+        margin: 0 auto ;
+        margin-bottom: 150px ;
+    }
+
+    .sec-kedua h1 span {
+        margin: auto ;
+        width: 130px ;
+    }
+
+    .sec-kedua p:nth-child(2) {
+        font-size: 15px ;
+        margin-top: -80px ;
+        text-align: center ;
+    }
+    
+    .sec-kedua button {
+        margin: auto ;
+        margin-top: 40px ;
+    }
+
+    .sec-3 {
+        margin-top: 100px ;
+        grid-template-areas: "judul " "sec-a" "sec-b" "sec-c" "sec-d";
+    }
+
+    .sec-3 h1 {
+        width: 300px ;
+        margin: auto ;
+        margin-bottom: 30px ;
+    }
+
+    .card-a ,.card-b ,.card-c ,.card-d {
+        margin: auto ;
+    }
+
+    .sec-empat {
+        grid-template-areas: "gambar" "judul" "about" "button";
+        width: 340px ;
+        margin: auto ;
+        margin-bottom : 130px  ;
+    }
+
+    .sec-empat img {
+        width: 330px ;
+        height: 330px ;
+        margin-left: 0 ;
+        /* margin-right: 0 ; */
+    }
+
+    .sec-empat h1 {
+        margin: auto ;
+        margin-top: 20px ;
+        margin-bottom: 200px ;
+    }
+
+    .sec-empat h1 span {
+        width: 100px ;
+        margin: auto ;
+        margin-top: -10px ;
+
+    }
+
+    .sec-empat p:nth-child(2) {
+        font-size : 15px ;
+        width: 350px ;
+        margin: auto ;
+        margin-top: -180px ;
+        text-align: center ;
+    }
+
+    .sec-empat button {
+        margin: auto ;
+        margin-top : -10px ;
+    }
+
+    .sec-kelima {
+        margin-top: 20px ;
+        grid-template-areas: "gambar" "aside" ;
+        margin: auto ;
+    }
+
+    .sec-kelima aside {
+
+    }
+
+    .sec-kelima img {
+        margin : auto ;
+        margin-top: 50px ;
+        width: 300px ;
+        height: 300px ;
+    }
+
+    .sec-kelima aside h1 {
+        margin-top: 10px ;
+        text-align: center ;
+        margin-bottom: 10px ;
+    }
+
+    .sec-kelima aside h1 span {
+        margin: auto ;
+        width: 100px ;
+        margin-top: -12px ;
+    }
+
+    .sec-kelima aside p:nth-child(2){
+        text-align: center ;
+        margin-top: 30px ;
+    }
+
+    .sec-kelima aside p:nth-child(3){
+        margin-top: 10px ;
+        font-size: 15px ;
+        text-align: center ;
+    }
+
+    .sec-kelima aside button {
+        margin: auto ;
+        margin-top: 50px ;
+        margin-bottom: 20px ;
+    }
+
+    footer {
+        display: none ;
+    }
+
+}

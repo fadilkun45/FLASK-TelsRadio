@@ -1,6 +1,10 @@
 
 /* bagian trending,berita,ads */
 
+html {
+    scroll-behavior: smooth;
+}
+
 .pengatur-sidebar {
     display : flex ;
     flex-direction: row ;
@@ -252,34 +256,6 @@
     margin-right : 18px ;
 }
 
-/* footer */
-
-footer {
-    background-color: #2681E6 ;
-    color : #FFFFFF ;
-    position: absolute ;
-    left: 0 ;
-    right: 0 ;
-}
-
-
-.copyright {
-    display: flex ;
-    flex-direction: row ;
-    margin: 0 auto ;
-    width : 200px ;
-    font-size: 13px ;
-}
-
-.copyright img {
-width : 10px ;
-height: 10px ;
-margin : 20px 10px  ;
-margin-top: 15px ;
-
-}
-
-
 
 /* media breakpoint */
 /* atau pengubah ukuran sesuai ukuran layar yang ditentukan */
@@ -362,19 +338,6 @@ margin-top: 15px ;
        right: 30% ;
        margin: 20px 10px ;
        margin-top: -29px ;
-    }
-
-    footer {
-        margin: 0 ;
-    }
-
-    .copyright {
-        display: flex ;
-        font-size: 15px ;
-    }
-
-    .copyright img {
-        margin-top: 20px ;
     }
 
 }
@@ -544,6 +507,10 @@ margin-top: 15px ;
     
     .site ,.artikel2 {
         transform: scale(100%) ;
+    }
+
+    footer {
+        display: none ;
     }
 
 }

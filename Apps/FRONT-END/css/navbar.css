@@ -183,20 +183,20 @@ button.button :hover {
         left: 0 ;
         right: 0 ;
         top: 0 ; 
-        height: 30px ;
+        height: 60px ;
         padding-top: 5px;
         background-color: white ;
     }
 
     .nav-brand {
-        margin-left: 20px ;
+        margin-left: 0px ;
         margin-bottom : 10px ;
         margin-top: 20px ;
     }
 
     .nav-brand img {
-        width: 100px ;
-        height: 26px ;
+        width: 130px ;
+        height: 100px ;
     }
 
     .nav-items {

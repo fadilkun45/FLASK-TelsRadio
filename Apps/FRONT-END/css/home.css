@@ -631,13 +631,13 @@ width: 150px ;
 
     .sec-kedua p:nth-child(2) {
         font-size: 15px ;
-        margin-top: -80px ;
+        margin-top: -50px ;
         text-align: center ;
     }
     
     .sec-kedua button {
         margin: auto ;
-        margin-top: 40px ;
+        margin-top: 80px ;
     }
 
     .sec-3 {

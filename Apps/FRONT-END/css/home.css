@@ -4,6 +4,7 @@ html {
     scroll-behavior: smooth;
   }
 
+
 * {
     padding: 0 ;
     margin: 0 ;
@@ -16,6 +17,7 @@ html {
     margin: auto ;
     margin-top: 30px ;
     font-family: 'Poppins', sans-serif;
+    position: relative;
 }
 
 .sec-pertama {
@@ -389,6 +391,22 @@ width: 150px ;
     padding-right: 7px ;
 }
 
+.toggle-naik {
+    background-color: #2681E6 ;
+    border-radius: 4px ;
+    cursor: pointer ;
+    font-size: 18px ;
+    color: #F3F3F3 ;
+    width: 30px ;
+    height: 30px ;
+    z-index: 300 ;
+    position: fixed ;
+    right: 20px ;
+    margin-top: 430px ;
+    /* display: none ; */
+    line-height: 30px ;
+    text-align: center ;
+}
 
 @media only screen and (max-width : 800px ){
     .container {
@@ -552,6 +570,12 @@ width: 150px ;
         margin-bottom: 30px ;
     }
 
+    .toggle-naik {
+        z-index: 300 ;
+        right: 20px ;
+        margin-top: 400px ;
+    }
+
 }
 
 @media only screen and (max-width : 600px ){
@@ -631,13 +655,13 @@ width: 150px ;
 
     .sec-kedua p:nth-child(2) {
         font-size: 15px ;
-        margin-top: -80px ;
+        margin-top: -50px ;
         text-align: center ;
     }
     
     .sec-kedua button {
         margin: auto ;
-        margin-top: 40px ;
+        margin-top: 80px ;
     }
 
     .sec-3 {
@@ -737,6 +761,13 @@ width: 150px ;
         margin-top: 50px ;
         margin-bottom: 20px ;
     }
+
+    .toggle-naik {
+        z-index: 300 ;
+        right: 20px ;
+        margin-top: 450px ;
+    }
+
 
     footer {
         display: none ;

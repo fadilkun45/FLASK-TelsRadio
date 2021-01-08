@@ -256,6 +256,25 @@ html {
     margin-right : 18px ;
 }
 
+.toggle-naik {
+    background-color: #2681E6 ;
+    border-radius: 4px ;
+    cursor: pointer ;
+    font-size: 18px ;
+    color: #F3F3F3 ;
+    width: 30px ;
+    height: 30px ;
+    z-index: 30000 ;
+    position: fixed ;
+    right: 20px ;
+    top: 0 ;
+    margin-top: 430px ;
+    display: none ;
+    line-height: 30px ;
+    text-align: center ;
+}
+
+
 
 /* media breakpoint */
 /* atau pengubah ukuran sesuai ukuran layar yang ditentukan */

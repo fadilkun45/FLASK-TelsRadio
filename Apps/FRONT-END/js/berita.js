@@ -1,7 +1,7 @@
 const toggleNaik = document.querySelector(".toggle-naik");
-// const container = document.querySelector('.container');
 
 
+if (document.documentElement.clientWidth < 800) {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -18,3 +18,4 @@ toggleNaik.addEventListener ('click' ,function () {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 })
+}

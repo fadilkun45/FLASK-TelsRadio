@@ -403,7 +403,7 @@ width: 150px ;
     position: fixed ;
     right: 20px ;
     margin-top: 430px ;
-    /* display: none ; */
+    display: none ;
     line-height: 30px ;
     text-align: center ;
 }

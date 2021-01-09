@@ -1,4 +1,4 @@
-## About 🤷
+## Tentang 🤷
 <a href="https://github.com/tomcat-squad/FLASK-TelsRadio/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/tomcat-squad/FLASK-TelsRadio?color=2b9348"></a>
 <a href="https://github.com/tomcat-squad/FLASK-TelsRadio/pulls"><img src="https://img.shields.io/github/issues-pr/tomcat-squad/FLASK-TelsRadio" alt="Pull Requests Badge"/></a>
 <a href="https://github.com/tomcat-squad/FLASK-TelsRadio/network/members"><img src="https://img.shields.io/github/forks/tomcat-squad/FLASK-TelsRadio" alt="Forks Badge"/></a><br>
@@ -16,3 +16,6 @@ Telsradio adalah sebuah radio berbasis web yang dibuat oleh Tomcat Squad angkata
 </p>
 <h3>Desain UI/UX ✨</h3>
 <a href="https://www.figma.com/file/UWi7rcaBe3swejvbvz6x5f/Telsradio?node-id=0%3A1">Figma Tels Radio</a>
+<h3>Tata Letak 👁️</h3>
+ <h4>- Berita</h4>
+ <img src="https://user-images.githubusercontent.com/67460437/104108659-1950eb80-52f9-11eb-9ac3-c7bf2d257f47.png" alt="Berita" width="300" height="300">

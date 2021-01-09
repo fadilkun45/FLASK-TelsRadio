@@ -175,7 +175,7 @@ width: 150px ;
     padding-right: 7px ;
 }
 
-.sec-3 {
+.sec-ketiga {
     display: grid ;
     grid-template-areas: "  judul judul judul judul" "sec-a sec-b sec-c sec-d";
     margin-top: 70px ;
@@ -185,14 +185,14 @@ width: 150px ;
     text-align: center ;
 }
 
-.sec-3 h1 {
+.sec-ketiga h1 {
     grid-area: judul ;
     margin: 20px auto ;
     display: flex ;
     flex-direction: column ;
 }
 
-.sec-3 h1 span {
+.sec-ketiga h1 span {
     border : 2px solid #2681E6 ;
     width: 150px ;
     margin: auto ;
@@ -402,7 +402,7 @@ width: 150px ;
     z-index: 300 ;
     position: fixed ;
     right: 7% ;
-    margin-top: 40% ;
+    margin-top: 400px ;
     display: none ;
     line-height: 52px ;
     text-align: center ;
@@ -489,12 +489,12 @@ width: 150px ;
         margin-left: 0 ;
     }
 
-    .sec-3 {
+    .sec-ketiga {
         margin-top: 100px ;
         grid-template-areas: "judul judul" "sec-a sec-b" "sec-c sec-d";
     }
 
-    .sec-3 h1 {
+    .sec-ketiga h1 {
         width: 300px ;
         margin: auto ;
         margin-bottom: 30px ;
@@ -573,7 +573,7 @@ width: 150px ;
     .toggle-naik {
         z-index: 300 ;
         right: 20px ;
-        margin-top: 530px ;
+        margin-top: 400px ;
     }
 
 }
@@ -664,12 +664,12 @@ width: 150px ;
         margin-top: 80px ;
     }
 
-    .sec-3 {
+    .sec-ketiga {
         margin-top: 100px ;
         grid-template-areas: "judul " "sec-a" "sec-b" "sec-c" "sec-d";
     }
 
-    .sec-3 h1 {
+    .sec-ketiga h1 {
         width: 300px ;
         margin: auto ;
         margin-bottom: 30px ;
@@ -762,6 +762,13 @@ width: 150px ;
         margin-bottom: 20px ;
     }
 
+    .toggle-naik {
+        font-size: 20px ;
+        width: 30px ;
+        height: 30px ;
+        line-height: 30px ;
+        margin-top: 500px ;
+    }
 
     footer {
         display: none ;

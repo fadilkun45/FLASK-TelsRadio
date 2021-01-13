@@ -21,17 +21,20 @@ html {
 }
 
 .sec-pertama {
-    display: grid ;
-    grid-template-areas:  "judul gambar" "about gambar " "button button" "sosmed sosmed"; 
+    display: flex ;
+    flex-direction: row ;
     margin: auto ;
-    grid-column-gap : 20px ;
-    grid-column:  "0.5fr , 1fr";
     margin-left: 0 ;
     width: 1050px ;
-    position: relative ;
 }
 
-.sec-pertama h1 span {
+.sec-pertama aside {
+    order: 1 ;
+    display: flex ;
+    flex-direction: column ;
+}
+
+.sec-pertama aside h1 span {
     border : 2px solid #2681E6 ;
     width: 190px ;
     margin : 10px 0 ;
@@ -39,8 +42,7 @@ html {
     margin-bottom: 40px ;
 }
 
-.sec-pertama h1 {
-    grid-area: judul ;
+.sec-pertama aside h1 {
     margin-bottom: -30px ;
     margin-top: 20px ;
     font-size: 50px ;
@@ -49,53 +51,49 @@ html {
     flex-direction: column ;
 }
 
-.sec-pertama p:nth-child(2)  {
-    grid-area: about ;
-    margin-top: -100px ;
+.sec-pertama aside p:nth-child(2)  {
+    /* margin-top: -100px ; */
 }
 
 .sec-pertama img {
-    grid-area: gambar ;
     width: 500px ;
     height: 504px;
-    margin-right: -140px ;
+    order: 2 ;
 }
 
-.sec-pertama button {
-    grid-area: button ;
+.sec-pertama aside button {
     width: 150px ;
     padding: 10px ;
     height: 40px ;
     display: flex ;
     flex-direction: row ;
-    margin-top: -120px ;
+    margin-top: 20px ;
     margin-left: -7px ;
     border-radius: 50px ;
 }
 
-.sec-pertama p span {
+.sec-pertama  aside p span {
     color: #2681E6 ;
     font-weight: bold ;
 }
 
-.sec-pertama button img {
+.sec-pertama aside button img {
     width: 30px ;
     height: 20px ;
 }
 
-.sosial-media-sec-1 {
-    grid-area: sosmed ;
+.sosial-media-sec-1  {
     display: inline-block ;
-    margin-top: -50px ;
+    margin-top: 40px ;
 }
 
-.sosial-media-sec-1 a img {
+.sosial-media-sec-1  a img {
 width: 25px ;
 height: 30px ;
 margin: 0 20px ;
 }
 
-.sosial-media-sec-1 a:nth-child(1) {
+.sosial-media-sec-1  a:nth-child(1) {
 margin-left: -25px ;
 }
 
@@ -177,7 +175,7 @@ width: 150px ;
 
 .sec-ketiga {
     display: grid ;
-    grid-template-areas: "  judul judul judul judul" "sec-a sec-b sec-c sec-d";
+    grid-template-areas: "judul judul judul judul" "sec-a sec-b sec-c sec-d";
     margin-top: 70px ;
     row-gap: 30px ;
     column-gap: 20px ;
@@ -248,21 +246,28 @@ width: 150px ;
 }
 
 .sec-empat {
-    display: grid ;
-    grid-template-areas: "judul gambar" "about gambar" "button button";
+    display: flex ;
+    flex-direction: row ;
     margin-top: 60px ;
     margin-bottom: 160px ;
     width: 100% ;
 }
 
-.sec-empat h1 {
+.sec-empat aside {
+    display: flex ;
+    flex-direction: column ;
+    order : 1 ;
+}
+
+.sec-empat aside h1 {
     font-size: 40px ;
+    margin-bottom: 40px ;
     grid-area: judul ;
     display: flex ;
     flex-direction: column ;
 }
 
-.sec-empat h1 span {
+.sec-empat aside h1 span  {
     border : 2px solid #2681E6 ;
     width: 80px ;
 }
@@ -270,12 +275,12 @@ width: 150px ;
 .sec-empat p:nth-child(2) {
     grid-area: about ;
     width: 600px ;
-    margin-top: -180px ;
+    /* margin-top: -180px ; */
     font-size: 20px ;
 }
 
 .sec-empat img {
-    grid-area: gambar ;
+    order: 2 ;
     width: 500px ;
     height: 500px ;
     margin-left: 50px ;
@@ -284,7 +289,7 @@ width: 150px ;
 .sec-empat button {
     grid-area : button ;
     height : 40px ;
-    margin-top: -180px ;
+    margin-top: 60px ;
     margin-left: -10px ;
     width: 130px ;
     background-color : #2681E6 ;

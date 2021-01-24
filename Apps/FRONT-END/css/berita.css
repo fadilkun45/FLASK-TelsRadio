@@ -1,6 +1,10 @@
 
 /* bagian trending,berita,ads */
 
+html {
+    scroll-behavior: smooth;
+}
+
 .pengatur-sidebar {
     display : flex ;
     flex-direction: row ;
@@ -252,31 +256,21 @@
     margin-right : 18px ;
 }
 
-/* footer */
-
-footer {
+.toggle-naik {
     background-color: #2681E6 ;
-    color : #FFFFFF ;
-    position: absolute ;
-    left: 0 ;
-    right: 0 ;
-}
-
-
-.copyright {
-    display: flex ;
-    flex-direction: row ;
-    margin: 0 auto ;
-    width : 200px ;
-    font-size: 13px ;
-}
-
-.copyright img {
-width : 10px ;
-height: 10px ;
-margin : 20px 10px  ;
-margin-top: 15px ;
-
+    border-radius: 4px ;
+    cursor: pointer ;
+    font-size: 40px ;
+    color: #F3F3F3 ;
+    width: 50px ;
+    height: 50px ;
+    z-index: 300 ;
+    position: fixed ;
+    right: 7% ;
+    margin-top: 400px ;
+    display: none ;
+    line-height: 52px ;
+    text-align: center ;
 }
 
 
@@ -364,17 +358,10 @@ margin-top: 15px ;
        margin-top: -29px ;
     }
 
-    footer {
-        margin: 0 ;
-    }
-
-    .copyright {
-        display: flex ;
-        font-size: 15px ;
-    }
-
-    .copyright img {
-        margin-top: 20px ;
+    .toggle-naik {
+        z-index: 300 ;
+        right: 20px ;
+        margin-top: 400px ;
     }
 
 }
@@ -545,5 +532,18 @@ margin-top: 15px ;
     .site ,.artikel2 {
         transform: scale(100%) ;
     }
+
+    footer {
+        display: none ;
+    }
+
+    .toggle-naik {
+        font-size: 30px ;
+        width: 40px ;
+        height: 40px ;
+        line-height: 40px ;
+        margin-top: 400px ;
+    }
+
 
 }

@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-# Section Berita
-![berita](https://user-images.githubusercontent.com/67460437/99273862-2521b380-285c-11eb-8502-793ef4aa0e62.png)
-# Figma
-https://www.figma.com/file/UWi7rcaBe3swejvbvz6x5f/Telsradio?node-id=0%3A1
 
-=======
 <p align="center">
 	<img alt="Tels Radio" src="https://images.idgesg.net/images/article/2019/06/on-the-air_neon_on-air_radio_podcast_mic_microphone_headphones-100800655-large.jpg" height="200" />
 	<h3 align="center"><b>Tels Radio</b></h3>
@@ -42,6 +36,3 @@ Telsradio adalah sebuah radio berbasis web yang dibuat oleh Tomcat Squad angkata
 ## Tata Letak 👁️
 <h4>- Berita</h4>
 <img src="https://user-images.githubusercontent.com/67460437/104108659-1950eb80-52f9-11eb-9ac3-c7bf2d257f47.png" alt="Berita" width="300" height="300">
-
-## 
->>>>>>> 09c4e9d23a9cc8571742c5991e03fb5a981f3139

@@ -685,32 +685,38 @@ width: 150px ;
     }
 
     .sec-empat {
-        grid-template-areas: "gambar" "judul" "about" "button";
+       display: flex ;
+       flex-direction: column ;
         width: 340px ;
         margin: auto ;
-        margin-bottom : 130px  ;
+        margin-bottom : 190px  ;
+    }
+
+    .sec-empat aside {
+        order: 2 ;
     }
 
     .sec-empat img {
+        order: 1 ;
         width: 300px ;
         height: 300px ;
         margin: auto ;
     }
 
-    .sec-empat h1 {
+    .sec-empat aside h1 {
         margin: auto ;
-        margin-top: 50px ;
+        margin-top: 40px ;
         margin-bottom: 250px ;
     }
 
-    .sec-empat h1 span {
+    .sec-empat aside h1 span {
         width: 100px ;
         margin: auto ;
         margin-top: -8px ;
 
     }
 
-    .sec-empat p:nth-child(2) {
+    .sec-empat aside p:nth-child(2) {
         font-size : 15px ;
         width: 350px ;
         margin: auto ;
@@ -718,7 +724,7 @@ width: 150px ;
         text-align: center ;
     }
 
-    .sec-empat button {
+    .sec-empat aside button {
         margin: auto ;
         margin-top : 50px ;
     }
@@ -775,8 +781,6 @@ width: 150px ;
         margin-top: 400px ;
     }
 
-    footer {
-        display: none ;
-    }
+    
 
 }

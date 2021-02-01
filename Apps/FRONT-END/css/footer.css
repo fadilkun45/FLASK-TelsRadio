@@ -33,6 +33,10 @@ footer {
     justify-content: space-between ;
 }
 
+.submenu-footer p {
+    display: none ;
+}
+
 .submenu-footer a {
     text-decoration: none ;
     color: #FFFFFF ;
@@ -69,6 +73,10 @@ footer {
     height: 30px ;
 }
 
+#khusus-mobile {
+    display: none ;
+}
+
 @media only screen and (max-width : 800px ){
     
     .container-footer {
@@ -98,4 +106,88 @@ footer {
         width: 25% ;
         justify-content: space-between ;
     }
+}
+
+@media only screen and (max-width : 600px ){
+
+    .container-footer {
+        width: 330px ;
+    }
+
+    .container-footer h1 {
+        text-align: center ;
+        margin: 20px auto ;
+        margin-top: 10px ;
+        font-size: 20px ;
+        margin-bottom: 10px ;
+    }
+
+    .submenu-footer {
+        display: flex ;
+        flex-direction: row ;
+        width : 330px ;
+        margin: 20px auto ;
+        justify-content: space-around ;
+        margin-top: -20px ;
+        flex-wrap: wrap ;
+        order: 2 ;
+    }
+
+    .submenu-footer p {
+        display: block ;
+        color: #FFFFFF ;
+        margin: auto 4px ;
+    }
+
+    .submenu-footer a {
+        margin: 2px auto ;
+        font-size: 17px ;
+        font-weight: 400 ;
+    }
+
+    .garis-footer {
+        width: 300px ;
+        margin: auto ;
+    }
+
+    .sec-bawah-footer {
+        display: flex ;
+        flex-direction: column ;
+        justify-content: space-between ;
+        margin: 30px 0 ;
+        width: 330px ;
+        order: 1 ;
+    }
+
+    .sec-bawah-footer p {
+        font-size : 15px ;
+        order: 2;
+        margin: 10px auto ;
+        display: none ;
+    }
+
+    .sosmed-footer {
+        margin: 10px auto;
+        display: flex ;
+        flex-direction: row ;
+        width: 80% ;
+        justify-content: space-between ;
+        order: 1;
+    }
+
+    .sosmed-footer a img {
+        width: 30px ;
+        height: 30px ;
+    }
+
+    .container-footer #khusus-mobile {
+        display: block ;
+        font-size : 15px ;
+        order: 2;
+        margin: 10px auto ;
+        color: #FFFFFF ;
+        font-weight: 100 ;
+    }
+
+
 }

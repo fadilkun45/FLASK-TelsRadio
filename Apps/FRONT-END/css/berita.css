@@ -510,10 +510,6 @@ html {
         right: 30%  ;
     }
 
-    footer {
-        left: 0 ;
-        right: 0 ; 
-    }
 
     .copyright {
         display: flex ;
@@ -531,10 +527,6 @@ html {
     
     .site ,.artikel2 {
         transform: scale(100%) ;
-    }
-
-    footer {
-        display: none ;
     }
 
     .toggle-naik {

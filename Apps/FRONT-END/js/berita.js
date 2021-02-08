@@ -19,3 +19,6 @@ toggleNaik.addEventListener ('click' ,function () {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 })
 }
+
+// aos trigger script
+AOS.init();

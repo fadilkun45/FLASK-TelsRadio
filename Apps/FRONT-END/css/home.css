@@ -10,12 +10,13 @@ html {
     margin: 0 ;
 }
 
+
 .container {
     display: flex ;
     flex-direction: column ;
     width: 1050px ;
     margin: auto ;
-    margin-top: 30px ;
+    margin-top: 40px ;
     font-family: 'Poppins', sans-serif;
     position: relative;
 }

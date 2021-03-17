@@ -407,7 +407,7 @@ width: 150px ;
     height: 50px ;
     z-index: 300 ;
     position: fixed ;
-    right: 2% ;
+    /* right: 2% ; */
     display: none ;
     line-height: 52px ;
     text-align: center ;
@@ -773,13 +773,13 @@ width: 150px ;
         margin-top: 50px ;
         margin-bottom: 20px ;
     }
-
+/* 
     .toggle-naik {
         font-size: 30px ;
         width: 40px ;
         height: 40px ;
         line-height: 40px ;
-    }
+    } */
 
     
 

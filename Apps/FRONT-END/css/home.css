@@ -408,10 +408,10 @@ width: 150px ;
     z-index: 300 ;
     position: fixed ;
     right: 7% ;
-    margin-top: 400px ;
     display: none ;
     line-height: 52px ;
     text-align: center ;
+    bottom: 40px ;
 }
 
 @media only screen and (max-width : 800px ){
@@ -579,7 +579,6 @@ width: 150px ;
     .toggle-naik {
         z-index: 300 ;
         right: 20px ;
-        margin-top: 400px ;
     }
 
 }
@@ -780,7 +779,6 @@ width: 150px ;
         width: 40px ;
         height: 40px ;
         line-height: 40px ;
-        margin-top: 400px ;
     }
 
     

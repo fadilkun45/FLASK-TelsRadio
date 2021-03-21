@@ -23,6 +23,7 @@ footer {
     color: #FFFFFF ;
     font-weight: bolder ;
     margin: 20px auto ;
+    text-transform: uppercase ;
 }
 
 .submenu-footer {

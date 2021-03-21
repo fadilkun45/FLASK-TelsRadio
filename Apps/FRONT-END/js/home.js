@@ -1,6 +1,6 @@
 const toggleNaik = document.querySelector(".toggle-naik");
 // const container = document.querySelector('.container');
-const Telsradio = document.querySelector(".tentang");
+const Telsradio = document.querySelector(".telsradio");
 const Tentang = document.querySelector(".tentang");
 const Musik = document.querySelector(".musik");
 const Berita = document.querySelector(".berita");

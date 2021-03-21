@@ -19,21 +19,22 @@ html {
   position: relative;
 }
 
-.sec-pertama {
+.hero-section {
   display: flex;
   flex-direction: row;
   margin: auto;
   margin-left: 0;
   width: 1050px;
+  justify-content: space-between ;
 }
 
-.sec-pertama aside {
+.hero-section aside {
   order: 1;
   display: flex;
   flex-direction: column;
 }
 
-.sec-pertama aside h1 span {
+.hero-section aside h1 span {
   border: 2px solid #2681e6;
   width: 190px;
   margin: 10px 0;
@@ -41,7 +42,7 @@ html {
   margin-bottom: 40px;
 }
 
-.sec-pertama aside h1 {
+.hero-section aside h1 {
   margin-bottom: -30px;
   margin-top: 20px;
   font-size: 50px;
@@ -50,17 +51,13 @@ html {
   flex-direction: column;
 }
 
-.sec-pertama aside p:nth-child(2) {
-  /* margin-top: -100px ; */
-}
-
-.sec-pertama img {
+.hero-section img {
   width: 500px;
   height: 504px;
   order: 2;
 }
 
-.sec-pertama aside button {
+.hero-section aside button {
   width: 150px;
   padding: 10px;
   height: 40px;
@@ -71,12 +68,12 @@ html {
   border-radius: 50px;
 }
 
-.sec-pertama aside p span {
+.hero-section aside p span {
   color: #2681e6;
   font-weight: bold;
 }
 
-.sec-pertama aside button img {
+.hero-section aside button img {
   width: 30px;
   height: 20px;
 }
@@ -96,7 +93,7 @@ html {
   margin-left: -25px;
 }
 
-.sec-kedua {
+.about-section {
   display: grid;
   grid-template-areas: "gambar judul" "gambar about" "button button";
   margin: auto;
@@ -105,7 +102,7 @@ html {
   column-gap: 50px;
 }
 
-.sec-kedua h1 {
+.about-section h1 {
   grid-area: judul;
   margin-top: 20px;
   color: #132943;
@@ -116,29 +113,29 @@ html {
   margin-bottom: 50px;
 }
 
-.sec-kedua h1 span {
+.about-section h1 span {
   border: 2px solid #2681e6;
   width: 150px;
 }
 
-.sec-kedua p:nth-child(2) {
+.about-section p:nth-child(2) {
   grid-area: about;
   margin-top: -60px;
   font-size: 20px;
 }
 
-.sec-kedua p span {
+.about-section p span {
   color: #2681e6;
   font-weight: bold;
 }
 
-.sec-kedua img {
+.about-section img {
   grid-area: gambar;
   width: 500px;
   height: 500px;
 }
 
-.sec-kedua button {
+.about-section button {
   grid-area: button;
   margin-left: 550px;
   margin-top: -50px;
@@ -154,12 +151,12 @@ html {
   color: #ffffff;
 }
 
-.sec-kedua button p {
+.about-section button p {
   margin-top: 10px;
   margin-left: 7px;
 }
 
-.sec-kedua button img {
+.about-section button img {
   width: 20px;
   height: 20px;
   background-color: #ffffff;
@@ -171,7 +168,7 @@ html {
   padding-right: 7px;
 }
 
-.sec-ketiga {
+.team-section {
   display: grid;
   grid-template-areas: "judul judul judul judul" "sec-a sec-b sec-c sec-d";
   margin-top: 70px;
@@ -181,14 +178,14 @@ html {
   text-align: center;
 }
 
-.sec-ketiga h1 {
+.team-section h1 {
   grid-area: judul;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
 }
 
-.sec-ketiga h1 span {
+.team-section h1 span {
   border: 2px solid #2681e6;
   width: 150px;
   margin: auto;
@@ -256,7 +253,7 @@ html {
   grid-area: sec-d;
 }
 
-.sec-empat {
+.musik-section {
   display: flex;
   flex-direction: row;
   margin-top: 60px;
@@ -264,13 +261,13 @@ html {
   width: 100%;
 }
 
-.sec-empat aside {
+.musik-section aside {
   display: flex;
   flex-direction: column;
   order: 1;
 }
 
-.sec-empat aside h1 {
+.musik-section aside h1 {
   font-size: 40px;
   margin-bottom: 40px;
   grid-area: judul;
@@ -278,26 +275,26 @@ html {
   flex-direction: column;
 }
 
-.sec-empat aside h1 span {
+.musik-section aside h1 span {
   border: 2px solid #2681e6;
   width: 80px;
 }
 
-.sec-empat p:nth-child(2) {
+.musik-section p:nth-child(2) {
   grid-area: about;
   width: 600px;
   /* margin-top: -180px ; */
   font-size: 20px;
 }
 
-.sec-empat img {
+.musik-section img {
   order: 2;
   width: 500px;
   height: 500px;
   margin-left: 50px;
 }
 
-.sec-empat button {
+.musik-section button {
   grid-area: button;
   height: 40px;
   margin-top: 60px;
@@ -312,12 +309,12 @@ html {
   color: #ffffff;
 }
 
-.sec-empat button p {
+.musik-section button p {
   margin-top: 10px;
   margin-left: 7px;
 }
 
-.sec-empat button img {
+.musik-section button img {
   width: 20px;
   height: 20px;
   background-color: #ffffff;
@@ -329,7 +326,7 @@ html {
   padding-right: 7px;
 }
 
-.sec-kelima {
+.berita-section {
   margin-top: 80px;
   display: grid;
   grid-template-areas: "gambar aside";
@@ -337,41 +334,41 @@ html {
   margin-bottom: 150px;
 }
 
-.sec-kelima img {
+.berita-section img {
   width: 400px;
   height: 400px;
   grid-area: gambar;
 }
 
-.sec-kelima aside {
+.berita-section aside {
   grid-area: aside;
 }
 
-.sec-kelima aside h1 {
+.berita-section aside h1 {
   display: flex;
   flex-direction: column;
   height: 40px;
   font-size: 40px;
 }
 
-.sec-kelima aside h1 span {
+.berita-section aside h1 span {
   border: 2px solid #2681e6;
   width: 100px;
 }
 
-.sec-kelima aside p:nth-child(2) {
+.berita-section aside p:nth-child(2) {
   color: #2681e6;
   margin-top: 30px;
   font-size: 12px;
 }
 
-.sec-kelima aside p:nth-child(3) {
+.berita-section aside p:nth-child(3) {
   margin-top: 20px;
   color: #18191f;
   font-size: 20px;
 }
 
-.sec-kelima aside button {
+.berita-section aside button {
   height: 40px;
   margin-top: 50px;
   width: 140px;
@@ -384,12 +381,12 @@ html {
   color: #ffffff;
 }
 
-.sec-kelima aside button p {
+.berita-section aside button p {
   margin-top: 10px;
   margin-left: 10px;
 }
 
-.sec-kelima button img {
+.berita-section button img {
   width: 20px;
   height: 20px;
   background-color: #ffffff;
@@ -416,15 +413,14 @@ html {
   padding: 3px 10px ;
 }
 
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1100px) {
   .container {
     width: 580px;
     margin: auto;
     margin-top: 10px;
   }
 
-  .sec-pertama {
+  .hero-section {
     display: grid;
     grid-template-areas: "judul " "about " "button";
     margin: auto;
@@ -436,143 +432,144 @@ html {
     display: none;
   }
 
-  .sec-pertama h1 span {
+  .hero-section h1 span {
     width: 150px;
     margin: 10px 0;
     margin-top: -8px;
   }
 
-  .sec-pertama h1 {
+  .hero-section h1 {
     margin-top: -20px;
     margin-bottom: 30px;
   }
 
-  .sec-pertama p:nth-child(2) {
+  .hero-section p:nth-child(2) {
     margin-top: 0px;
   }
 
-  .sec-pertama img {
+  .hero-section img {
     display: none;
   }
 
-  .sec-pertama button {
+  .hero-section button {
     width: 135px;
     margin-top: 40px;
     line-height: 23px;
   }
 
-  .sec-pertama button img {
+  .hero-section button img {
     width: 30px;
     height: 20px;
     display: block;
   }
 
-  .sec-kedua {
+  .about-section {
     display: grid;
     margin-top: 20px;
     grid-template-areas: "gambar " "judul" "about" "button";
   }
 
-  .sec-kedua img {
+  .about-section img {
     margin: auto;
     margin-bottom: 40px;
   }
 
-  .sec-kedua h1 {
+  .about-section h1 {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 150px;
   }
 
-  .sec-kedua h1 span {
+  .about-section h1 span {
     margin: auto;
     width: 130px;
   }
 
-  .sec-kedua p {
+  .about-section p {
     margin-top: 300px;
   }
 
-  .sec-kedua button {
+  .about-section button {
     margin-top: 20px;
     margin-left: 0;
   }
 
-  .sec-ketiga {
+  .team-section {
     margin-top: 100px;
     grid-template-areas: "judul judul" "sec-a sec-b" "sec-c sec-d";
   }
 
-  .sec-ketiga h1 {
+  .team-section h1 {
     width: 300px;
     margin: auto;
     margin-bottom: 30px;
   }
 
-  .sec-empat {
-    grid-template-areas: "gambar" "judul" "about" "button";
+  .musik-section {
+    display: flex ;
+    flex-direction: column ;
     margin: 30px auto;
   }
 
-  .sec-empat img {
+  .musik-section img {
     margin-bottom: 30px;
+    order: 1 ;
   }
 
-  .sec-empat h1 {
+  .musik-section aside  h1 {
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 200px;
   }
 
-  .sec-empat h1 span {
+  .musik-section aside {
+    order: 2 ;
+    margin-bottom: 100px ;
+  }
+
+  .musik-section h1 span {
     width: 70px;
     margin: auto;
   }
 
-  .sec-empat p {
-    margin-top: 200px;
-  }
 
-  .sec-empat button {
+  .musik-section button {
     margin-top: 30px;
   }
 
-  .sec-kelima {
+  .berita-section {
     margin-top: 20px;
     grid-template-areas: "gambar" "aside";
     margin: auto;
   }
 
-  .sec-kelima aside {
-  }
 
-  .sec-kelima img {
+  .berita-section img {
     margin: auto;
     margin-top: 50px;
   }
 
-  .sec-kelima aside h1 {
+  .berita-section aside h1 {
     margin-top: 10px;
     text-align: center;
     margin-bottom: 10px;
   }
 
-  .sec-kelima aside h1 span {
+  .berita-section aside h1 span {
     margin: auto;
     width: 80px;
     margin-top: -4px;
   }
 
-  .sec-kelima aside p:nth-child(2) {
+  .berita-section aside p:nth-child(2) {
     text-align: center;
     margin-top: 30px;
   }
 
-  .sec-kelima aside p:nth-child(3) {
+  .berita-section aside p:nth-child(3) {
     margin-top: 10px;
   }
 
-  .sec-kelima aside button {
+  .berita-section aside button {
     margin-top: 20px;
     margin-left: 0px;
     margin-bottom: 30px;
@@ -586,11 +583,9 @@ html {
     margin-top: 80px;
   }
 
-  .sec-pertama {
-    display: grid;
-    grid-template-areas: "judul " "about " "button";
+  .hero-section {
+    width: 330px;
     margin: auto;
-    width: 340px;
     margin-top: -30px;
     margin-left: 10px;
   }
@@ -599,79 +594,79 @@ html {
     display: none;
   }
 
-  .sec-pertama aside h1 span {
+  .hero-section aside h1 span {
     width: 110px;
     margin: 10px 0;
     margin-top: -4px;
     display: none;
   }
 
-  .sec-pertama aside h1 {
+  .hero-section aside h1 {
     margin-bottom: 10px;
     font-size: 30px;
   }
 
-  .sec-pertama p:nth-child(2) {
+  .hero-section p:nth-child(2) {
     margin-top: 20px;
     font-size: 12px;
   }
 
-  .sec-pertama img {
+  .hero-section img {
     display: none;
   }
 
-  .sec-pertama aside button {
+  .hero-section aside button {
     width: 150px;
     margin-top: 40px;
   }
 
-  .sec-pertama button img {
+  .hero-section button img {
     width: 30px;
     height: 20px;
     display: block;
   }
 
-  .sec-kedua {
+  .about-section {
     display: grid;
     margin-top: 40px;
     grid-template-areas: "gambar " "judul" "about" "button";
   }
 
-  .sec-kedua img {
+  .about-section img {
     margin: auto;
     margin-bottom: 60px;
     width: 300px;
     height: 300px;
   }
 
-  .sec-kedua h1 {
+  .about-section h1 {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 150px;
   }
 
-  .sec-kedua h1 span {
+  .about-section h1 span {
     margin: auto;
     width: 130px;
   }
 
-  .sec-kedua p:nth-child(2) {
+  .about-section p:nth-child(2) {
     font-size: 15px;
     margin-top: -50px;
     text-align: center;
   }
 
-  .sec-kedua button {
+  .about-section button {
     margin: auto;
     margin-top: 80px;
   }
 
-  .sec-ketiga {
+  .team-section {
     margin-top: 100px;
     grid-template-areas: "judul " "sec-a" "sec-b" "sec-c" "sec-d";
   }
 
-  .sec-ketiga h1 {
+  .team-section h1 {
     width: 300px;
     margin: auto;
     margin-bottom: 30px;
@@ -684,7 +679,7 @@ html {
     margin: auto;
   }
 
-  .sec-empat {
+  .musik-section {
     display: flex;
     flex-direction: column;
     width: 340px;
@@ -692,49 +687,49 @@ html {
     margin-bottom: 190px;
   }
 
-  .sec-empat aside {
+  .musik-section aside {
     order: 2;
   }
 
-  .sec-empat img {
+  .musik-section img {
     order: 1;
     width: 300px;
     height: 300px;
     margin: auto;
   }
 
-  .sec-empat aside h1 {
+  .musik-section aside h1 {
     margin: auto;
     margin-top: 40px;
     margin-bottom: 250px;
   }
 
-  .sec-empat aside h1 span {
+  .musik-section aside h1 span {
     width: 100px;
     margin: auto;
     margin-top: -8px;
   }
 
-  .sec-empat aside p:nth-child(2) {
-    font-size: 15px;
-    width: 350px;
+  .musik-section aside p:nth-child(2) {
+    font-size: 14px;
+    width: 330px;
     margin: auto;
-    margin-top: -180px;
+    margin-top: -220px;
     text-align: center;
   }
 
-  .sec-empat aside button {
+  .musik-section aside button {
     margin: auto;
     margin-top: 50px;
   }
 
-  .sec-kelima {
+  .berita-section {
     grid-template-areas: "gambar" "aside";
     margin: auto;
-    margin-top: -30px;
+    margin-top: -200px;
   }
 
-  .sec-kelima img {
+  .berita-section img {
     margin: auto;
     margin-top: 50px;
     width: 300px;
@@ -742,39 +737,33 @@ html {
     margin-bottom: 50px;
   }
 
-  .sec-kelima aside h1 {
+  .berita-section aside h1 {
     margin-top: 10px;
     text-align: center;
     margin-bottom: 10px;
   }
 
-  .sec-kelima aside h1 span {
+  .berita-section aside h1 span {
     margin: auto;
     width: 100px;
     margin-top: -8px;
   }
 
-  .sec-kelima aside p:nth-child(2) {
+  .berita-section aside p:nth-child(2) {
     text-align: center;
     margin-top: 70px;
   }
 
-  .sec-kelima aside p:nth-child(3) {
+  .berita-section aside p:nth-child(3) {
     margin-top: 20px;
     font-size: 15px;
     text-align: center;
   }
 
-  .sec-kelima aside button {
+  .berita-section aside button {
     margin: auto;
     margin-top: 50px;
     margin-bottom: 20px;
   }
-  /* 
-    .toggle-naik {
-        font-size: 30px ;
-        width: 40px ;
-        height: 40px ;
-        line-height: 40px ;
-    } */
+  
 }

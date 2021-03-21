@@ -141,7 +141,7 @@ button.button :hover {
 
  
 /* handphone */
-@media only screen and (max-width : 800px ){
+@media only screen and (max-width : 1100px ){
 
     nav {
         width: 600px  ;
@@ -174,7 +174,7 @@ button.button :hover {
     } 
 }
 
-@media only screen and (max-width : 580px ){
+@media only screen and (max-width : 600px ){
 
     nav {
         width : 100% ;
@@ -189,7 +189,7 @@ button.button :hover {
     }
 
     .nav-brand {
-        margin-left: 0px ;
+        margin-left: 5px ;
         margin-bottom : 10px ;
         margin-top: 20px ;
     }

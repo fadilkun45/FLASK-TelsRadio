@@ -201,7 +201,7 @@ html {
 .card-c:hover,
 .card-d:hover {
   cursor: pointer;
-  transform: scale(110%);
+  transform: scale(1.1);
 }
 
 .card-a p:nth-child(2),
@@ -227,7 +227,7 @@ html {
 .card-c img,
 .card-d img {
   width: 200px;
-  height: 150px;
+  height: 180px;
   margin: 20px auto;
 }
 

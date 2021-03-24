@@ -279,6 +279,11 @@ html {
   font-size: 20px;
 }
 
+.musik-section p span {
+  color: #2681e6;
+  font-weight: bold;
+}
+
 .musik-section img {
   order: 2;
   width: 500px;
@@ -353,6 +358,11 @@ html {
   margin-top: 20px;
   color: #18191f;
   font-size: 20px;
+}
+
+.berita-section p span {
+  color: #2681e6;
+  font-weight: bold;
 }
 
 .berita-section aside button {

@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #e5e5e5;
+  background: #fafafa;
 }
 
 .header {
@@ -48,7 +48,7 @@ nav button {
 
 .hero-kiri {
   width: 550px ;
-  height: 380px;
+  height: 300px ;
   grid-area: hero-kiri;
   display: flex ;
   flex-direction: column ;
@@ -60,9 +60,10 @@ nav button {
 }
 
 .hero-kiri p {
-  margin: 50px auto ;
+  margin: 30px auto ;
   color: #FFFFFF ;
   font-size: 16px ;
+  font-weight: 100 ;
 }
 
 .hero-kanan img {
@@ -72,8 +73,7 @@ nav button {
 }
 
 .hero-btn {
-  width: 160px ;
-  padding: 10px;
+  width: 180px ;
   border-radius: 50px;
   display: flex;
   flex-direction: row;
@@ -82,6 +82,7 @@ nav button {
   grid-area: hero-btn;
   margin-top: 50px;
   transition: 0.5s ease;
+  padding: 12px 20px ;
 }
 
 .hero-btn img {
@@ -257,7 +258,7 @@ nav button {
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
-  border-bottom: 2px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
   margin: 10px auto;
   cursor: pointer;
 }

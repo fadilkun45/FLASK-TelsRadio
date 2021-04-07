@@ -22,6 +22,8 @@ GenreContent.forEach((content) => {
       aktif.classList.remove("genre-aktif");
     });
     content.classList.toggle("genre-aktif");
+   const data = content.getAttribute("genre");
+   console.log(data)
   });
 });
 

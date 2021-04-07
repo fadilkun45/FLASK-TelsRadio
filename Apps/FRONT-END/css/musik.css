@@ -173,6 +173,7 @@ nav button {
   text-align: center;
   border-radius: 8px;
   cursor: pointer;
+  margin-top: 0 ;
 }
 
 .genre-render {

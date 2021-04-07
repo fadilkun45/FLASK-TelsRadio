@@ -80,9 +80,9 @@ nav button {
   justify-content: space-around;
   background-color: #186ecf;
   grid-area: hero-btn;
-  margin-top: 50px;
   transition: 0.5s ease;
   padding: 12px 20px ;
+  margin: 10px ;
 }
 
 .hero-btn img {

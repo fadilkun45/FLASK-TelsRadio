@@ -28,8 +28,6 @@ GenreContent.forEach((content) => {
 
 
 
-
-
 //  musik player 
 
 const load = document.querySelector(".load");

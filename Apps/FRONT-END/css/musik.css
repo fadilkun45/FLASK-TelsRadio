@@ -46,10 +46,23 @@ nav button {
   grid-template-areas: "hero-kiri hero-kanan" "hero-btn hero-btn";
 }
 
-.hero-kiri img {
+.hero-kiri {
   width: 550px ;
   height: 380px;
   grid-area: hero-kiri;
+  display: flex ;
+  flex-direction: column ;
+}
+
+.hero-kiri h1 {
+  color: #FFFFFF ;
+  font-size: 50px ;
+}
+
+.hero-kiri p {
+  margin: 50px auto ;
+  color: #FFFFFF ;
+  font-size: 16px ;
 }
 
 .hero-kanan img {

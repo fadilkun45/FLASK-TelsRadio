@@ -5,6 +5,10 @@ html {
     scroll-behavior: smooth;
 }
 
+nav {
+    margin-top: 0;
+}  
+
 .pengatur-sidebar {
     display : flex ;
     flex-direction: row ;

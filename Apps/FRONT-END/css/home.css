@@ -7,6 +7,11 @@ html {
 * {
   padding: 0;
   margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  margin-top: 0;
 }
 
 .container {
@@ -281,8 +286,8 @@ html {
 
 .musik-section img {
   order: 2;
-  width: 500px;
-  height: 500px;
+  width: 400px ;
+  height: 400px ;
   margin-left: 50px;
 }
 

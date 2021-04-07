@@ -1,0 +1,514 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #e5e5e5;
+}
+
+.header {
+  background-color: #2681e6;
+  margin-top: 0;
+  height: 100vh;
+}
+
+nav {
+  margin-top: 0;
+}
+
+nav .nav-link {
+  color: #ffffff;
+}
+
+nav .nav-link.active {
+  border-bottom: 3px solid #fff;
+}
+
+nav .nav-link {
+  font-size: 18px;
+}
+
+nav button {
+  background-color: #ffffff;
+  color: #2681e6;
+}
+
+.header-2 {
+  display: grid;
+  width: 1200px;
+  margin: 20px auto;
+  margin-top: 40px;
+  grid-template-areas: "hero-kiri hero-kanan" "hero-btn hero-btn";
+}
+
+.hero-kiri img {
+  width: 550px ;
+  height: 380px;
+  grid-area: hero-kiri;
+}
+
+.hero-kanan img {
+  width: 580px;
+  height: 380px;
+  grid-area: hero-kanan;
+}
+
+.hero-btn {
+  width: 160px ;
+  padding: 10px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #186ecf;
+  grid-area: hero-btn;
+  margin-top: 50px;
+  transition: 0.5s ease;
+}
+
+.hero-btn img {
+  width: 13px;
+  height: 20px;
+}
+
+.hero-btn:hover {
+  background-color: #245b9b;
+}
+
+/* genre */
+
+.genre {
+  display: flex;
+  margin: 15px auto;
+  width: 1000px;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #e4e4e4;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.genre-utama {
+  display: flex;
+  margin: 15px auto;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vmin;
+}
+
+.genre-more-trigger {
+  display: flex;
+  margin: 10px auto;
+}
+
+.genre-list {
+  display: flex;
+  margin: 10px auto;
+  justify-content: space-between;
+  width: 100vmin;
+  flex-wrap: wrap;
+}
+
+.genre-list-more {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.genre-content {
+  display: block;
+  background-color: #ffffff;
+  color: #050505;
+  margin: 10px auto;
+  width: 100px;
+  text-align: center;
+  padding: 8px;
+  border: 2px #b3afaf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.genre-content.genre-aktif {
+  background-color: #2681e6;
+  color: #ffff;
+}
+
+.more-genre {
+  display: none;
+  flex-direction: column;
+  margin: 15px auto;
+  width: 100vmin;
+}
+
+.genre-btn {
+  display: block;
+  background-color: #2681e6;
+  width: 100vmin;
+  margin: 10px auto;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.genre-render {
+  width: 1000px;
+  border: 1px solid #e4e4e4;
+  background: #ffff;
+  margin: 20px auto;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+.genre-render-atas {
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.genre-judul {
+  font-size: 18px;
+  text-transform: capitalize;
+  width: 50%;
+}
+
+.load-semua {
+  font-size: 14px;
+  color: #a1a1a1;
+  width: 100px;
+  cursor: pointer;
+}
+
+.channel {
+  display: flex;
+  margin: 15px auto;
+  width: 1000px;
+  flex-direction: column ;
+  justify-content: space-around ;
+  border: 1px solid #e4e4e4;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.channel h4  {
+  font-size: 20px  ;
+  margin : auto  ;
+  margin-bottom: 28px ;
+  margin-top: 32px ;
+}
+
+.channel-list {
+  width: 90%  ;
+  display: flex ;
+  flex-direction: row  ;
+  justify-content: center ;
+  margin: auto ;
+}
+
+.channel-card {
+  display: flex ;
+  flex-direction: column ;
+  font-size: 15px ;
+  text-align: center ;
+  width: 100px ;
+  padding: 10px ;
+  margin: 20px auto ;
+  margin-top: 0 ;
+  align-items: center ;
+  border: 1px solid black ;
+  text-decoration: none ;
+  color: #050505 ;
+}
+
+.channel-card img {
+  width: 80px ;
+  height: 80px ;
+}
+
+/* musik box */
+
+.musik-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  border-bottom: 2px solid #e4e4e4;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.musik-box .sec-1 {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.musik-box .sec-1 img {
+  width: 100px;
+  height: 80px;
+  margin: 10px;
+}
+
+.musik-box .sec-1 .judul-dan-channel {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  margin-top: 0;
+}
+
+.musik-box .sec-1 .judul-dan-channel h4 {
+  font-size: 17px;
+  margin: 10px auto;
+}
+
+.musik-box .sec-1 .judul-dan-channel p {
+  font-size: 15px;
+  color: #a1a1a1;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.time {
+  width: 100px;
+  margin: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* musik player */
+
+.musik-player {
+  background-color: #ffffff;
+}
+
+.container-player {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  height: 80px;
+  width: 90%  ;
+}
+
+.musik-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 20rem;
+  margin: auto;
+  /* border: 1px solid black; */
+}
+
+.musik-info .sec-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10px;
+  width: 300px;
+}
+
+.musik-info .sec-1 h4 {
+  font-size: 15px;
+}
+
+.musik-info .sec-1 p {
+  font-size: 11px;
+  color: #a1a1a1;
+}
+
+.musik-info img {
+  width: 46px;
+  height: 46px;
+  margin: auto;
+}
+.musik-panel {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* border: 1px solid black; */
+}
+
+.musik-panel .instrumen-atas {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+  margin-bottom: 0;
+  height: 28px ;
+}
+
+.musik-panel .instrumen-atas button {
+  width: 28px ;
+  height: 28px ;
+  border-radius: 0;
+  background-color: #ffffff;
+}
+
+.musik-panel .instrumen-atas img {
+  width: 28px ;
+  height: 28px ;
+}
+
+.musik-panel .instrumen-bawah {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px ;
+}
+
+.musik-panel .instrumen-bawah #bar-time {
+  width: 75%;
+  height: 7px;
+  margin: auto;
+  border-radius: 5px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.instrumen-bawah #bar-time .load-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #dbdbdb;
+  border-radius: 8px;
+}
+
+.instrumen-bawah #bar-time #musik-track {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 15;
+  opacity: 0;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.instrumen-bawah #bar-time .load {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: #050505;
+  border-radius: 8px;
+}
+
+.musik-panel .instrumen-bawah #timer {
+  display: block;
+  margin: 10px auto;
+}
+
+.musik-panel .instrumen-bawah #timer p {
+  font-size: 13px;
+}
+
+.musik-volume {
+  width: 40vmin;
+  /* border: 1px solid black; */
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.musik-volume img {
+  width: 20px;
+  height: 20px;
+}
+
+#volume {
+  appearance: none;
+  width: 30vmin;
+  background: linear-gradient(90deg, #dbdbdb 60%, #dbdbdb 60%);
+  border-radius: 8px;
+}
+
+#volume::-webkit-slider-thumb {
+  appearance: none;
+  background: #bbb8b8;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#volume::-moz-range-thumb {
+  appearance: none;
+  background: #bbb8b8;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.container-footer {
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 1100px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header-2 {
+    width: 600px;
+    grid-template-areas: "hero-kiri" "hero-btn";
+  }
+
+  .hero-kiri img {
+    width: 350px;
+    height: 240px;
+  }
+
+  .hero-kanan {
+    display: none;
+  }
+
+  .nav-brand img {
+    width: 100px;
+    height: 30px;
+  }
+
+  /* genre list */
+
+  .genre {
+    width: 600px;
+    margin: 40px auto;
+  }
+
+  .genre-content {
+    width: 70px;
+    font-size: 14px;
+  }
+
+  .genre-render {
+    width: 37rem;
+    border: 1px solid #e4e4e4;
+    background: #ffff;
+    margin: 20px auto;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+  }
+
+  .musik-player {
+    display: none;
+  }
+}

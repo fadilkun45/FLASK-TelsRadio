@@ -141,12 +141,13 @@ nav button {
   background-color: #ffffff;
   color: #050505;
   margin: 10px auto;
-  width: 100px;
+  width: 110px;
   text-align: center;
   padding: 8px;
   border: 1px solid #E4E4E4  ;
   border-radius: 8px ;
   cursor: pointer;
+  font-size: 14px ;
 }
 
 

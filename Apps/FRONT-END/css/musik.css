@@ -114,7 +114,7 @@ nav button {
   margin: 15px auto;
   flex-direction: column;
   justify-content: center;
-  width: 100vmin;
+  width: 85% ;
 }
 
 .genre-more-trigger {
@@ -126,7 +126,7 @@ nav button {
   display: flex;
   margin: 10px auto;
   justify-content: space-between;
-  width: 100vmin;
+  width: 80% ;
   flex-wrap: wrap;
 }
 
@@ -161,7 +161,7 @@ nav button {
   display: none;
   flex-direction: column;
   margin: 15px auto;
-  width: 100vmin;
+  width: 80%;
 }
 
 .genre-btn {
@@ -185,7 +185,7 @@ nav button {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  overflow-y: hidden;
+  overflow : hidden;
 }
 
 .genre-render-atas {
@@ -270,7 +270,7 @@ nav button {
 }
 
 .musik-box .sec-1 {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: row;
 }
@@ -285,25 +285,16 @@ nav button {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  margin-top: 0;
 }
 
 .musik-box .sec-1 .judul-dan-channel h4 {
   font-size: 17px;
-  margin: 10px auto;
 }
 
 .musik-box .sec-1 .judul-dan-channel p {
   font-size: 15px;
   color: #a1a1a1;
   font-weight: 100 ;
-}
-
-.time {
-  width: 100px;
-  margin: 10px;
-  font-weight: bold;
-  text-align: center;
 }
 
 /* musik player */
@@ -530,4 +521,34 @@ nav button {
   .musik-player {
     display: none;
   }
+}
+
+.animasi {
+  width: 100px  ;
+  height: 100px ;
+  background: #186ecf ;
+  margin-left: 100% ;
+  animation: normal animasiLoad 3s infinite ;
+  border-radius: 50% ;
+  margin-bottom: 30px ;
+
+}
+
+@keyframes animasiLoad {
+  0% {
+    margin-left : 10% ;
+  }
+  25% {
+    margin-left : 25% ;
+  }
+  50% {
+    margin-left : 50% ;
+  }
+  75% {
+    margin-left : 75% ;
+  }
+  100% {
+    margin-left : 100% ;
+  }
+
 }

@@ -58,8 +58,11 @@
         <!-- genre pertama yang ditunjukan -->
         <div class="genre-utama">
             <div class="genre-list">
-                <div class="genre-content genre-aktif " genre="campur sari">Campur Sari</div>
-                <div class="genre-content" genre="cover">Cover</div>
+                <div class="genre-content genre-aktif " genre="campur_sari" judul="Campur Sari">Campur Sari</div>
+                <div class="genre-content" genre="cover" judul="Cover">Cover</div>
+                <div class="genre-content" genre="remix" judul="Remix">Remix</div>
+                <div class="genre-content" genre="pop" judul="Pop">Pop</div>
+                <div class="genre-content" genre="indie" judul="Indie">indie</div>
             </div>
             <!-- trigger-genre -->
             <div class="genre-more-trigger">
@@ -71,17 +74,8 @@
         <!-- genre kedua yang ditunjukan -->
         <div class="more-genre">
             <div class="genre-list-more">
-                <!-- kalo ada tambahan tinggal di aktifkan -->
-                <p>maaf belom ada</p>
-                <!-- <div class="genre-content">genre B </div>
-                <div class="genre-content">genre B </div>
-                <div class="genre-content">genre B </div>
-                <div class="genre-content">genre B </div>
-                <div class="genre-content">genre B </div>
-                <div class="genre-content">genre B </div>
-                <div class="genre-content">genre B </div>
-                <div class="genre-content">genre B </div>
-                <div class="genre-content">genre B </div> -->
+                <!-- genre -->
+                <div class="genre-content" genre="hip hop" judul="Hip hop">Hip Hop</div>
             </div>
             <div class="genre-more-trigger">
                 <div class="genre-btn" id="close-more-genre">
@@ -93,7 +87,7 @@
     <section class="genre-render">
         <div class="genre-render-atas">
             <div class="genre-judul">
-                <h4>Classic (nanti ngerender sesuai genre)</h4>
+                <h4>Campur Sari</h4>
             </div>
             <div class="load-semua">
                 <p>Load semua</p>
@@ -101,7 +95,7 @@
         </div>
         <div id="genre-render">
             <!-- musik box kotak nya -->
-            <div class="musik-box">
+            <!-- <div class="musik-box">
                 <div class="sec-1">
                     <img src="img/dumny gan.png">
                     <div class="judul-dan-channel">
@@ -109,48 +103,7 @@
                         <p>kunto aji</p>
                     </div>
                 </div>
-                <p class="time">10:00</p>
-            </div>
-            <div class="musik-box">
-                <div class="sec-1">
-                    <img src="img/dumny gan.png">
-                    <div class="judul-dan-channel">
-                        <h4>Selaras</h4>
-                        <p>kunto aji</p>
-                    </div>
-                </div>
-                <p class="time">10:00</p>
-            </div>
-            <div class="musik-box">
-                <div class="sec-1">
-                    <img src="img/dumny gan.png">
-                    <div class="judul-dan-channel">
-                        <h4>Selaras</h4>
-                        <p>kunto aji</p>
-                    </div>
-                </div>
-                <p class="time">10:00</p>
-            </div>
-            <div class="musik-box">
-                <div class="sec-1">
-                    <img src="img/dumny gan.png">
-                    <div class="judul-dan-channel">
-                        <h4>Selaras</h4>
-                        <p>kunto aji</p>
-                    </div>
-                </div>
-                <p class="time">10:00</p>
-            </div>
-            <div class="musik-box">
-                <div class="sec-1">
-                    <img src="img/dumny gan.png">
-                    <div class="judul-dan-channel">
-                        <h4>Selaras</h4>
-                        <p>kunto aji</p>
-                    </div>
-                </div>
-                <p class="time">10:00</p>
-            </div>
+            </div> -->            
         </div>
     </section>
     <section class="channel">
@@ -185,20 +138,22 @@
     </section>
     <section class="musik-player">
         <div class="container-player">
-            <div class="musik-info">
-                <img src="img/dumny gan.png">
-                <div class="sec-1">
-                    <div class="judul-artis">
-                        <h4>Lorem ipsum dolor lorem</h4>
-                        <p>kunto aji</p>
+            <div id="RenderInfo">
+                <div class="musik-info">
+                    <img src="img/dumny gan.png" id="thumb">
+                    <div class="sec-1">
+                        <div class="judul-artis">
+                            <h4>Lorem ipsum dolor lorem</h4>
+                            <p>kunto aji</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="musik-panel">
+            <div class="musik-panel" >
                 <div class="instrumen-atas">
-                    <button><img src="img/prev.png"></button>
-                    <button><img src="img/button 1.png"></button>
-                    <button><img src="img/next.png"></button>
+                    <button id="prev"><img src="img/prev.png"></button>
+                    <button id="play"><img src="img/button 1.png"></button>
+                    <button id="next"><img src="img/next.png"></button>
                 </div>
                 <div class="instrumen-bawah">
                     <div id="timer">
@@ -249,7 +204,6 @@
             <p id="khusus-mobile">© 2021 TomcatSquad. All rights reserved</p>
         </div>
     </footer>
-
     <script src="js/navbar.js"></script>
     <script src="js/musik.js"></script>
 </body>

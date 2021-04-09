@@ -19,7 +19,7 @@ body {
 
 nav {
   margin-top: 0;
-  width: 1200px ;
+  width: 1230px ;
 }
 
 nav .nav-link {
@@ -32,7 +32,7 @@ nav .nav-link.active {
 }
 
 .nav-brand img {
-  width: 130px;
+  width: 147px ;
   height: 45px ;
 }
 
@@ -49,7 +49,7 @@ nav button {
 
 .header-2 {
   display: grid;
-  width: 1250px;
+  width: 1230px;
   margin: 20px auto;
   margin-top: 40px;
   grid-template-areas: "hero-kiri hero-kanan" "hero-btn hero-btn";

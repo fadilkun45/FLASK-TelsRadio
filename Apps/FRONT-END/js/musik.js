@@ -15,8 +15,6 @@ const playbtn = document.querySelector("#play");
 const nextbtn = document.querySelector("#next");
 const prevbtn = document.querySelector("#prev");
 
-
-
 BtnOpenGnre.addEventListener("click", () => {
   MoreGenre.style.display = "flex";
   BtnOpenGnre.style.display = "none";
@@ -28,10 +26,24 @@ BtnClsdGnre.addEventListener("click", () => {
   BtnOpenGnre.style.display = "block";
 });
 
+
+
+
+
 window.onload = listrender((data = "campur_sari"));
 var musik = [];
 let audio = new Audio();
 let currentsong = 0;
+
+playbtn.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.play();
+    playbtn.innerHTML = `<img src="img/pause.png">`;
+  } else {
+    audio.pause();
+    playbtn.innerHTML = '<img src="img/button 1.png">';
+  }
+});
 
 GenreContent.forEach((content) => {
   // content diklik dan genrecontent dicari setelah ketemu lalu dihapus yang aktif
@@ -47,13 +59,23 @@ GenreContent.forEach((content) => {
     listrender(data);
     GenreJudulRender.innerHTML = `<h4>${judul}</h4>`;
     renderResult.classList.add("animasi");
-    musik.length = 0 ;
-    console.log(musik.length)
+    musik.length = 0;
+    console.log(musik.length);
   });
 });
 
-function listrender(data) {
+const loadAll = document.querySelector(".load-semua");
+loadAll.addEventListener("click", () => {
+  let GenreContentActive = document.querySelectorAll(".genre-aktif");
+  GenreContentActive.forEach((aktif) => {
+    const data = aktif.getAttribute("genre");
+    listrenderMore(data)
+    console.log(data)
+  });
+  renderResult.innerHTML = "";
+})
 
+function listrender(data) {
   fetch("https://api.tomcatsquad.web.id/api/v1/music/?genre=" + data)
     .then((res) => res.json())
     .then((res) => {
@@ -61,7 +83,7 @@ function listrender(data) {
       var judul = [];
       var channel = [];
       var thumbnail = [];
-      for (i = 0; i < 5; i++) {
+      for (i = 0; i <= 5; i++) {
         musik.push(res["results"][i]["url"]);
         judul.push(res["results"][i]["title"]);
         channel.push(res["results"][i]["channel_name"]);
@@ -70,25 +92,33 @@ function listrender(data) {
         // console.log(channel[i]);
         // console.log(thumbnail[i]);
         renderResult.innerHTML += `<div class="musik-box" urutan="${i}" judul="${judul[i]}" thumbnail="${thumbnail[i]}" channel="${channel[i]}">
-        <div class="sec-1">
-            <img src="${thumbnail[i]}">
-            <div class="judul-dan-channel">
-                <h4>${judul[i]}</h4>
-                <p>${channel[i]}</p>
-            </div>
-        </div>
-    </div>`;
+          <div class="sec-1">
+              <img src="${thumbnail[i]}">
+              <div class="judul-dan-channel">
+                  <h4>${judul[i]}</h4>
+                  <p>${channel[i]}</p>
+              </div>
+          </div>
+      </div>`;
+
+        }
+
+
+
+      nextbtn.addEventListener("click", () => {
+        nextmusic();
+      });
+      prevbtn.addEventListener("click", () => {
+        prevmusic();
+      });
+
+      function setelmusic() {
+        audio.src = musik[currentsong];
+        audio.play();
+        playbtn.innerHTML = `<img src="img/pause.png"/>`;
       }
 
-
-
-  function setelmusic() {
-    audio.src = musik[currentsong];
-    audio.play();
-    playbtn.innerHTML = `<img src="img/pause.png"/>`; 
-  }
-
-      calling ()
+      calling();
 
       MusikTrack.addEventListener("change", () => {
         audio.currentTime = MusikTrack.value;
@@ -106,6 +136,9 @@ function listrender(data) {
         MusikTotal.innerText = `${timeFormat(audio.duration)}`;
         let position = audio.currentTime / audio.duration;
         load.style.width = position * 100 + "%";
+        if (audio.ended) {
+          nextmusic();
+        }
       });
 
       audio.addEventListener("loadedmetadata", () => {
@@ -130,79 +163,53 @@ function listrender(data) {
         Volume.style.background = color;
       }
 
-        playbtn.addEventListener('click',() => {
-          playmusic()
-        })
-        nextbtn.addEventListener('click',() => {
-          nextmusic()
-        })
-        prevbtn.addEventListener('click',() => {
-          prevmusic()
-        })
-      
-      
-
-      function playmusic () {
-        if (audio.paused) {
-            audio.play();
-            playbtn.innerHTML = `<img src="img/pause.png">`; 
-        }else {
-            audio.pause();
-            playbtn.innerHTML = '<img src="img/button 1.png">';
+      function nextmusic() {
+        currentsong++;
+        if (currentsong > 5) {
+          currentsong = 0;
         }
-    }
-
-    function nextmusic() {
-      currentsong++;
-      if (currentsong > 4) {
-        currentsong = 0;
-      }
-      setelmusic();
-      RenderInfo.innerHTML = `<div class="musik-info">
+        setelmusic();
+        RenderInfo.innerHTML = `<div class="musik-info">
       <img src="${thumbnail[currentsong]}" id="thumb">
       <div class="sec-1">
           <div class="judul-artis">
               <h4>${judul[currentsong]}</h4>
               <p>${channel[currentsong]}</p>
           </div>
-      </div>`
-      Playbtn.innerHTML = `<img src="img/pause.png">`;
-       
-    }
-
-    function prevmusic() {
-      currentsong--;
-      if (currentsong < 4) {
-        currentsong = 0 ;
+      </div>`;
+        Playbtn.innerHTML = `<img src="img/pause.png">`;
       }
-      setelmusic();
-      Playbtn.innerHTML = `<img src="img/pause.png"/>`;
-      RenderInfo.innerHTML = `<div class="musik-info">
+
+      function prevmusic() {
+        currentsong--;
+        if (currentsong < 5) {
+          currentsong = 0;
+        }
+        setelmusic();
+        Playbtn.innerHTML = `<img src="img/pause.png"/>`;
+        RenderInfo.innerHTML = `<div class="musik-info">
       <img src="${thumbnail[currentsong]}" id="thumb">
       <div class="sec-1">
           <div class="judul-artis">
               <h4>${judul[currentsong]}</h4>
               <p>${channel[currentsong]}</p>
           </div>
-      </div>`
-    }
-
-
-
+      </div>`;
+      }
 
       const MusikBox = document.querySelectorAll(".musik-box");
       MusikBox.forEach((TesMusik) => {
         TesMusik.addEventListener("click", () => {
           currentsong = TesMusik.getAttribute("urutan");
-          setelmusic()
-         RenderInfo.innerHTML = `<div class="musik-info">
+          setelmusic();
+          RenderInfo.innerHTML = `<div class="musik-info">
          <img src="${TesMusik.getAttribute("thumbnail")}" id="thumb">
          <div class="sec-1">
              <div class="judul-artis">
                  <h4>${TesMusik.getAttribute("judul")}</h4>
                  <p>${TesMusik.getAttribute("channel")}</p>
              </div>
-         </div>`
+         </div>`;
         });
       });
     })

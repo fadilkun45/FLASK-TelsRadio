@@ -208,7 +208,7 @@ nav button {
 #genre-render {
   overflow-x : hidden;
   /* z-index: -10 ; */
-  height: 300px ;
+  height: 350px ;
 } 
 
 .notice {
@@ -232,9 +232,6 @@ nav button {
   position: relative;
   z-index: 19 ;
 }
-
-
-
 
 .channel {
   display: flex;
@@ -325,6 +322,7 @@ nav button {
 /* musik player */
 
 .musik-player {
+  border-top: 1px solid #e4e4e4 ;
   background-color: #fff;
 }
 
@@ -341,9 +339,10 @@ nav button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 20rem;
+  width: 400px ;
   margin: auto;
   /* border: 1px solid black; */
+  margin-top: 10px ;
 }
 
 .musik-info .sec-1 {
@@ -351,7 +350,7 @@ nav button {
   flex-direction: row;
   justify-content: space-between;
   margin-left: 10px;
-  width: 300px;
+  width: 350px;
 }
 
 .musik-info .sec-1 h4 {

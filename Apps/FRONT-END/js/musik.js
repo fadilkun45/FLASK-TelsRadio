@@ -112,10 +112,9 @@ function listrender(data) {
       function nextmusic() {
         currentsong++ ;
         if (currentsong > musik.length) {
-          currentsong = 0;
-        }else {
-          currentsong = 0 ;
+          currentsong = 1;
         }
+
         setelmusic();
         RenderInfo.innerHTML = `<div class="musik-info">
 <img src="${thumbnail[currentsong]}" id="thumb">
@@ -160,7 +159,23 @@ function listrender(data) {
         let position = audio.currentTime / audio.duration;
         load.style.width = position * 100 + "%";
         if (audio.ended) {
-          nextmusic();
+          currentsong++ ;
+          if (currentsong > musik.length) {
+            currentsong = 0 ;
+          }else{
+            currentsong = 1 ;
+          }
+  
+          setelmusic();
+          RenderInfo.innerHTML = `<div class="musik-info">
+  <img src="${thumbnail[currentsong]}" id="thumb">
+  <div class="sec-1">
+      <div class="judul-artis">
+          <h4>${judul[currentsong]}</h4>
+          <p>${channel[currentsong]}</p>
+      </div>
+  </div>`;
+          Playbtn.innerHTML = `<img src="img/pause.png">`;
         }
       });
 

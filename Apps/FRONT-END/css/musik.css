@@ -535,29 +535,29 @@ nav button {
 .animasi {
   width: 100px  ;
   height: 100px ;
+  margin: auto ;
   background: #186ecf ;
-  margin-left: 100% ;
+  padding-left: 100% ;
   animation: normal animasiLoad 3s infinite ;
-  border-radius: 50% ;
   margin-bottom: 30px ;
 
 }
 
 @keyframes animasiLoad {
   0% {
-    margin-left : 10% ;
+    padding-left : 10% ;
   }
   25% {
-    margin-left : 25% ;
+    padding-left : 25% ;
   }
   50% {
-    margin-left : 50% ;
+    padding-left : 50% ;
   }
   75% {
-    margin-left : 75% ;
+    padding-left : 75% ;
   }
   100% {
-    margin-left : 100% ;
+    padding-left : 100% ;
   }
 
 }

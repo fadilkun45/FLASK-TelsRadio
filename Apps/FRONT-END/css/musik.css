@@ -357,6 +357,8 @@ nav button {
   font-size: 15px;
   direction: left ;
   width: 300px ;
+  color: #050505 ;
+  font-weight: bold ;
 }
 
 .musik-info .sec-1 p {

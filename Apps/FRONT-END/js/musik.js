@@ -103,6 +103,11 @@ function listrender(data) {
           </div>
       </div>`;
       }
+      console.log(musik.length )
+      if(musik.length == 0 ){
+        renderResult.innerHTML = `<center class="notice">Maaf genre yang anda minta belum tersedia</center>`;
+
+      }
 
       function nextmusic() {
         currentsong++ ;
@@ -213,11 +218,9 @@ function listrender(data) {
          </div>`;
         });
       });
-    })
-
-    .catch((res) => {
+    }).catch((res) => {
       console.log(res);
-      renderResult.innerHTML = `<center  style="margin : 50px auto ;">Maaf genre yang anda minta belum tersedia</center>`;
+      console.log("tes")
     });
 }
 

@@ -185,7 +185,14 @@ nav button {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  overflow : hidden;
+  overflow-x : hidden;
+  height: 300px ;
+
+}
+
+.notice {
+  margin: 50px auto ;
+  
 }
 
 .genre-render-atas {

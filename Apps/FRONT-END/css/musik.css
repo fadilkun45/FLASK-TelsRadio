@@ -22,7 +22,13 @@ nav {
   width: 1200px ;
 }
 
+nav button {
+  border-radius: 50px ;
+  margin-top: 20px ;
+}
+
 nav .nav-link {
+  margin-top: 20px ;
   color: #ffffff;
 }
 
@@ -316,7 +322,7 @@ nav button {
 /* musik player */
 
 .musik-player {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .container-player {

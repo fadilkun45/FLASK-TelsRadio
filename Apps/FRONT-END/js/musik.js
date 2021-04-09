@@ -26,12 +26,9 @@ BtnClsdGnre.addEventListener("click", () => {
   BtnOpenGnre.style.display = "block";
 });
 
-
-
-
-
 window.onload = listrender((data = "campur_sari"));
 var musik = [];
+
 let audio = new Audio();
 let currentsong = 0;
 
@@ -63,34 +60,39 @@ GenreContent.forEach((content) => {
     console.log(musik.length);
   });
 });
+var judul = [];
+var channel = [];
+var thumbnail = [];
+
+
 
 const loadAll = document.querySelector(".load-semua");
 loadAll.addEventListener("click", () => {
   let GenreContentActive = document.querySelectorAll(".genre-aktif");
   GenreContentActive.forEach((aktif) => {
     const data = aktif.getAttribute("genre");
-    listrenderMore(data)
-    console.log(data)
+    listrenderMore(data);
+    console.log(data);
   });
   renderResult.innerHTML = "";
-})
+});
 
 function listrender(data) {
   fetch("https://api.tomcatsquad.web.id/api/v1/music/?genre=" + data)
     .then((res) => res.json())
     .then((res) => {
       renderResult.classList.remove("animasi");
-      var judul = [];
-      var channel = [];
-      var thumbnail = [];
-      for (i = 0; i <= 5; i++) {
+      judul = [];
+      channel = [];
+      thumbnail = [];
+      for (i = 0; i < res["results"].length ; i++) {
         musik.push(res["results"][i]["url"]);
         judul.push(res["results"][i]["title"]);
         channel.push(res["results"][i]["channel_name"]);
         thumbnail.push(res["results"][i]["thumbnail"]);
-        console.log(musik.length);
-        // console.log(channel[i]);
-        // console.log(thumbnail[i]);
+        // console.log(musik.length);
+        // // console.log(channel[i]);
+        // // console.log(thumbnail[i]);
         renderResult.innerHTML += `<div class="musik-box" urutan="${i}" judul="${judul[i]}" thumbnail="${thumbnail[i]}" channel="${channel[i]}">
           <div class="sec-1">
               <img src="${thumbnail[i]}">
@@ -100,10 +102,26 @@ function listrender(data) {
               </div>
           </div>
       </div>`;
+      }
 
+      function nextmusic() {
+        currentsong++ ;
+        if (currentsong > musik.length) {
+          currentsong = 0;
+        }else {
+          currentsong = 0 ;
         }
-
-
+        setelmusic();
+        RenderInfo.innerHTML = `<div class="musik-info">
+<img src="${thumbnail[currentsong]}" id="thumb">
+<div class="sec-1">
+    <div class="judul-artis">
+        <h4>${judul[currentsong]}</h4>
+        <p>${channel[currentsong]}</p>
+    </div>
+</div>`;
+        Playbtn.innerHTML = `<img src="img/pause.png">`;
+      }
 
       nextbtn.addEventListener("click", () => {
         nextmusic();
@@ -163,26 +181,9 @@ function listrender(data) {
         Volume.style.background = color;
       }
 
-      function nextmusic() {
-        currentsong++;
-        if (currentsong > 5) {
-          currentsong = 0;
-        }
-        setelmusic();
-        RenderInfo.innerHTML = `<div class="musik-info">
-      <img src="${thumbnail[currentsong]}" id="thumb">
-      <div class="sec-1">
-          <div class="judul-artis">
-              <h4>${judul[currentsong]}</h4>
-              <p>${channel[currentsong]}</p>
-          </div>
-      </div>`;
-        Playbtn.innerHTML = `<img src="img/pause.png">`;
-      }
-
       function prevmusic() {
         currentsong--;
-        if (currentsong < 5) {
+        if (currentsong < musik.length) {
           currentsong = 0;
         }
         setelmusic();

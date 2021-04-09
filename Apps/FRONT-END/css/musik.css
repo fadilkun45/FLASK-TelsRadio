@@ -192,24 +192,18 @@ nav button {
   display: flex;
   flex-direction: row;
   margin: 10px auto;
-  justify-content: space-between;
+  justify-content: space-around ;
   width: 90%;
   margin-bottom: 28px ;
   margin-top: 32px ;
 }
 
 .genre-judul {
-  font-size: 18px;
+  font-size: 25px;
   text-transform: capitalize;
-  width: 50%;
+
 }
 
-.load-semua {
-  font-size: 14px;
-  color: #a1a1a1;
-  width: 100px;
-  cursor: pointer;
-}
 
 .channel {
   display: flex;

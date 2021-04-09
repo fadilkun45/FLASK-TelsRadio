@@ -120,8 +120,9 @@ function listrender(data) {
 <img src="${thumbnail[currentsong]}" id="thumb">
 <div class="sec-1">
     <div class="judul-artis">
-        <h4>${judul[currentsong]}</h4>
-        <p>${channel[currentsong]}</p>
+    <marquee behavior = "scroll"
+    scrollamount="6">${judul[currentsong]}</marquee>
+    <p>${channel[currentsong]}</p>
     </div>
 </div>`;
         Playbtn.innerHTML = `<img src="img/pause.png">`;
@@ -171,7 +172,8 @@ function listrender(data) {
   <img src="${thumbnail[currentsong]}" id="thumb">
   <div class="sec-1">
       <div class="judul-artis">
-          <h4>${judul[currentsong]}</h4>
+      <marquee behavior = "scroll"
+      scrollamount="6">${judul[currentsong]}</marquee>
           <p>${channel[currentsong]}</p>
       </div>
   </div>`;
@@ -212,7 +214,8 @@ function listrender(data) {
       <img src="${thumbnail[currentsong]}" id="thumb">
       <div class="sec-1">
           <div class="judul-artis">
-              <h4>${judul[currentsong]}</h4>
+          <marquee behavior = "scroll"
+          scrollamount="6">${judul[currentsong]}</marquee>
               <p>${channel[currentsong]}</p>
           </div>
       </div>`;
@@ -227,7 +230,8 @@ function listrender(data) {
          <img src="${TesMusik.getAttribute("thumbnail")}" id="thumb">
          <div class="sec-1">
              <div class="judul-artis">
-                 <h4>${TesMusik.getAttribute("judul")}</h4>
+             <marquee behavior = "scroll"
+      scrollamount="6">${TesMusik.getAttribute("judul")}</marquee>
                  <p>${TesMusik.getAttribute("channel")}</p>
              </div>
          </div>`;

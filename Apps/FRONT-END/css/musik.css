@@ -350,11 +350,13 @@ nav button {
   flex-direction: row;
   justify-content: space-between;
   margin-left: 10px;
-  width: 350px;
+  width: 300px;
 }
 
-.musik-info .sec-1 h4 {
+.musik-info .sec-1 marquee {
   font-size: 15px;
+  direction: left ;
+  width: 300px ;
 }
 
 .musik-info .sec-1 p {

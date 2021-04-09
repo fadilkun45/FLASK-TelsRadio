@@ -185,14 +185,19 @@ nav button {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  overflow-x : hidden;
-  height: 300px ;
-
 }
+
+
+
+#genre-render {
+  overflow-x : hidden;
+  /* z-index: -10 ; */
+  height: 300px ;
+} 
 
 .notice {
   margin: 50px auto ;
-  
+
 }
 
 .genre-render-atas {
@@ -208,8 +213,11 @@ nav button {
 .genre-judul {
   font-size: 25px;
   text-transform: capitalize;
-
+  position: relative;
+  z-index: 19 ;
 }
+
+
 
 
 .channel {

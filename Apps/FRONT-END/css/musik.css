@@ -22,18 +22,18 @@ nav {
   width: 1200px ;
 }
 
-nav button {
-  border-radius: 50px ;
-  margin-top: 20px ;
-}
-
 nav .nav-link {
-  margin-top: 20px ;
+  margin-top: 15px ;
   color: #ffffff;
 }
 
 nav .nav-link.active {
   border-bottom: 3px solid #fff;
+}
+
+.nav-brand img {
+  width: 130px;
+  height: 45px ;
 }
 
 nav .nav-link {
@@ -43,6 +43,8 @@ nav .nav-link {
 nav button {
   background-color: #ffffff;
   color: #2681e6;
+  border-radius: 50px ;
+  margin-top: 15px ;
 }
 
 .header-2 {
@@ -54,7 +56,7 @@ nav button {
 }
 
 .hero-kiri {
-  width: 550px ;
+  width: 600px  ;
   height: 300px ;
   grid-area: hero-kiri;
   display: flex ;
@@ -63,13 +65,13 @@ nav button {
 
 .hero-kiri h1 {
   color: #FFFFFF ;
-  font-size: 50px ;
+  font-size: 60px ;
 }
 
 .hero-kiri p {
   margin: 30px auto ;
   color: #FFFFFF ;
-  font-size: 16px ;
+  font-size: 18px ;
   font-weight: 100 ;
 }
 
@@ -92,7 +94,7 @@ nav button {
   margin: 10px ;
   font-size: 15px ;
   height: 48px ;
-  margin-top: -45px ;
+  margin-top: -15px  ;
   margin-left: -5px ;
 }
 

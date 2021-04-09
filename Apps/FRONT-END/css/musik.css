@@ -19,6 +19,7 @@ body {
 
 nav {
   margin-top: 0;
+  width: 1200px ;
 }
 
 nav .nav-link {
@@ -83,11 +84,17 @@ nav button {
   transition: 0.5s ease;
   padding: 12px 20px ;
   margin: 10px ;
+  font-size: 15px ;
+  height: 48px ;
+  margin-top: -45px ;
+  margin-left: -5px ;
 }
 
 .hero-btn img {
-  width: 13px;
-  height: 20px;
+  margin-top: 2px ;
+  margin-right: -10px ;
+  width: 14px;
+  height: 23px;
 }
 
 .hero-btn:hover {

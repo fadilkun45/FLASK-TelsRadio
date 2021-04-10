@@ -109,9 +109,9 @@ function listrender(data) {
       }
 
       function nextmusic() {
-        currentsong++ ;
-        if (currentsong > musik.length) {
-          currentsong = 1;
+        currentsong++
+        if (currentsong > musik.length - 1 ) {
+          currentsong = 0 ;
         }
 
         setelmusic();
@@ -160,8 +160,7 @@ function listrender(data) {
         let position = audio.currentTime / audio.duration;
         load.style.width = position * 100 + "%";
         if (audio.ended) {
-          currentsong++
-          setelmusic();
+         nextmusic()
           RenderInfo.innerHTML = `<div class="musik-info">
   <img src="${thumbnail[currentsong]}" id="thumb">
   <div class="sec-1">
@@ -231,6 +230,8 @@ function listrender(data) {
          </div>`;
         });
       });
+      console.log( musik.length - 1 )
+ 
     }).catch((res) => {
       console.log(res);
       console.log("tes")

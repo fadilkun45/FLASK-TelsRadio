@@ -1063,7 +1063,7 @@ nav button {
   /* musik player */
 
   .musik-player {
-    height: 150px ;
+    height: 160px ;
   }
 
   .container-player {
@@ -1111,10 +1111,10 @@ nav button {
     height: 46px;
     margin: auto;
   }
-  
+
 
 .musik-panel {
-  width: 60% ;
+  width: 330px ;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -1125,27 +1125,22 @@ nav button {
 .musik-panel .instrumen-atas {
   display: flex;
   flex-direction: row;
-  width: 50%;
+  width: 300px;
   justify-content: space-between;
   height: 28px ;
   margin: auto ;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .musik-panel .instrumen-atas button {
-  width: 28px ;
-  height: 28px ;
+  width: 30px ;
+  height: 30px ;
   border-radius: 0;
   background-color: #ffffff;
 }
 
-.musik-panel .instrumen-atas img {
-  width: 28px ;
-  height: 28px ;
-}
-
 .musik-panel .instrumen-bawah {
-  width: 100%;
+  width: 300px ;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -1155,7 +1150,7 @@ nav button {
 }
 
 .musik-volume {
-  width: 200px ;
+  width: 60% ;
   /* border: 1px solid black; */
   margin: 10px auto;
   display: flex;
@@ -1166,7 +1161,12 @@ nav button {
 }
 
 .musik-panel .instrumen-bawah #bar-time {
-  width: 55% ;
+  width: 60% ;
+  height: 8px ;
+}
+
+#timer2 , #timer{
+  font-size: 13px ;
 }
 
 #volume {
@@ -1177,6 +1177,13 @@ nav button {
 }
 
 #volume::-moz-range-thumb {
+  appearance: none;
+  background: #bbb8b8;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#volume::-webkit-range-thumb {
   appearance: none;
   background: #bbb8b8;
   border-radius: 50%;

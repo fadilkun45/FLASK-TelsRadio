@@ -196,6 +196,8 @@ function listrender(data) {
                 currentsong-- ;
                 if (currentsong > musik.length - 2 ) {
                     currentsong = 1 ;
+                }else if(currentsong > musik.length){
+                  currentsong =  musik.length - 2 ;
                 }
                 setelmusic();
                 RenderInfo.innerHTML = `<div class="musik-info">

@@ -372,21 +372,25 @@ nav button {
   height: 46px;
   margin: auto;
 }
+
+
 .musik-panel {
-  width: 40%;
+  width: 40% ;
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: auto ;
   /* border: 1px solid black; */
 }
 
 .musik-panel .instrumen-atas {
   display: flex;
   flex-direction: row;
-  width: 50%;
+  width: 80%;
   justify-content: space-between;
-  margin-bottom: 0;
   height: 28px ;
+  margin: auto ;
+  margin-bottom: 0;
 }
 
 .musik-panel .instrumen-atas button {
@@ -402,7 +406,7 @@ nav button {
 }
 
 .musik-panel .instrumen-bawah {
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -412,7 +416,7 @@ nav button {
 }
 
 .musik-panel .instrumen-bawah #bar-time {
-  width: 75%;
+  width: 80% ;
   height: 7px;
   margin: auto;
   border-radius: 5px;
@@ -502,10 +506,6 @@ nav button {
 
 @media only screen and (min-width : 1500px ){
   .container-player {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: auto;
     height: 80px;
     width: 75% ;
   }
@@ -513,20 +513,11 @@ nav button {
   .musik-panel .instrumen-atas {
     width: 60%;
     justify-content: space-around;
-    height: 28px ;
-    margin: auto ;
-    margin-bottom: 0;
   }
 
   .musik-panel {
     width: 50%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    /* border: 1px solid black; */
   }
-
-
   
 }
 
@@ -537,7 +528,7 @@ nav button {
   }
 
   nav {
-    width: 1000px  ;
+    width: 990px  ;
   }
 
   nav .nav-link {
@@ -560,17 +551,17 @@ nav button {
   /* genre list */
 
   .genre {
-    width: 600px;
+    width: 650px;
     margin: 40px auto;
   }
 
   .genre-content {
-    width: 70px;
+    width: 90px;
     font-size: 14px;
   }
 
   .genre-render {
-    width: 37rem;
+    width: 650px;
     border: 1px solid #e4e4e4;
     background: #ffff;
     margin: 20px auto;
@@ -580,9 +571,618 @@ nav button {
     overflow-y: hidden;
   }
 
-  .musik-player {
+    /* channel card */
+
+  .channel {
+    width: 650px ;
+  }
+
+  .channel-card {
+    display: flex ;
+    flex-direction: column ;
+    font-size: 13px ;
+    text-align: center ;
+    width: 80px ;
+    padding: 5px ;
+    margin: 0px auto ;
+    margin-top: 0 ;
+    align-items: center ;
+    /* border: 1px solid black ; */
+    text-decoration: none ;
+    color: #050505 ;
+  }
+
+  .channel-card img {
+    height: 70px ;
+    width: 70px ;
+  }
+
+  .channel h4  {
+    font-size: 20px  ;
+    margin : auto  ;
+    margin-bottom: 10px ;
+    margin-top: 5px ;
+  }
+
+  /* musik player */
+
+  .musik-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px ;
+    margin: auto;
+    /* border: 1px solid black; */
+    margin-top: 10px ;
+  }
+  
+  .musik-info .sec-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10px;
+    width: 250px;
+  }
+  
+  .musik-info .sec-1 marquee {
+    font-size: 15px;
+    direction: left ;
+    width: 250px ;
+    color: #050505 ;
+    font-weight: bold ;
+  }
+  
+  .musik-info .sec-1 p {
+    font-size: 11px;
+    color: #a1a1a1;
+  }
+  
+  .musik-info img {
+    width: 46px;
+    height: 46px;
+    margin: auto;
+  }
+  
+
+.musik-panel {
+  width: 40% ;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto ;
+  /* border: 1px solid black; */
+}
+
+.musik-panel .instrumen-atas {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-between;
+  height: 28px ;
+  margin: auto ;
+  margin-bottom: 0;
+}
+
+.musik-panel .instrumen-atas button {
+  width: 28px ;
+  height: 28px ;
+  border-radius: 0;
+  background-color: #ffffff;
+}
+
+.musik-panel .instrumen-atas img {
+  width: 28px ;
+  height: 28px ;
+}
+
+.musik-panel .instrumen-bawah {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px ;
+}
+
+.musik-volume {
+  width: 30vmin;
+  /* border: 1px solid black; */
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.musik-panel .instrumen-bawah #bar-time {
+  width: 70% ;
+}
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    width: 550px ;
+  }
+
+  nav button {
+    border-radius: 15px ;
+    width: 180px ;
+  }
+
+  nav .nav-link {
+    font-size: 15px;
+  }
+
+  .header-2 {
+    width: 550px ;
+    grid-template-areas: "hero-kiri" "hero-btn";
+  }
+
+  .hero-kiri {
+    width: 550px ;
+  }
+
+  .hero-kiri h1 {
+    font-size: 45px ;
+  }
+
+  .hero-kiri p {
+    margin-top: 0px  ;
+    font-size: 15px ;
+  }
+
+  .hero-btn {
+    margin-top: -25px ;
+  }
+
+  .hero-kanan {
     display: none;
   }
+
+
+  /* genre list */
+
+  .genre {
+    width: 550px;
+    margin: 40px auto;
+  }
+
+  .genre-content {
+    width: 90px;
+    font-size: 14px;
+  }
+
+  .genre-render {
+    width: 550px;
+    border: 1px solid #e4e4e4;
+    background: #ffff;
+    margin: 20px auto;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+  }
+
+    /* channel card */
+
+  .channel {
+    width: 550px ;
+  }
+
+  .channel-card {
+    display: flex ;
+    flex-direction: column ;
+    font-size: 13px ;
+    text-align: center ;
+    width: 60px ;
+    padding: 5px ;
+    margin: 0px auto ;
+    margin-top: 0 ;
+    align-items: center ;
+    /* border: 1px solid black ; */
+    text-decoration: none ;
+    color: #050505 ;
+  }
+
+  .channel-card img {
+    height: 60px ;
+    width: 65px ;
+  }
+
+  .channel h4  {
+    font-size: 20px  ;
+    margin : auto  ;
+    margin-bottom: 10px ;
+    margin-top: 5px ;
+  }
+
+  /* musik player */
+
+  .musik-player {
+    height: 150px ;
+  }
+
+  .container-player {
+    display: flex ;
+    flex-direction: column ;
+  }
+
+  .musik-info {
+    display: flex;
+    justify-content: space-between;
+    width: 200px ;
+    margin: auto;
+    margin-top: 10px ;
+    flex-direction: column ;
+  }
+
+  .musik-info img {
+    display: none ;
+  }
+  
+  .musik-info .sec-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0px ;
+    width: 200px;
+  }
+  
+  .musik-info .sec-1 marquee {
+    font-size: 15px;
+    direction: left ;
+    width: 200px ;
+    color: #050505 ;
+    font-weight: bold ;
+  }
+  
+  .musik-info .sec-1 p {
+    font-size: 11px;
+    color: #a1a1a1;
+    text-align: center ;
+  }
+  
+  .musik-info img {
+    width: 46px;
+    height: 46px;
+    margin: auto;
+  }
+  
+
+.musik-panel {
+  width: 60% ;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto ;
+  /* border: 1px solid black; */
+}
+
+.musik-panel .instrumen-atas {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+  height: 28px ;
+  margin: auto ;
+  margin-bottom: 0;
+}
+
+.musik-panel .instrumen-atas button {
+  width: 28px ;
+  height: 28px ;
+  border-radius: 0;
+  background-color: #ffffff;
+}
+
+.musik-panel .instrumen-atas img {
+  width: 28px ;
+  height: 28px ;
+}
+
+.musik-panel .instrumen-bawah {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px ;
+}
+
+.musik-volume {
+  width: 200px ;
+  /* border: 1px solid black; */
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:  0 ;
+}
+
+.musik-panel .instrumen-bawah #bar-time {
+  width: 70% ;
+}
+
+#volume {
+  appearance: none;
+  width: 150px ;
+  background: linear-gradient(90deg, #dbdbdb 60%, #dbdbdb 60%);
+  border-radius: 8px;
+}
+
+#volume::-moz-range-thumb {
+  appearance: none;
+  background: #bbb8b8;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    width: 350px ;
+    position: static ;
+    background: #2681e6 ;
+  }
+
+  nav .toggle-button span {
+    background-color: #fff ;
+  }
+
+  nav .nav-items {
+    background: #2681e6 ;
+  }
+
+  nav .toggle-button input:checked ~ span:nth-child(2){
+    background: #fff ;
+  }
+
+  nav .toggle-button input:checked ~ span:nth-child(4){
+    background: #fff ;
+  }
+
+  nav button {
+    border-radius: 15px ;
+    width: 180px ;
+  }
+
+  nav .nav-link {
+    font-size: 15px;
+  }
+
+  .header-2 {
+    width: 350px ;
+    grid-template-areas: "hero-kiri" "hero-btn";
+  }
+
+  .hero-kiri {
+    width: 350px ;
+  }
+
+  .hero-kiri h1 {
+    font-size: 45px ;
+  }
+
+  .hero-kiri p {
+    margin-top: 0px  ;
+    font-size: 15px ;
+  }
+
+  .hero-btn {
+    margin-top : 35px ;
+  }
+
+  .hero-kanan {
+    display: none;
+  }
+
+
+  /* genre list */
+
+  .genre {
+    width: 350px ;
+    margin: 40px auto;
+  }
+
+  .genre-render {
+    width: 350px ;
+    border: 1px solid #e4e4e4;
+    background: #ffff;
+    margin: 20px auto;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+  }
+
+  /* musik box */
+  .musik-box .sec-1 .judul-dan-channel h4 {
+    font-size: 13px;
+  }
+  
+  .musik-box .sec-1 .judul-dan-channel p {
+    font-size: 12px;
+    color: #a1a1a1;
+    font-weight: 100 ;
+  }
+
+    /* channel card */
+
+  .channel {
+    width: 350px ;
+  }
+
+  .channel-list {
+    flex-direction: row ;
+    flex-wrap: wrap ;
+  }
+
+  .channel-card {
+    display: flex ;
+    flex-direction: column ;
+    font-size: 13px ;
+    text-align: center ;
+    width: 60px ;
+    padding: 5px ;
+    margin: 0px auto ;
+    margin-top: 0 ;
+    align-items: center ;
+    /* border: 1px solid black ; */
+    text-decoration: none ;
+    color: #050505 ;
+  }
+
+  .channel-card img {
+    height: 60px ;
+    width: 65px ;
+  }
+
+  .channel h4  {
+    font-size: 20px    ;
+    margin : auto  ;
+    margin-bottom: 10px ;
+    margin-top: 5px ;
+  }
+
+
+
+  /* musik player */
+
+  .musik-player {
+    height: 150px ;
+  }
+
+  .container-player {
+    display: flex ;
+    flex-direction: column ;
+  }
+
+  .musik-info {
+    display: flex;
+    justify-content: space-between;
+    width: 200px ;
+    margin: auto;
+    margin-top: 10px ;
+    flex-direction: column ;
+  }
+
+  .musik-info img {
+    display: none ;
+  }
+  
+  .musik-info .sec-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0px ;
+    width: 200px;
+  }
+  
+  .musik-info .sec-1 marquee {
+    font-size: 15px;
+    direction: left ;
+    width: 200px ;
+    color: #050505 ;
+    font-weight: bold ;
+  }
+  
+  .musik-info .sec-1 p {
+    font-size: 11px;
+    color: #a1a1a1;
+    text-align: center ;
+  }
+  
+  .musik-info img {
+    width: 46px;
+    height: 46px;
+    margin: auto;
+  }
+  
+
+.musik-panel {
+  width: 60% ;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto ;
+  /* border: 1px solid black; */
+}
+
+.musik-panel .instrumen-atas {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+  height: 28px ;
+  margin: auto ;
+  margin-bottom: 0;
+}
+
+.musik-panel .instrumen-atas button {
+  width: 28px ;
+  height: 28px ;
+  border-radius: 0;
+  background-color: #ffffff;
+}
+
+.musik-panel .instrumen-atas img {
+  width: 28px ;
+  height: 28px ;
+}
+
+.musik-panel .instrumen-bawah {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px ;
+}
+
+.musik-volume {
+  width: 200px ;
+  /* border: 1px solid black; */
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:  0 ;
+}
+
+.musik-panel .instrumen-bawah #bar-time {
+  width: 55% ;
+}
+
+#volume {
+  appearance: none;
+  width: 150px ;
+  background: linear-gradient(90deg, #dbdbdb 60%, #dbdbdb 60%);
+  border-radius: 8px;
+}
+
+#volume::-moz-range-thumb {
+  appearance: none;
+  background: #bbb8b8;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 }
 
 

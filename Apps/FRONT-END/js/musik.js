@@ -194,10 +194,11 @@ function listrender(data) {
 
             function prevmusic() {
                 currentsong-- ;
-                if (currentsong > musik.length - 2 ) {
+                if (currentsong > musik.length - 1 ) {
                     currentsong = 1 ;
-                }else if(currentsong > musik.length){
-                  currentsong =  musik.length - 2 ;
+                    console.log(currentsong)
+                }else if(currentsong == -1 ){
+                  currentsong =  musik.length - 1 ;
                 }
                 setelmusic();
                 RenderInfo.innerHTML = `<div class="musik-info">
@@ -209,7 +210,7 @@ function listrender(data) {
                         <p>${channel[currentsong]}</p>
                     </div>
                 </div>`;
-                Playbtn.innerHTML = `<img src="img/pause.png"/>`;
+                Playbtn.innerHTML = `<img src="img/pause.png">`;
                
             }
 

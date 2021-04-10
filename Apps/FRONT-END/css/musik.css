@@ -500,6 +500,37 @@ nav button {
   margin-top: 0;
 }
 
+@media only screen and (min-width : 1500px ){
+  .container-player {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    height: 80px;
+    width: 75% ;
+  }
+
+  .musik-panel .instrumen-atas {
+    width: 60%;
+    justify-content: space-around;
+    height: 28px ;
+    margin: auto ;
+    margin-bottom: 0;
+  }
+
+  .musik-panel {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid black; */
+  }
+
+
+  
+}
+
+
 @media only screen and (max-width: 1300px) {
   body {
     overflow-x: hidden;

@@ -106,7 +106,6 @@ function listrender(data) {
       console.log(musik.length )
       if(musik.length == 0 ){
         renderResult.innerHTML = `<center class="notice">Maaf genre yang anda minta belum tersedia</center>`;
-
       }
 
       function nextmusic() {
@@ -136,6 +135,7 @@ function listrender(data) {
       });
 
       function setelmusic() {
+
         audio.src = musik[currentsong];
         audio.play();
         playbtn.innerHTML = `<img src="img/pause.png"/>`;
@@ -160,13 +160,7 @@ function listrender(data) {
         let position = audio.currentTime / audio.duration;
         load.style.width = position * 100 + "%";
         if (audio.ended) {
-          currentsong++ ;
-          if (currentsong > musik.length) {
-            currentsong = 0 ;
-          }else{
-            currentsong = 1 ;
-          }
-  
+          currentsong++
           setelmusic();
           RenderInfo.innerHTML = `<div class="musik-info">
   <img src="${thumbnail[currentsong]}" id="thumb">

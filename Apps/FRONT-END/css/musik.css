@@ -1171,14 +1171,6 @@ nav button {
 
 .musik-volume {
   display: none ;
-  width: 60% ;
-  /* border: 1px solid black; */
-  margin: 10px auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin-top:  0 ;
 }
 
 .musik-volume img {
@@ -1187,10 +1179,6 @@ nav button {
 
 #volume {
   display: none ;
-  appearance: none;
-  width: 150px ;
-  background: linear-gradient(90deg, #dbdbdb 60%, #dbdbdb 60%);
-  border-radius: 8px;
 }
 
 #volume::-moz-range-thumb {

@@ -440,6 +440,14 @@ nav button {
   opacity: 0;
   cursor: pointer;
   border-radius: 8px;
+  transition: 0.3s ease ;
+  appearance: none ;
+}
+
+.instrumen-bawah #bar-time #musik-track:hover  {
+  appearance: none ;
+  opacity: 1 ;
+  background: none ;
 }
 
 .instrumen-bawah #bar-time .load {
@@ -1141,7 +1149,7 @@ nav button {
 
 .musik-panel .instrumen-bawah #bar-time {
   width: 60% ;
-  height: 8px ;
+  height: 5px ;
 }
 
 #timer2 , #timer{
@@ -1194,7 +1202,7 @@ nav button {
   appearance: none ;
   background : white ;
   width: 30px ;
-  height: 40px ;
+  height: 10px ;
   border-radius: 30% ;
   cursor: pointer ;
 }
@@ -1208,7 +1216,7 @@ nav button {
   height: 100px ;
   margin: auto ;
   background: #186ecf ;
-  padding-left: 100% ;
+  padding-left: 80% ;
   animation: normal animasiLoad 3s infinite ;
   margin-bottom: 30px ;
 
@@ -1228,7 +1236,7 @@ nav button {
     padding-left : 75% ;
   }
   100% {
-    padding-left : 100% ;
+    padding-left : 80% ;
   }
 
 }

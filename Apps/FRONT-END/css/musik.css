@@ -459,13 +459,10 @@ nav button {
   border-radius: 8px;
 }
 
-.musik-panel .instrumen-bawah #timer {
+.musik-panel .instrumen-bawah #timer , #timer2{
   display: block;
   margin: 10px ;
-}
-
-.musik-panel .instrumen-bawah #timer p {
-  font-size: 13px;
+  font-size: 13px ;
 }
 
 .musik-volume {
@@ -1071,7 +1068,7 @@ nav button {
   /* musik player */
 
   .musik-player {
-    height: 160px ;
+    height: 120px ;
   }
 
   .container-player {
@@ -1114,9 +1111,14 @@ nav button {
     text-align: center ;
   }
   
+.musik-info button {
+  width: 20px;
+  height: 20px;
+}
+
   .musik-info img {
-    width: 46px;
-    height: 46px;
+    width: 20px;
+    height: 20px;
     margin: auto;
   }
 
@@ -1164,6 +1166,7 @@ nav button {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0px ;
+  margin-top: -10px ;
 }
 
 .musik-volume {

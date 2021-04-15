@@ -238,6 +238,7 @@ nav button {
   width: 100px ;
   height: 15px ;
   margin-top: 10px ;
+  text-transform: capitalize ;
 }
 
 /* musik box */

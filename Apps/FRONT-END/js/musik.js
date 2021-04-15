@@ -261,7 +261,7 @@ function listrender(data) {
     
                 const MusikBox = document.querySelectorAll(".musik-box");
                 if( MusikBox.length == 0 ){
-                    renderResult.innerHTML = `<center class="notice">Maaf genre yang anda minta belum tersedia</center>`;
+                    renderResult.innerHTML = `<center class="notice">hasil Tidak ditemukan</center>`;
                 }
                 MusikBox.forEach((TesMusik) => {
 

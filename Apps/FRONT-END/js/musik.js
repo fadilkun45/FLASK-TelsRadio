@@ -121,7 +121,7 @@ function listrender(data) {
         const valueRaw = SearchBar.value ;
         let valueResult = valueRaw.trim().toLowerCase().replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
             console.log(valueResult)
-            fetch(`http://api-tomcatsquad.herokuapp.com/api/v1/music/?g=${data}&t=${valueResult}`)
+            fetch(`https://api-tomcatsquad.herokuapp.com/api/v1/music/?g=${data}&t=${valueResult}`)
             .then((res) => res.json())
             .then((res) => {
               console.log(valueResult)

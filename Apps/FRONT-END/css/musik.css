@@ -227,9 +227,17 @@ nav button {
 }
 
 .genre-judul {
+  margin-top: 0 ;
   font-size: 25px;
   text-transform: capitalize;
   color: #18191F ;
+}
+
+.genre-render-atas input[type='text'] {
+  display: block ;
+  width: 100px ;
+  height: 15px ;
+  margin-top: 10px ;
 }
 
 /* musik box */
@@ -986,6 +994,14 @@ nav button {
   .genre-render-atas {
     margin-top: 10px ;
     margin-bottom: 15px ;
+  }
+
+  .genre-judul {
+    margin-top: 0 ;
+  }
+
+  .genre-render-atas input[type="text"]{
+    margin-top: 10px ;
   }
 
   .genre {

@@ -7,6 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth ;
+}
+
 body {
   background: #fafafa;
 }
@@ -511,6 +515,22 @@ nav button {
 .container-footer {
   margin-top: 0;
 }
+
+.toggle-naik {
+  background-color: #2681e6;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #f3f3f3;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  padding: 3px 10px ;
+}
+
 
 @media only screen and (min-width : 1500px ){
   .container-player {

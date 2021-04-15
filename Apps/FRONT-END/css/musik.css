@@ -232,6 +232,48 @@ nav button {
   color: #18191F ;
 }
 
+/* musik box */
+
+.musik-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  border-bottom: 1px solid #e4e4e4;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.musik-box .sec-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.musik-box .sec-1 img {
+  width: 56px;
+  height: 56px;
+  margin: 10px;
+}
+
+.musik-box .sec-1 .judul-dan-channel {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.musik-box .sec-1 .judul-dan-channel h4 {
+  font-size: 17px;
+}
+
+.musik-box .sec-1 .judul-dan-channel p {
+  font-size: 15px;
+  color: #a1a1a1;
+  font-weight: 100 ;
+}
+
+/* channel */
+
 .channel {
   display: flex;
   margin: 15px auto;
@@ -279,45 +321,7 @@ nav button {
   height: 80px ;
 }
 
-/* musik box */
 
-.musik-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 90%;
-  border-bottom: 1px solid #e4e4e4;
-  margin: 10px auto;
-  cursor: pointer;
-}
-
-.musik-box .sec-1 {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-.musik-box .sec-1 img {
-  width: 56px;
-  height: 56px;
-  margin: 10px;
-}
-
-.musik-box .sec-1 .judul-dan-channel {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-}
-
-.musik-box .sec-1 .judul-dan-channel h4 {
-  font-size: 17px;
-}
-
-.musik-box .sec-1 .judul-dan-channel p {
-  font-size: 15px;
-  color: #a1a1a1;
-  font-weight: 100 ;
-}
 
 /* musik player */
 
@@ -1019,15 +1023,8 @@ nav button {
     display: flex ;
     flex-direction: column ;
     font-size: 13px ;
-    text-align: center ;
     width: 60px ;
     padding: 5px ;
-    margin: 0px auto ;
-    margin-top: 0 ;
-    align-items: center ;
-    /* border: 1px solid black ; */
-    text-decoration: none ;
-    color: #050505 ;
   }
 
   .channel-card img {
@@ -1184,7 +1181,7 @@ nav button {
 
 }
 
-
+/* animasi */
 
 .animasi {
   display: flex;
@@ -1199,8 +1196,16 @@ nav button {
   width: 56px;
   height: 56px;
   margin: 10px;
-  border: 1px solid black ;
+  background-color: #F0F0F0 ;
 } 
+
+.animasi .title {
+  width: 100%;
+  margin: 10px ;
+  height: 50px ;
+  background-color: #F0F0F0 ;
+}
+
 
 /* @keyframes animasiLoad {
   0% {

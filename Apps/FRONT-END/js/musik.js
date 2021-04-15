@@ -49,13 +49,28 @@ GenreContent.forEach((content) => {
         GenreContentActive.forEach((aktif) => {
             aktif.classList.remove("genre-aktif");
             renderResult.innerHTML = "";
+            renderResult.innerHTML = `                <div class="animasi">
+            <div class="kotak"></div>
+            <div class="title"></div>
+        </div>     
+        <div class="animasi">
+            <div class="kotak"></div>
+            <div class="title"></div>
+        </div>   
+        <div class="animasi">
+            <div class="kotak"></div>
+            <div class="title"></div>
+        </div>   
+        <div class="animasi">
+            <div class="kotak"></div>
+            <div class="title"></div>
+        </div>      `
         });
         content.classList.toggle("genre-aktif");
         const data = content.getAttribute("genre");
         const judul = content.getAttribute("judul");
         listrender(data);
         GenreJudulRender.innerHTML = `<h4>${judul}</h4>`;
-        renderResult.classList.add("animasi");
         musik.length = 0;
         console.log(musik.length);
     });
@@ -80,7 +95,7 @@ function listrender(data) {
     fetch("https://api-tomcatsquad.herokuapp.com/api/v1/music/?genre=" + data)
         .then((res) => res.json())
         .then((res) => {
-            renderResult.classList.remove("animasi");
+            renderResult.innerHTML = "";
             judul = [];
             channel = [];
             thumbnail = [];

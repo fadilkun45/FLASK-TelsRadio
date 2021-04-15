@@ -341,7 +341,6 @@ nav button {
   justify-content: space-between;
   width: 400px ;
   margin: auto;
-  /* border: 1px solid black; */
   margin-top: 10px ;
 }
 
@@ -379,7 +378,6 @@ nav button {
   align-items: center;
   flex-direction: column;
   margin: auto ;
-  /* border: 1px solid black; */
 }
 
 .musik-panel .instrumen-atas {
@@ -460,7 +458,6 @@ nav button {
 
 .musik-volume {
   width: 40vmin;
-  /* border: 1px solid black; */
   margin: 10px auto;
   display: flex;
   flex-direction: row;
@@ -774,15 +771,11 @@ nav button {
     display: flex ;
     flex-direction: column ;
     font-size: 13px ;
-    text-align: center ;
     width: 60px ;
     padding: 5px ;
     margin: 0px auto ;
     margin-top: 0 ;
     align-items: center ;
-    /* border: 1px solid black ; */
-    text-decoration: none ;
-    color: #050505 ;
   }
 
   .channel-card img {
@@ -1019,7 +1012,7 @@ nav button {
 
   .channel-list {
     flex-direction: row ;
-    flex-wrap: wrap ;
+    overflow-y : hidden ;
   }
 
   .channel-card {
@@ -1194,17 +1187,22 @@ nav button {
 
 
 .animasi {
-  width: 100px  ;
-  height: 100px ;
-  margin: auto ;
-  background: #186ecf ;
-  padding-left: 80% ;
-  animation: normal animasiLoad 3s infinite ;
-  margin-bottom: 30px ;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  border-bottom: 1px solid #e4e4e4;
+  margin: 10px auto;
 }
 
-@keyframes animasiLoad {
+.animasi .kotak {
+  width: 56px;
+  height: 56px;
+  margin: 10px;
+  border: 1px solid black ;
+} 
+
+/* @keyframes animasiLoad {
   0% {
     padding-left : 10% ;
   }
@@ -1221,4 +1219,4 @@ nav button {
     padding-left : 80% ;
   }
 
-}
+} */

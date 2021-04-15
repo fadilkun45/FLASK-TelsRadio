@@ -77,7 +77,7 @@ loadAll.addEventListener("click", () => {
 });
 
 function listrender(data) {
-    fetch("https://api.tomcatsquad.web.id/api/v1/music/?genre=" + data)
+    fetch("http://api-tomcatsquad.herokuapp.com/api/v1/music/?genre=" + data)
         .then((res) => res.json())
         .then((res) => {
             renderResult.classList.remove("animasi");

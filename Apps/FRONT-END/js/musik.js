@@ -435,7 +435,7 @@ function listrender(data) {
       function prevmusic() {
         currentsong--;
         if (currentsong > musik.length - 1) {
-          currentsong = 1;
+          currentsong = 1 ;
           // console.log(currentsong)
         } else if (currentsong == -1) {
           currentsong = musik.length - 1;

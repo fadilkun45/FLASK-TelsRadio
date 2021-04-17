@@ -378,20 +378,20 @@ nav {
     .container-berita {
         width : 330px ;
         margin : 0 auto ;
+        margin-top : 170px ;
     }
 
     .berita-a {
         width : 330px ;
 		margin : auto ;
 		z-index : 5001 ;
-        margin-top : 170px ;
     }
 
     .berita-a a img {
         width : 330px ;
         height : 300px ;
 		z-index : -9 ;
-		margin-top : -170px ;
+        margin-top : -170px ;
     }
 
     .berita-a a {

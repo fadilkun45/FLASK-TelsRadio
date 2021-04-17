@@ -367,7 +367,7 @@ nav {
 
     .pengatur-sidebar {
         width: 330px ;
-        overflow-x : hidden;
+        overflow : hidden;
         margin: auto ;
     }
 

@@ -4,7 +4,7 @@ const Status = document.querySelector(".status");
 const Countdown = document.querySelector(".countdown");
 
 const int = setInterval(() => {
-  fetch("http://192.168.0.100:8000/status-json.xsl")
+  fetch("http://206.189.47.75:8000/status-json.xsl")
     .then((res) => res.json())
     .then((res) => {
     //   console.log(res["icestats"]["source"]);
@@ -34,7 +34,7 @@ function tes() {
     }, 1000);
 }
 
-let musik = "http://192.168.0.100:8000/radio";
+let musik = "http://206.189.47.75:8000/radio";
 let audio = new Audio();
 audio.src = musik;
 audio.play()

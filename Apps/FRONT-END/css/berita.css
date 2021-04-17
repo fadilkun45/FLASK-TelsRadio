@@ -362,12 +362,11 @@ nav {
 
 @media only screen and (max-width : 600px ){
 
-    body {
+    nav {
     }
 
     .pengatur-sidebar {
         width: 330px ;
-        margin-top : 170px ;
         overflow-x : hidden;
         margin: auto ;
     }
@@ -383,9 +382,9 @@ nav {
 
     .berita-a {
         width : 330px ;
-		margin-top : 130px ;
 		margin : auto ;
 		z-index : 5001 ;
+        margin-top : 170px ;
     }
 
     .berita-a a img {

@@ -208,8 +208,6 @@ nav button {
   flex-direction: column;
 }
 
-
-
 #genre-render {
   overflow-x : hidden;
   height: 350px ;
@@ -237,13 +235,13 @@ nav button {
   color: #18191F ;
 }
 
-.genre-render-atas input[type='text'] {
+/* .genre-render-atas input[type='text'] {
   display: block ;
   width: 100px ;
   height: 15px ;
   margin-top: 10px ;
   text-transform: capitalize ;
-}
+} */
 
 /* musik box */
 
@@ -926,6 +924,7 @@ nav button {
   justify-content: space-around;
   align-items: center;
   margin-top:  0 ;
+  display: none ;
 }
 
 .musik-panel .instrumen-bawah #bar-time {
@@ -933,6 +932,7 @@ nav button {
 }
 
 #volume {
+  display: none ;
   appearance: none;
   width: 150px ;
   background: linear-gradient(90deg, #dbdbdb 60%, #dbdbdb 60%);
@@ -1019,6 +1019,7 @@ nav button {
 
   .genre-judul {
     margin-top: 0 ;
+    font-size: 17px ;
   }
 
   .genre-render-atas input[type="text"]{
@@ -1070,7 +1071,7 @@ nav button {
   }
 
   .channel h4  {
-    font-size: 20px    ;
+    font-size: 17px    ;
     margin : auto  ;
     margin-bottom: 10px ;
     margin-top: 5px ;
@@ -1150,7 +1151,6 @@ nav button {
   flex-direction: row;
   width: 250px ;
   justify-content: space-between;
-  /* height: 28px ; */
   margin: auto ;
   margin-bottom: 10px;
 }
@@ -1242,23 +1242,3 @@ nav button {
   height: 50px ;
   background-color: #F0F0F0 ;
 }
-
-
-/* @keyframes animasiLoad {
-  0% {
-    padding-left : 10% ;
-  }
-  25% {
-    padding-left : 25% ;
-  }
-  50% {
-    padding-left : 50% ;
-  }
-  75% {
-    padding-left : 75% ;
-  }
-  100% {
-    padding-left : 80% ;
-  }
-
-} */

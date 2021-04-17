@@ -2,7 +2,7 @@
 
 
 nav {
-    width: 1144px;
+    width: 1230px ;
     margin: 0 auto;
     display: flex ;
     justify-content: space-between ;
@@ -18,8 +18,8 @@ nav {
 }
   
 .nav-brand img {
-    width : 120px ;
-    height : 10x ;
+    width: 147px ;
+    height: 45px ;
 }
   
 .nav-items {
@@ -44,6 +44,8 @@ nav {
     color: #132943;
     text-decoration: none;
     font-size: 18px;
+    margin-top: 15px ;
+
 }
 
 .nav--links li a {
@@ -65,13 +67,14 @@ button {
     margin: 10px ;
     border: none;
     background-color: #2681E6;
-    border-radius: 10px;
     color: #fff;
     height: 40px ;
     font-size: 13px;
     font-weight: 500;
     transition: all 0.3s ease 0s;
     font-family: 'Poppins', sans-serif;
+    border-radius: 50px ;
+    margin-top: 15px ;
   
 }
 
@@ -143,7 +146,7 @@ button.button :hover {
 @media only screen and (max-width : 1100px ){
 
     nav {
-        width: 600px  ;
+        width: 550px ;
         margin : auto ;
         margin-bottom : 30px ;
         margin-top:  0 ;
@@ -163,6 +166,11 @@ button.button :hover {
         height: 80px ;
     }
 
+    nav button {
+        border-radius: 15px ;
+        width: 180px ;
+      }
+
 
     .nav-items button {
         font-size: 13px ;
@@ -176,15 +184,14 @@ button.button :hover {
 @media only screen and (max-width : 600px ){
 
     nav {
-        width : 100% ;
-        position: fixed ;
+        width: 350px ;
         z-index: 6000 ;
         left: 0 ;
         right: 0 ;
-        top: 0 ; 
         height: 60px ;
         padding-top: 5px;
         background-color: white ;
+        margin-bottom: -20px ;
     }
 
     .nav-brand {

@@ -268,13 +268,12 @@ nav {
     color: #f3f3f3;
     position: fixed;
     bottom: 40px;
-    right: 10px;
+    right: 20px;
     text-align: center;
     line-height: 30px;
     color: white;
     padding: 3px 10px ;
-    display: none ;
-}  
+  }
 
 /* media breakpoint */
 /* atau pengubah ukuran sesuai ukuran layar yang ditentukan */
@@ -364,28 +363,28 @@ nav {
 @media only screen and (max-width : 600px ){
 
     .pengatur-sidebar {
-        width: 350px ;
-        margin-top : 60px ;
+        width: 330px ;
+        margin-top : 170px ;
     }
 
     .container-utama {
-        width : 350px ;
+        width : 330px ;
     }
 
     .container-berita {
-        width : 350px ;
+        width : 330px ;
         margin : 0 auto ;
     }
 
     .berita-a {
-        width : 340px ;
+        width : 330px ;
 		margin-top : 130px ;
-		/* margin : auto ; */
+		margin : auto ;
 		z-index : 5001 ;
     }
 
     .berita-a a img {
-        width : 340px ;
+        width : 330px ;
         height : 300px ;
 		z-index : -9 ;
 		margin-top : -170px ;
@@ -401,7 +400,7 @@ nav {
     }
 
     .ads a img {
-        width: 340px ;
+        width: 330px ;
     }
 
     .ads {
@@ -410,7 +409,7 @@ nav {
     }
 
     .berita-b {
-        width : 340px ;
+        width : 330px ;
         z-index: 5000 ;
 		margin : auto ; 
     }
@@ -418,7 +417,7 @@ nav {
 
     .berita-b a img {
 		margin-top : -172px ;
-        width: 340px ;
+        width: 330px ;
         height: 300px ;
 		z-index : -999 ;
     }
@@ -431,7 +430,7 @@ nav {
 
    .container-beritaB {
        margin-top: 650px ;
-       width : 340px ;
+       width : 330px ;
    }
 
    .container-beritaB h3 {
@@ -460,7 +459,7 @@ nav {
     }
 
     .sidebar {
-        width : 340px ;
+        width : 330px ;
         margin: auto ;
     }
 
@@ -469,7 +468,7 @@ nav {
     }
 
     .telstream {
-        width: 340px ;
+        width: 330px ;
         margin : 0 auto ;
     }
 
@@ -483,7 +482,7 @@ nav {
     }
 
     .sosmed {
-        width: 340px ;
+        width: 330px ;
     }
 
     .sosmed h3 {

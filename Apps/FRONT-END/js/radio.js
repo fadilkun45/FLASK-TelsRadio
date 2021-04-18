@@ -52,7 +52,7 @@ Playbtn.addEventListener("click", () => {
 });
 
 function timeFormat(time) {
-  return Math.floor(time / 60) + ":" + ("0" + Math.floor(time % 60)).slice(-2);
+  return Math.floor(time / 60) + " : " + ("0" + Math.floor(time % 60)).slice(-2);
 }
 
 audio.addEventListener("timeupdate", () => {

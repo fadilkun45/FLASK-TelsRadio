@@ -77,6 +77,10 @@ nav {
     height: 50px ;
 }
 
+footer {
+    margin-bottom: 0 ;
+}
+
 
 @media only screen and (max-width : 600px ) {
 

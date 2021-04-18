@@ -10,7 +10,7 @@ const int = setInterval(() => {
     //   console.log(res["icestats"]["source"]);
       if (res["icestats"]["source"] == undefined || audio == undefined) {
         Status.innerHTML =
-        `<p>status : <span style="color : red ;">Offline</span></p>` ;
+        `<p>Status : <span style="color : red ;">Offline</span></p>` ;
         clearInterval(int, 100);
         tes();
         setTimeout(() => {
@@ -18,7 +18,7 @@ const int = setInterval(() => {
         }, 21000);
       } else {
        
-        Status.innerHTML = ` <p>status : <span style="color : green ;">Online</span></p>`;
+        Status.innerHTML = ` <p>Status : <span style="color : green ;">Online</span></p>`;
     }
     });
 }, 2000);
@@ -38,7 +38,7 @@ let musik = "https://live.tomcatsquad.web.id:8443/stream";
 let audio = new Audio();
 audio.src = musik;
 audio.play()
-Playbtn.innerHTML = `<img src="img/radio pause.png">`;
+Playbtn.innerHTML = `<img src="img/radio play.png">`;
 
 
 Playbtn.addEventListener("click", () => {
@@ -58,3 +58,7 @@ function timeFormat(time) {
 audio.addEventListener("timeupdate", () => {
   Time.innerText = `${timeFormat(audio.currentTime)}`;
 });
+
+if(document.documentElement.clientWidth > 800 ){
+  Playbtn.innerHTML = `<img src="img/radio pause.png">`;
+} 

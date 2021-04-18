@@ -354,7 +354,7 @@ nav button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 400px ;
+  width: 280px  ;
   margin: auto;
   margin-top: 10px ;
 }
@@ -364,13 +364,13 @@ nav button {
   flex-direction: row;
   justify-content: space-between;
   margin-left: 10px;
-  width: 300px;
+  width: 200px ;
 }
 
 .musik-info .sec-1 marquee {
   font-size: 15px;
   direction: left ;
-  width: 300px ;
+  width: 200px  ;
   color: #050505 ;
   font-weight: bold ;
 }
@@ -398,11 +398,11 @@ nav button {
 .musik-panel .instrumen-atas {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 40%;
   justify-content: space-between;
   height: 28px ;
   margin: auto ;
-  margin-bottom: 0;
+  margin-bottom: 10px ;
 }
 
 .musik-panel .instrumen-atas button {

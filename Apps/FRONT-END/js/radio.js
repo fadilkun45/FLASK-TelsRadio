@@ -27,7 +27,7 @@ function tes() {
   var count = 20,
     timer = setInterval(function () {
         Countdown.style.display = "block"
-      Countdown.innerHTML = ` <center><p>Karena radio offline web akan refresh dalam : ${count--}</p></center>`;
+      Countdown.innerHTML = ` <center><p>Radio sedang offline web akan refresh secara otomatis dalam waktu : ${count--} Detik</p></center>`;
       Playbtn.innerHTML = `<img src="img/radio play.png">`;
       audio.pause()
       if (count == 0) clearInterval(timer);

@@ -1,209 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>telsradio</title>
-        <!-- stylesheet -->
-        <link rel="stylesheet" href="css/navbar.css">
-        <link rel="stylesheet" href="css/berita.css">
-        <link rel="stylesheet" href="css/footer.css">
-          <!-- cdn fontawsome -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    </head>
-    <body>
-        <nav>
-            <div class="nav-brand">
-                <img src="img/logo telsradio.svg">
-            </div>
-            <div class="nav-items">
-                <ul class="nav-links">
-                    <li>
-                        <a href="#" class="nav-link">Telsradio</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link">Tentang</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link">Musik</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link active">Berita</a>
-                    </li>
-                </ul>
-                <button class="button"> Dengerin Yuk !</button>    
-            </div>
-            
-            <div class="toggle-button">
-                <input type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
 
-        <div class="pengatur-sidebar">
-            <div class="container-utama">
-                <div class="container-berita">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>telsradio</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/berita.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- cdn fontawsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- cdn aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
 
-                    <!-- berita a -->
-                    <div class="berita-a">
-                        <a href="https://google.com">
-						    <img src="https://winpoin.com/wp-content/uploads/2020/12/Pillars-Tyranny.jpg" alt="berita">
-                            Microsoft Rilis Known Issues Untuk Xbox Series S dan X
-                        </a>
-                    </div>
-                    
-                    <!-- iklan -->
-                    <div class="ads">
-                        <a href="#"><img src="https://dummyimage.com/550x60/18ada8/080808.png" alt="ads"></a>
-                    </div>
-                    
-                    <!-- berita b -->
-                    <div class="berita-b">
-                        <a href="https://google.com">
-						<img src="https://dummyimage.com/672x505/black/080808.png" alt="#">
-						Update KB4586859 Dirilis Untuk Windows 10 1903/1909 Via WSUS</a>
-                    </div>
-                </div>
-                
-                <!--Berita Terkini-->
-                <div class="container-beritaB">
-                    <h3>BERITA TERKINI</h3>
+<body>
 
-                    <div class="artikel2">
-                        <a href="#">
-						    <img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
-                            <!-- max 12 kalimat -->
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
-                        </a>
-                    </div>
+    <nav>
+    <div class="nav-brand">
+        <img src="img/logo telsradio.svg">
+    </div>
+    <div class="nav-items">
+        <ul class="nav-links">
+            <li>
+                <a href="#" class="nav-link">Telsradio</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">Tentang</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">Musik</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link active">Berita</a>
+            </li>
+        </ul>
+        <button class="button"> Dengerin Yuk !</button>
+    </div>
 
-                    <div class="artikel2">
-                        <a href="#">
-						   <img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
-                            <!-- max 12 kalimat -->
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
-                        </a>
-                    </div>
+    <div class="toggle-button">
+        <input type="checkbox">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    </nav>
 
-                    <div class="artikel2">
-                        <a href="#">
-                            <!-- max 12 kalimat -->
-						<img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
-						</a>
-                    </div>
+    <div class="pengatur-sidebar">
+    <div class="container-utama">
+        <div class="container-berita" data-aos="fade-up" data-aos-anchor-placement="top-center">
 
-                    <div class="artikel2">
-                        <a href="#">
-						<img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
-                            <!-- max 12 kalimat -->
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
-						</a>
-                    </div>
-
-                </div>
+            <!-- berita a -->
+            <div class="berita-a">
+                <a href="https://google.com">
+                    <img src="https://winpoin.com/wp-content/uploads/2020/12/Pillars-Tyranny.jpg" alt="berita">
+                    Microsoft Rilis Known Issues Untuk Xbox Series S dan X
+                </a>
             </div>
 
-            <div class="sidebar">
-                 <!--Trending Now--> 
-                <h3>TRENDING NOW</h3>
-                <!-- trending 1 -->
-                <div class="site">
-                    <a href="#">
-					    <img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
-                       <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nihil soluta pariatur suscipit fuga? Voluptate, repellat nisi.</p>
-                    </a>
-                </div>
-                <!-- trending 2 -->
-                <div class="site">
-                    <a href="#">
-					<img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
-                    </a>
-                </div>
-                <!-- trending 3 -->
-                <div class="site">
-                    <a href="#">
-					    <img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
-                       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
-                    </a>
-                </div>
-                <!-- trending 4 -->
-                <div class="site">
-                    <a href="#">
-					<img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
-                      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
-                    </a>
-                </div>
-                <!-- trending 5 -->
-                <div class="site">
-                    <a href="#">
-					<img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
-                        <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
-                    </a>
-                </div>
-                
-                <!-- iframe -->
-                <div class="telstream">
-                    
-                    <h3>TELS STREAM</h3>
-                    <!-- frame 1 -->
-                    <iframe width="853" height="480" src="https://www.youtube.com/embed/vEDgALv2SPk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                    <!-- frame 2 -->
-                    <iframe width="853" height="480" src="https://www.youtube.com/embed/k-nw7IaWFO4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                    <!-- frame 3 -->
-                    <iframe width="853" height="480" src="https://www.youtube.com/embed/nl7GfuvFNWQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                
-                <!-- Sicial Media -->
-                <div class="sosmed">
-                    <h3>SOCIAL MEDIA</h3>
-                    <a href="#"><img src="img/facebook.svg"></a>
-                    <a href="#"><img src="img/instagram.svg"></a>
-                    <a href="#"><img src="img/twitter.svg"></a>
-                    <a href="#"><img src="img/youtube.svg"></a>
-                </div>
+            <!-- iklan -->
+            <div class="ads">
+                <a href="#"><img src="https://dummyimage.com/550x60/18ada8/080808.png" alt="ads"></a>
             </div>
-            <div class="toggle-naik"><i class="fas fa-arrow-circle-up"></i></div>
+
+            <!-- berita b -->
+            <div class="berita-b">
+                <a href="https://google.com">
+                    <img src="https://dummyimage.com/672x505/black/080808.png" alt="#">
+                    Update KB4586859 Dirilis Untuk Windows 10 1903/1909 Via WSUS</a>
+            </div>
         </div>
 
-        
-        <footer>
-            <div class="container-footer">
-                <h1>Telsradio</h1>
-                <div class="submenu-footer">
-                  <a href="#">Telsradio</a>
-                  <p>|</p>
-                  <a href="#">Tentang</a>
-                  <p>|</p>
-                  <a href="#">Musik</a>
-                  <p>|</p>
-                  <a href="#">Berita</a>
-                  <p>|</p>
-                  <a href="#">Dengerin Yuk !</a>
-                </div>
-                <div class="garis-footer"></div>
-                <div class="sec-bawah-footer">
-                    <!-- copyright khusus di dekstop -->
-                    <p>© 2020 TomcatSquad. All rights reserved</p>
-                    <div class="sosmed-footer">
-                    <a href="#"><img src="img/browser footer.svg" alt=""></a>
-                    <a href="#"><img src="img/Twitter footer.svg" alt=""></a>
-                    <a href="#"><img src="img/Youtube footer.svg" alt=""></a>
-                    <a href="#"><img src="img/ig footer.svg" alt=""></a>
-                    </div>
-                </div>
-                <!-- copyright khusus dimobile -->
-                <p id="khusus-mobile">© 2020 TomcatSquad. All rights reserved</p>
-            </div>
-            </footer>
+        <!--Berita Terkini-->
+        <div class="container-beritaB" data-aos="fade-up" data-aos-anchor-placement="top-center">
+            <h3>BERITA TERKINI</h3>
 
-        <!-- script -->
-       <script src="js/navbar.js"></script> 
-         <script src="js/berita.js"></script>
-    </body>
-</html> 
+            <div class="artikel2">
+                <a href="#">
+                    <img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
+                    <!-- max 12 kalimat -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
+                </a>
+            </div>
+
+            <div class="artikel2">
+                <a href="#">
+                    <img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
+                    <!-- max 12 kalimat -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
+                </a>
+            </div>
+
+            <div class="artikel2">
+                <a href="#">
+                    <!-- max 12 kalimat -->
+                    <img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
+                </a>
+            </div>
+
+            <div class="artikel2">
+                <a href="#">
+                    <img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
+                    <!-- max 12 kalimat -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="sidebar" data-aos="zoom-out-down">
+        <!--Trending Now-->
+        <h3>TRENDING NOW</h3>
+        <!-- trending 1 -->
+        <div class="site">
+            <a href="#">
+                <img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nihil soluta pariatur suscipit
+                    fuga? Voluptate, repellat nisi.</p>
+            </a>
+        </div>
+        <!-- trending 2 -->
+        <div class="site">
+            <a href="#">
+                <img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
+            </a>
+        </div>
+        <!-- trending 3 -->
+        <div class="site">
+            <a href="#">
+                <img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
+            </a>
+        </div>
+        <!-- trending 4 -->
+        <div class="site">
+            <a href="#">
+                <img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
+            </a>
+        </div>
+        <!-- trending 5 -->
+        <div class="site">
+            <a href="#">
+                <img src="https://dummyimage.com/100x100/4ad4bf/000000" alt="thumbnail">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et cumque optio.</p>
+            </a>
+        </div>
+
+        <!-- iframe -->
+        <div class="telstream" data-aos="fade-up" data-aos-anchor-placement="top-center">
+
+            <h3>TELS STREAM</h3>
+            <!-- frame 1 -->
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/vEDgALv2SPk" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+            <!-- frame 2 -->
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/k-nw7IaWFO4" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+            <!-- frame 3 -->
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/nl7GfuvFNWQ" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <!-- Sicial Media -->
+        <div class="sosmed">
+            <h3>SOCIAL MEDIA</h3>
+            <a href="#"><img src="img/facebook.svg"></a>
+            <a href="#"><img src="img/instagram.svg"></a>
+            <a href="#"><img src="img/twitter.svg"></a>
+            <a href="#"><img src="img/youtube.svg"></a>
+        </div>
+    </div>
+    </div>
+    <div class="toggle-naik"><i class="fas fa-arrow-circle-up"></i></div>
+
+    <footer>
+    <div class="container-footer">
+        <h1>Tels radio</h1>
+        <div class="submenu-footer">
+            <a href="#">Telsradio</a>
+            <p>|</p>
+            <a href="#">Tentang</a>
+            <p>|</p>
+            <a href="#">Musik</a>
+            <p>|</p>
+            <a href="#">Berita</a>
+            <p>|</p>
+            <a href="#">Dengerin Yuk !</a>
+        </div>
+        <div class="garis-footer"></div>
+        <div class="sec-bawah-footer">
+            <!-- copyright khusus di dekstop -->
+            <p>© 2021 TomcatSquad. All rights reserved</p>
+            <div class="sosmed-footer">
+                <a href="#"><img src="img/browser footer.svg" alt=""></a>
+                <a href="#"><img src="img/Twitter footer.svg" alt=""></a>
+                <a href="#"><img src="img/Youtube footer.svg" alt=""></a>
+                <a href="#"><img src="img/ig footer.svg" alt=""></a>
+            </div>
+        </div>
+        <!-- copyright khusus dimobile -->
+        <p id="khusus-mobile">© 2021 TomcatSquad. All rights reserved</p>
+    </div>
+    </footer>
+
+    <!-- script -->
+    <script src="js/navbar.js"></script>
+    <script src="js/berita.js"></script>
+</body>
+
+</html>

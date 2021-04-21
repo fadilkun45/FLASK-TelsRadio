@@ -27,7 +27,7 @@ Telsradio adalah sebuah radio berbasis web yang dibuat oleh Tomcat Squad angkata
 ![Jinja](https://img.shields.io/badge/-Jinja-b41717?style=flat-square&logo=Jinja&logoColor=white) 
 ![Javascript](https://img.shields.io/badge/-Javascript-efd81d?style=flat-square&logo=Javascript&logoColor=black)
 <p>
-  Pada section berita kami mengambil data dengan cara scrap dari website <a href="https://winpoin.com">Winpoin.</a> Untuk section musik kami menggunakan API dari <a href="https://developer.spotify.com/documentation/web-api/">Spotify.</a> Semua data yang berhasil diambil akan disimpan di database mysql agar sewaktu-waktu jika terjadi down pada website Winpoin/Spotify kami masih mempunyain backup datanya..
+  Pada section berita dan musik kami mengambil data dari <a href="https://api-tomcatsquad.herokuapp.com">API Tomcat Squad</a>
 </p>
 
 ## Desain UI/UX ✨

@@ -38,12 +38,11 @@
 		<div class="container-utama">
 			<div class="container-berita">
                 <!-- berita a -->
-                {% for row in berita_1 %}
 				<div class="berita-a">
-					<a href="{{row.2}}">
-						<img src="{{row.1}}" alt="berita">{{row.3}}</a>
+					<a href="{{berita[0]['url']}}">
+						<img src="{{berita[0]['thumbnail']}}" alt="berita">{{berita[0]['title']}}
+					</a>
                 </div>
-                {% endfor %}
 				<!-- iklan -->
 				<div class="ads">
 					<a href="#">
@@ -51,22 +50,21 @@
 					</a>
 				</div>
                 <!-- berita b -->
-                {% for row in berita_2 %}
 				<div class="berita-b">
-					<a href="{{row.2}}">
-						<img src="{{row.1}}" alt="#">{{row.3}}</a>
+					<a href="{{berita[1]['url']}}">
+						<img src="{{berita[1]['thumbnail']}}" alt="berita">{{berita[1]['title']}}
+					</a>
                 </div>
-                {% endfor %}
             </div>
 			<!--Berita Terkini-->
 			<div class="container-beritaB">
                 <h3>BERITA TERKINI</h3>
-                {% for row in berita_4 %}
+                {% for row in range(2, 7) %}
 				<div class="artikel2">
-					<a href="{{row.2}}">
-						<img src="{{row.1}}" alt="thumbnail">
+					<a href="{{berita[row]['url']}}">
+						<img src="{{berita[row]['thumbnail']}}" alt="thumbnail">
 						<!-- max 12 kalimat -->
-						<p>{{row.3}}</p>
+						<p>{{berita[row]['title']}}</p>
 					</a>
                 </div>
                 {% endfor %}
@@ -76,20 +74,20 @@
 			<!--Trending Now-->
 			<h3>TRENDING NOW</h3>
             <!-- trending 1 -->
-            {% for row in berita_3 %}
+			{% for row in range(8, 13) %}
 			<div class="site">
-				<a href="{{row.2}}">
-					<img src="{{row.1}}" alt="thumbnail">
-					<p>{{row.3}}</p>
+				<a href="{{berita[row]['url']}}">
+					<img src="{{berita[row]['thumbnail']}}" alt="thumbnail">
+					<p>{{berita[row]['title']}}</p>
 				</a>
             </div>
-            {% endfor %}
+			{% endfor %}
 			<!-- iframe -->
 			<div class="telstream">
                 <h3>TELS STREAM</h3>
                 {% for row in api_youtube %}
 				<!-- frame 1 -->
-				<iframe width="853" height="480" src="https://www.youtube.com/embed/{{row.1}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="853" height="480" src="https://www.youtube.com/embed/{{row['url']}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 {% endfor %}
             </div>
 			<!-- Sicial Media -->

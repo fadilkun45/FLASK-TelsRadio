@@ -4,7 +4,11 @@ import requests
 app = Flask(__name__)
 
 @app.route('/')
-def index():                  
+def index():
+    return render_template('home.html')
+
+@app.route('/berita')
+def berita():                  
     url_youtube = requests.get('http://api-tomcatsquad.herokuapp.com/api/v1/youtube/?limit=3')
     api_youtube = url_youtube.json()['results']
 
@@ -15,6 +19,10 @@ def index():
         api_youtube=api_youtube,
         berita=api_berita,
     )
+
+@app.route('/radio')
+def radio():
+    return render_template('radio.html')
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')

@@ -2,12 +2,13 @@
 
 
 nav {
-    width: 1144px;
+    width: 1230px ;
     margin: 0 auto;
     display: flex ;
     justify-content: space-between ;
     align-items: center;
     font-family: 'Poppins', sans-serif;
+    margin-top: 10px ;
 }
 
 .nav-brand {
@@ -17,8 +18,8 @@ nav {
 }
   
 .nav-brand img {
-    width : 120px ;
-    height : 10x ;
+    width: 147px ;
+    height: 45px ;
 }
   
 .nav-items {
@@ -42,7 +43,9 @@ nav {
 .nav-link {
     color: #132943;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
+    margin-top: 15px ;
+
 }
 
 .nav--links li a {
@@ -64,12 +67,14 @@ button {
     margin: 10px ;
     border: none;
     background-color: #2681E6;
-    border-radius: 10px;
     color: #fff;
+    height: 40px ;
     font-size: 13px;
     font-weight: 500;
     transition: all 0.3s ease 0s;
     font-family: 'Poppins', sans-serif;
+    border-radius: 50px ;
+    margin-top: 15px ;
   
 }
 
@@ -81,34 +86,30 @@ button.button :hover {
 /* tombol */
 
 .toggle-button {
-    display: none ;
-}
-
-.toggle-button {
-    display : none ;
-    flex-direction: column ;
-    height: 18px ;
-    justify-content: space-between ;
-    position: relative ;
+    display: none;
+    flex-direction: column;
+    height: 21px;
+    justify-content: space-between;
+    position: relative;
+    /* border: 1px solid black ; */
 }
 
 .toggle-button span {
-    display: block ;
-    width: 25px ;
-    height: 4px ;
-    background-color:  #2681E6 ;
-    border-radius: 3px ;
-    transition: 0.5s ;
+    display: block;
+    width: 26px;
+    height: 3px;
+    background-color: #2681E6;
+    border-radius: 3px;
+    transition: 0.5s;
 }
 
 .toggle-button input {
-    position: absolute ;
-    width: 40px ;
-    height: 3px ;
+    position: absolute;
+   width: 100% ;
+   height: 100% ;
     opacity: 0 ;
-    z-index: 3 ;
-    left: -5px ;
-    top: 3px ;
+    z-index: 3;
+    top: 0;
     cursor: pointer;
 }
 
@@ -124,7 +125,7 @@ button.button :hover {
 
 .toggle-button input:checked ~ span:nth-child(2){
     background-color:  #2681E6 ;
-    transform: rotate(40deg) translate(-1px, -1px) ;
+    transform: rotate(45deg) translate(3px, -3px) ;
 }
 
 .toggle-button input:checked ~ span:nth-child(3){
@@ -134,7 +135,7 @@ button.button :hover {
 
 .toggle-button input:checked ~ span:nth-child(4){
     background-color:  #2681E6 ;
-    transform: rotate(-40deg) translate(-1px, 0);
+    transform: rotate(-45deg) translate(3px, 3px);
 }
 
 
@@ -142,64 +143,66 @@ button.button :hover {
 
  
 /* handphone */
-@media only screen and (max-width : 800px ){
+@media only screen and (max-width : 1100px ){
 
     nav {
-        width: 100% ;
+        width: 550px ;
+        margin : auto ;
+        margin-bottom : 30px ;
+        margin-top:  0 ;
     }
 
     .nav-items {
         width: 80% ;
     }
+
     .nav-link {
         font-size : 15px ;
         justify-content: space-around ;
     }
 
-    .nav-brand {
-        margin-left: 10px ;
+    .nav-brand img {
+        width: 140px ;
+        height: 80px ;
     }
 
-    .nav-brand img {
-        width: 150px ;
-        height: 90px ;
-    }
+    nav button {
+        border-radius: 15px ;
+        width: 180px ;
+      }
 
 
     .nav-items button {
         font-size: 13px ;
-        width: 90px ;
+        width: 100px ;
         margin-right: 10px ;
         margin-left: 10px ;
         height: 50px ;
     } 
 }
 
-@media only screen and (max-width : 580px ){
+@media only screen and (max-width : 600px ){
 
     nav {
-        /* margin-top: -10px ;
-        margin-right: 10px ;
-        margin-left: -20px ; */
-        position: fixed ;
+        width: 350px ;
         z-index: 6000 ;
         left: 0 ;
         right: 0 ;
-        top: 0 ; 
-        height: 30px ;
+        height: 60px ;
         padding-top: 5px;
         background-color: white ;
+        margin-bottom: -20px ;
     }
 
     .nav-brand {
-        margin-left: 25px ;
-        margin-left : 10px ;
-        margin-top: 2px ;
+        margin-left: 5px ;
+        margin-bottom : 10px ;
+        margin-top: 20px ;
     }
 
     .nav-brand img {
-        width: 100px ;
-        height: 26px ;
+        width: 130px ;
+        height: 100px ;
     }
 
     .nav-items {
@@ -212,11 +215,12 @@ button.button :hover {
         align-items: center ;
         background-color: white  ;
         transition: all 1s ;
-        width: 104% ;
+        width: 100% ;
         opacity: 0 ;
         z-index : 5000 ;
         margin: 0 auto ;
         margin-top: -10px ;
+        left: 0 ;
         /* border: 1px solid black ; */
     }
 
@@ -255,9 +259,9 @@ button.button :hover {
     .toggle-button {
         display: flex ;
         position: relative ;
-        z-index: 50001;
+        z-index: 50004 ;
         margin-right: 20px ;
-        margin-top: -4px ;
+        /* margin-top: -4px ; */
         height: 20px ;
     }
 

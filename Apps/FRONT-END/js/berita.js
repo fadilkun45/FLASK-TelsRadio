@@ -30,7 +30,7 @@ const RenderTerkini = document.querySelector("#berita-terkini-render");
 const RenderTrending = document.querySelector("#render-trending")
 RenderA.innerHTML = " ";
 
-fetch("http://api-tomcatsquad.herokuapp.com/api/v1/news/")
+fetch("https://api-tomcatsquad.herokuapp.com/api/v1/news/")
   .then((res) => res.json())
   .then((res) => {
     let title = [];
@@ -59,7 +59,7 @@ fetch("http://api-tomcatsquad.herokuapp.com/api/v1/news/")
 
 
 
-fetch("http://api-tomcatsquad.herokuapp.com/api/v1/news/")
+fetch("https://api-tomcatsquad.herokuapp.com/api/v1/news/")
 .then((res) => res.json())
 .then(res => {
 
@@ -81,7 +81,7 @@ fetch("http://api-tomcatsquad.herokuapp.com/api/v1/news/")
  
 })
 
-fetch("http://api-tomcatsquad.herokuapp.com/api/v1/news/")
+fetch("https://api-tomcatsquad.herokuapp.com/api/v1/news/")
 .then((res) => res.json())
 .then(res => {
 

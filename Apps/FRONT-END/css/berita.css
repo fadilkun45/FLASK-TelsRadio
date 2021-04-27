@@ -36,8 +36,7 @@ nav {
     position: relative;
     z-index: 1000 ;
     display: block ;
-	position : relative ;
-	
+	position : relative ;	
 }
 
 
@@ -149,7 +148,7 @@ nav {
     column-gap: 2px ;
     margin : 0 auto ;
     grid-template-columns: 0.3fr 1fr;
-    grid-template-areas: "thumbnail judul" ;
+    grid-template-areas: "thumbnail judul" "thumbnail tanggal" ;
     text-align: left ;
     box-sizing: border-box ;
     font-family: 'Rubik', sans-serif;
@@ -166,13 +165,23 @@ nav {
     height : 100px ;
 }
 
-.artikel2 a p {
+.artikel2 a p:nth-child(2) {
     font-size : 15px ;
     grid-area: judul ;
     margin-top: 10px ;
     color : #000000 ;
     font-weight: bold ;
     margin-left: 10px ;
+}
+
+.artikel2 a p:nth-child(3) {
+    font-size : 12px ;
+    grid-area: tanggal ;
+    margin-top: -20px ;
+    margin-bottom: 40px ;
+    color : #000000 ;
+    margin-left: 10px ;
+    font-weight: 100 ;
 }
 
 .artikel2:hover {
@@ -194,9 +203,7 @@ nav {
     column-gap: 10px ;
     margin : -10px auto ;
     grid-template-columns: 0.3fr 1fr;
-    grid-template-areas: "thumbnail judul" ;
-    text-align: left ;
-    box-sizing: border-box ;
+    grid-template-areas: "thumbnail judul" "thumbnail tanggal" ;
     font-family: 'Rubik', sans-serif;
     transition: all 0.5s ;
 	text-decoration: none ;
@@ -215,13 +222,23 @@ nav {
     height : 100px ;
 }
 
-.site a p {
+.site a p:nth-child(2) {
     font-size : 15px ;
     grid-area: judul ;
     margin-top: 10px ;
     color : #000000 ;
     font-weight: bold ;
     margin-left: 10px ;
+}
+
+.site a p:nth-child(3) {
+    font-size : 12px ;
+    grid-area: tanggal ;
+    margin-top: -20px ;
+    margin-bottom: 34px ;
+    color : #000000 ;
+    margin-left: 10px ;
+    font-weight: 100 ;
 }
 
 .sidebar h3 {
@@ -273,6 +290,7 @@ nav {
     line-height: 30px;
     color: white;
     padding: 3px 10px ;
+    z-index: 99999 ;
   }
 
 /* media breakpoint */
@@ -363,6 +381,8 @@ nav {
 @media only screen and (max-width : 600px ){
 
     nav {
+        position: relative ;
+        z-index: 999999 ;
     }
 
     .pengatur-sidebar {
@@ -428,12 +448,12 @@ nav {
 
    .berita-b a {
    font-size: 24px ;
-   margin-top : 700px ;
+   margin-top : 500px ;
    padding-bottom: 18px ;
    }
 
    .container-beritaB {
-       margin-top: 650px ;
+       margin-top: 500px ;
        width : 330px ;
    }
 
@@ -449,6 +469,15 @@ nav {
     .artikel2 img {
         width : 100px ;
         height : 100px ;
+    }
+
+    .artikel2 p:nth-child(2){
+        font-size: 14px ;
+    }
+
+    .artikel2 a p:nth-child(3){
+        margin-top: -15px ;
+        margin-bottom: 0px ;
     }
 
     .container-beritaB h3 {
@@ -469,6 +498,15 @@ nav {
 
     .site {
         margin-left: -15px ;
+    }
+
+    .site a p:nth-child(2){
+        font-size: 14px ;
+    }
+
+    .site a p:nth-child(3){
+        margin-top: -15px ;
+        margin-bottom: 0px ;
     }
 
     .telstream {
@@ -521,5 +559,71 @@ nav {
     
     .site ,.artikel2 {
         transform: scale(100%) ;
+    }
+}
+
+/* animasi berita terkni dan trending*/
+
+.animasi {
+    max-width : 500px ;
+    height: 150px ;
+    display : grid ;
+    column-gap: 10px ;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-areas: "gambar judul" "gambar tanggal" ;
+}
+
+.animasi .gambar {
+    grid-area: gambar ;
+    margin-top: 10px ;
+    margin-left: 10px ;
+    border-radius: 5px ;
+    width : 100px ;
+    height : 100px ;
+    background-color: #F0F0F0 ;
+}
+
+.animasi .tulisan-1 {
+    grid-area: judul ;
+    margin-top: 10px ;
+    width: 100% ;
+    background-color: #F0F0F0 ;
+    height: 20px ;
+}
+
+.animasi .tulisan-2 {
+    grid-area: tanggal ;
+    margin-top: -20px ;
+    margin-bottom: 40px ;
+    width: 100% ;
+    background-color: #F0F0F0 ;
+    height: 20px ;
+}
+
+/* animasi berita highlight */
+
+.animasi-highlight {
+    width: 500px ;
+    height: 300px ;
+    background-color: #F0F0F0 ;
+    display: flex ;
+    margin-bottom: 60px ;
+}
+
+.animasi-highlight-2 {
+    width: 500px ;
+    height: 300px ;
+    background-color: #F0F0F0 ;
+    display: flex ;
+    margin-bottom: 60px ;
+}
+
+@media only screen and (max-width : 600px ){
+    .animasi-highlight {
+        margin-top: -150px ;
+    }
+
+    .animasi-highlight-2 {
+        margin-bottom: -200px ;
     }
 }

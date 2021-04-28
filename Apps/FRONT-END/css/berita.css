@@ -82,7 +82,6 @@ nav {
 
 .artikel2 a {
     max-width : 500px ;
-    height: 150px ;
     display : grid ;
     column-gap: 2px ;
     margin : 0 auto ;

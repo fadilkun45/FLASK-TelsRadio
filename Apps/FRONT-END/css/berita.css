@@ -376,6 +376,10 @@ nav {
         margin-bottom: 50px ;
     }
 
+    .artikel2 a {
+        cursor: pointer ;
+    }
+
     .artikel2 img {
         width : 100px ;
         height : 100px ;
@@ -413,6 +417,10 @@ nav {
     .site {
         margin-bottom: 50px ;
         margin-left: -15px ;
+    }
+
+    .site a {
+        cursor: pointer ;
     }
 
     .site a p:nth-child(2){

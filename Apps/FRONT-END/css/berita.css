@@ -106,7 +106,6 @@ nav {
 .artikel2 a p:nth-child(2) {
     font-size : 15px ;
     grid-area: judul ;
-    margin-top: 10px ;
     color : #000000 ;
     font-weight: bold ;
     margin-left: 10px ;

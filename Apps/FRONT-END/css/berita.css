@@ -115,13 +115,13 @@ nav {
     grid-area: deskripsi;
     font-size: 14px ;
     margin-left: 10px ;
-    color : #000000 ;
+    color : #7b7b7b ;
 }
 
 .artikel2 a p:nth-child(4) {
     font-size : 12px ;
     grid-area: tanggal ;
-    color : #000000 ;
+    color : #7b7b7b ;
     margin-left: 10px ;
     font-weight: 100 ;
     margin-top: 0 ;
@@ -178,7 +178,7 @@ nav {
 .site a p:nth-child(3){
     grid-area: deskripsi ;
     font-size: 14px ;
-    color : #000000 ;
+    color : #7b7b7b ;
     margin-left: 10px ;
 }
 
@@ -187,7 +187,7 @@ nav {
     grid-area: tanggal ;
     /* margin-top: -20px ; */
     /* margin-bottom: 34px ; */
-    color : #000000 ;
+    color : #7b7b7b ;
     margin-left: 10px ;
     font-weight: 100 ;
 }

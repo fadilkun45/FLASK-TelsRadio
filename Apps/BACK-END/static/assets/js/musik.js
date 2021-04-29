@@ -74,10 +74,10 @@ let audio = new Audio();
 playbtn.addEventListener("click", () => {
   if (audio.paused) {
     audio.play();
-    playbtn.innerHTML = `<img src="img/pause.png">`;
+    playbtn.innerHTML = `<img src="static/assets/img/pause.png">`;
   } else {
     audio.pause();
-    playbtn.innerHTML = '<img src="img/button 1.png">';
+    playbtn.innerHTML = '<img src="static/assets/img/button 1.png">';
   }
 });
 
@@ -103,7 +103,7 @@ GenreContent.forEach((content) => {
 function listrender(data) {
   function setelmusic() {
     audio.src = musik[currentsong];
-    playbtn.innerHTML = `<img src="img/pause.png"/>`;
+    playbtn.innerHTML = `<img src="static/assets/img/pause.png"/>`;
     console.log(currentsong);
     audio.play();
   }

@@ -1,4 +1,4 @@
-const toggleNaik = document.querySelector(".toggle-naik");
+const toggleNaik = document.querySelector(".toggle-naik");https://api-tomcatsquad.herokuapp.com/api/v1/news/
 
 if (document.documentElement.clientWidth < 800) {
   window.onscroll = function () {
@@ -24,15 +24,14 @@ if (document.documentElement.clientWidth < 800) {
   });
 }
 
-const RenderA = document.querySelector("#renderA");
-const RenderB = document.querySelector("#renderB");
+const RenderBerita = document.querySelector("#renderberita");
 const RenderTerkini = document.querySelector("#berita-terkini-render");
 const RenderTrending = document.querySelector("#render-trending")
-RenderA.innerHTML = " ";
 
 fetch("https://api-tomcatsquad.herokuapp.com/api/v1/news/")
   .then((res) => res.json())
   .then((res) => {
+    RenderBerita.innerHTML = ''
     let title = [];
     var image = [];
     var link = [];
@@ -42,18 +41,20 @@ fetch("https://api-tomcatsquad.herokuapp.com/api/v1/news/")
       image.push(res["results"][i]["thumbnail"]);
       link.push(res["results"][i]["url"]);
     }
+    RenderBerita.innerHTML += `<div class="berita">
+    <a href="${link[0]}">
+        <img src="${image[0]}" alt="berita">
+        <p>${title[0]}</p>
+    </a>
+</div>`
+RenderBerita.innerHTML += `<div class="berita">
+<a href="${link[1]}">
+    <img src="${image[1]}" alt="berita">
+    <p>${title[1]}</p>
+</a>
+</div>`
     //  console.log(title + image + link) ;
-    RenderA.innerHTML = ` <div class="berita-a">
-     <a href="${link[0]}">
-         <img src="${image[0]}" alt="berita">
-        ${title[0]}
-     </a>
-   </div>`;
-    RenderB.innerHTML = `<div class="berita-b">
-     <a href="${link[1]}">
-      <img src="${image[1]}" alt="#">
-      ${title[1]}</a>
-     </div>`;
+   
   }
 )
 
@@ -68,12 +69,14 @@ fetch("https://api-tomcatsquad.herokuapp.com/api/v1/news/")
     let title = res["results"][i]["title"];
     let image = res["results"][i]["thumbnail"];
     let link = res["results"][i]["url"];
+    let desk = res["results"][i]["description"];
     let tanggal = res["results"][i]["publish"];
     let author = res["results"][i]["author"];
     RenderTerkini.innerHTML += `<div class="artikel2">
     <a href="${link}">
         <img src="${image}" alt="thumbnail">
         <p>${title}</p>
+        <p>${desk}</p>
         <p>${tanggal + " " +author}</p>
     </a>
   </div>`
@@ -91,11 +94,13 @@ fetch("https://api-tomcatsquad.herokuapp.com/api/v1/news/")
     let image = res["results"][i]["thumbnail"];
     let link = res["results"][i]["url"];
     let tanggal = res["results"][i]["publish"];
+    let desk = res["results"][i]["description"];
     let author = res["results"][i]["author"];
     RenderTrending.innerHTML += `<div class="site">
     <a href="${link}">
         <img src="${image}" alt="thumbnail">
         <p>${title}</p>
+        <p>${desk}</p>
         <p>${tanggal + " " +author}</p>
     </a>
 </div>`

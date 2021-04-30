@@ -108,4 +108,25 @@ fetch("https://api-tomcatsquad.herokuapp.com/api/v1/news/")
  
 })
 
+const telsStreamRender = document.querySelector("#telstream-render")
+// render telstream
+fetch("http://api-tomcatsquad.herokuapp.com/api/v1/youtube/?channel_name=Tels%20Stream")
+.then((res) => res.json())
+.then((res) => {
+  for(i = 0 ; i <= 2 ; i++ ){
+    let link  = res["results"][i]["url"]
+    telsStreamRender.innerHTML += `
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/${link}" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>`
+  }
+})
+
+
+
+
+
+
+
+
 

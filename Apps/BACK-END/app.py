@@ -8,7 +8,7 @@ def index():
     return render_template('home.html')
 
 @app.route('/berita')
-def berita():                  
+def index_berita():                  
     url_youtube = requests.get('http://api-tomcatsquad.herokuapp.com/api/v1/youtube/?limit=3')
     api_youtube = url_youtube.json()['results']
 
@@ -20,8 +20,12 @@ def berita():
         berita=api_berita,
     )
 
+@app.route('/musik')
+def index_musik():
+    return render_template('musik.html')
+
 @app.route('/radio')
-def radio():
+def index_radio():
     return render_template('radio.html')
 
 if __name__ == '__main__':

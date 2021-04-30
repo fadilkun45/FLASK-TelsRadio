@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musik</title>
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/musik.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/musik.css') }}">
     <script src="https://code.jquery.com/jquery-3.6.0.js"
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -19,7 +19,7 @@
     <section class="header">
         <nav>
             <div class="nav-brand">
-                <img src="img/logo musik.svg">
+                <img src="{{ url_for('static', filename='assets/img/logo musik.svg') }}">
             </div>
             <div class="nav-items">
                 <ul class="nav-links">
@@ -51,10 +51,10 @@
                 <p>Dengarkan Gratis, putar lagu dimana saja, kapanpun yang anda inginkan.</p>
             </div>
             <div class="hero-kanan">
-                <img src="img/hero kanan.svg">
+                <img src="{{ url_for('static', filename='assets/img/hero kanan.svg') }}">
             </div>
             <button class="hero-btn">
-                <p>Putar Sekarang</p> <img src="img/button-logo.png">
+                <p>Putar Sekarang</p> <img src="{{ url_for('static', filename='assets/img/button-logo.png') }}">
             </button>
         </div>
     </section>
@@ -126,31 +126,31 @@
             
     </section>
     <section class="channel">
-        <h4>Channel Teratas</h4>
+        <h4>Album Teratas</h4>
         <div class="channel-list">
             <a href="#" class="channel-card">
-                <img src="img/pak onno.jpeg">
-                <p>Tes Dummny</p>
+                <img src="https://m.media-amazon.com/images/I/819KjK0EBuL._AC_SL1500_.jpg">
+                <p>Post Malone</p>
             </a>
             <a href="#" class="channel-card">
-                <img src="img/pak onno.jpeg">
-                <p>Tes Dummny</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/35/The_Eminem_Show.jpg">
+                <p>Eminem</p>
             </a>
             <a href="#" class="channel-card">
-                <img src="img/pak onno.jpeg">
-                <p>Tes Dummny</p>
+                <img src="https://img.discogs.com/K2n2h98KlMOrLfbfoN4lEj1sRiE=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-15344402-1590058356-5750.jpeg.jpg">
+                <p>Juice WRLD</p>
             </a>
             <a href="#" class="channel-card">
-                <img src="img/pak onno.jpeg">
-                <p>Tes Dummny</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/e/e5/Hozier_album.jpg">
+                <p>Hozier</p>
             </a>
             <a href="#" class="channel-card">
-                <img src="img/pak onno.jpeg">
-                <p>Tes Dummny</p>
+                <img src="https://i.pinimg.com/originals/7e/90/56/7e90567c4991af6e0e44b3c1847fe7d9.png">
+                <p>Twenty One Pilots </p>
             </a>
             <a href="#" class="channel-card">
-                <img src="img/pak onno.jpeg">
-                <p>Tes Dummny</p>
+                <img src="https://images-na.ssl-images-amazon.com/images/I/51iRXx9WjbL._AC_.jpg">
+                <p>Travis Scott</p>
             </a>
             
         </div>
@@ -159,7 +159,7 @@
         <div class="container-player">
             <div id="RenderInfo">
                 <div class="musik-info">
-                    <img src="img/logo telsradio.svg" id="thumb">
+                    <img src="{{ url_for('static', filename='assets/img/logo telsradio.svg') }}" id="thumb">
                     <div class="sec-1">
                         <div class="judul-artis">
                             <marquee behavior = "scroll"
@@ -171,9 +171,9 @@
             </div>
             <div class="musik-panel" >
                 <div class="instrumen-atas">
-                    <button id="prev"><img src="img/prev.png"></button>
-                    <button id="play"><img src="img/button 1.png"></button>
-                    <button id="next"><img src="img/next.png"></button>
+                    <button id="prev"><img src="{{ url_for('static', filename='assets/img/prev.png') }}"></button>
+                    <button id="play"><img src="{{ url_for('static', filename='assets/img/button 1.png') }}"></button>
+                    <button id="next"><img src="{{ url_for('static', filename='assets/img/next.png') }}"></button>
                 </div>
                 <div class="instrumen-bawah">
                     <div id="timer">
@@ -190,7 +190,7 @@
                 </div>
             </div>
            <div class="musik-volume">
-               <img src="img/speaker.png">
+               <img src="{{ url_for('static', filename='assets/img/speaker.png') }}">
                <input type="range" min="0" max="100" id="volume" value="40">
             </div>
         </div>
@@ -214,10 +214,10 @@
                 <!-- copyright khusus di dekstop -->
                 <p>© 2021 TomcatSquad. All rights reserved</p>
                 <div class="sosmed-footer">
-                    <a href="#"><img src="img/browser footer.svg" alt=""></a>
-                    <a href="#"><img src="img/Twitter footer.svg" alt=""></a>
-                    <a href="#"><img src="img/Youtube footer.svg" alt=""></a>
-                    <a href="#"><img src="img/ig footer.svg" alt=""></a>
+                    <a href="#"><img src="{{ url_for('static', filename='assets/img/browser footer.svg') }}" alt=""></a>
+                    <a href="#"><img src="{{ url_for('static', filename='assets/img/Twitter footer.svg') }}" alt=""></a>
+                    <a href="#"><img src="{{ url_for('static', filename='assets/img/Youtube footer.svg') }}" alt=""></a>
+                    <a href="#"><img src="{{ url_for('static', filename='assets/img/ig footer.svg') }}" alt=""></a>
                 </div>
             </div>
             <!-- copyright khusus dimobile -->
@@ -227,8 +227,8 @@
     <div class="toggle-naik">
         <i class="fas fa-arrow-circle-up"></i>
     </div>
-    <script src="js/navbar.js"></script>
-    <script src="js/musik.js"></script>
+    <script src="{{ url_for('static', filename='assets/js/navbar.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/musik.js') }}"></script>
 </body>
 
 </html>

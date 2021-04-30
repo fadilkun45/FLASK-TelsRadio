@@ -126,7 +126,7 @@ nav {
     grid-area: deskripsi;
     font-size: 13px ;
     margin-left: 10px ;
-    color : #000000 ;
+    color : #797979 ;
 }
 
 .artikel2 a p:nth-child(4) {
@@ -189,7 +189,7 @@ nav {
 .site a p:nth-child(3){
     grid-area: deskripsi ;
     font-size: 13px ;
-    color : #000000 ;
+    color : #797979 ;
     margin-left: 10px ;
 }
 

@@ -110,9 +110,10 @@ fetch("https://api-tomcatsquad.herokuapp.com/api/v1/news/")
 
 const telsStreamRender = document.querySelector("#telstream-render")
 // render telstream
-fetch("http://api-tomcatsquad.herokuapp.com/api/v1/youtube/?channel_name=Tels%20Stream")
+fetch("https://api-tomcatsquad.herokuapp.com/api/v1/youtube/?channel_name=Tels%20Stream")
 .then((res) => res.json())
 .then((res) => {
+  telsStreamRender.innerHTML = ''
   for(i = 0 ; i <= 2 ; i++ ){
     let link  = res["results"][i]["url"]
     telsStreamRender.innerHTML += `

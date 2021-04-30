@@ -311,8 +311,7 @@ nav {
         display: flex ;
         flex-direction: column ;
         width: 550px ;
-        margin: auto ;
-        margin-top: 80px ;
+      
     }
 
     .telstream iframe {
@@ -388,7 +387,7 @@ nav {
     .artikel2 {
         margin-left: -10px ;
         column-gap: 10px ;
-        margin-bottom: 50px ;
+        margin-bottom: 30px ;
     }
 
     .artikel2 a {
@@ -405,7 +404,7 @@ nav {
     }
 
     .artikel2 p:nth-child(3){
-        font-size: 14px ;
+        /* font-size: 14px ; */
     }
 
     .artikel2 a p:nth-child(4){
@@ -430,7 +429,7 @@ nav {
     }
 
     .site {
-        margin-bottom: 50px ;
+        margin-bottom: 80px ;
         margin-left: -15px ;
     }
 
@@ -454,6 +453,8 @@ nav {
     .telstream {
         width: 330px ;
         margin : 0 auto ;
+        margin: auto ;
+        margin-top: 80px ;
     }
 
     .telstream h3 {
@@ -551,6 +552,16 @@ nav {
     display: flex ;
     margin-bottom: 60px ;
 }
+
+
+.animasi-stream {
+    width: 300px ;
+    height: 250px ;
+    background-color: #F0F0F0 ;
+    display: flex ;
+    margin-bottom: 30px ;
+}
+
 
 .animasi-highlight-2 {
     width: 500px ;

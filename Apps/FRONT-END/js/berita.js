@@ -1,4 +1,4 @@
-const toggleNaik = document.querySelector(".toggle-naik");https://api-tomcatsquad.herokuapp.com/api/v1/news/
+const toggleNaik = document.querySelector(".toggle-naik");
 
 if (document.documentElement.clientWidth < 800) {
   window.onscroll = function () {

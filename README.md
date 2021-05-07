@@ -35,7 +35,7 @@ Telsradio adalah radio berbasis web yang dibuat oleh Tomcat Squad angkatan 4 dan
 ## Kontributor
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/oojiii"><img src="https://avatars.githubusercontent.com/u/69113529" width="100px;" alt=""/><br /><sub><b>Muhammad Habibi
+    <td align="center"><a href="https://github.com/Habibidesign"><img src="https://avatars.githubusercontent.com/u/69113529" width="100px;" alt=""/><br /><sub><b>Muhammad Habibi
 </b></sub></a><br /> UI/UX
       <br />
     <td align="center"><a href="https://github.com/oojiii"><img src="https://avatars.githubusercontent.com/u/62457646?v=4" width="100px;" alt=""/><br /><sub><b>Ahmad Fauzi</b></sub></a><br /> UI/UX

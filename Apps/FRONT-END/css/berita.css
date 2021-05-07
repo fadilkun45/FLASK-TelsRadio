@@ -132,7 +132,7 @@ nav {
 .artikel2 a p:nth-child(4) {
     font-size : 12px ;
     grid-area: tanggal ;
-    color : #000000 ;
+    color : #7b7b7b ;
     margin-left: 10px ;
     font-weight: 100 ;
     margin-top: 0 ;
@@ -198,7 +198,7 @@ nav {
     grid-area: tanggal ;
     /* margin-top: -20px ; */
     /* margin-bottom: 34px ; */
-    color : #000000 ;
+    color : #7b7b7b ;
     margin-left: 10px ;
     font-weight: 100 ;
 }

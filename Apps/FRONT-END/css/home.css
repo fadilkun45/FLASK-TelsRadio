@@ -68,7 +68,7 @@ nav {
   padding: 10px;
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: -7px;
   border-radius: 50px;
   font-size: 13px ;
@@ -306,7 +306,7 @@ nav {
 .musik-section button img {
   width: 30px;
   height: 20px;
-  margin-left: 20px ;
+  margin-left: 10px ;
 }
 
 .berita-section {
@@ -367,7 +367,7 @@ nav {
 }
 
 .berita-section aside button img {
-  margin-left : 20px  ;
+  margin-left : 10px  ;
   width: 30px;
   height: 20px;
 }

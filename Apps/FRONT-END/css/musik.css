@@ -741,7 +741,7 @@ nav button {
   }
 
   .header-2 {
-    margin-top: 40% ;
+    margin-top: 10vh ;
     width: 550px ;
     grid-template-areas: "hero-kiri" "hero-btn";
   }

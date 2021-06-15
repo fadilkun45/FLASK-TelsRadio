@@ -139,8 +139,8 @@ nav button {
 
 .genre-more-trigger {
   display: flex;
-  margin: 10px auto;
-  width: 80% ;
+  margin: 15px auto;
+  width: 85% ;
 }
 
 .genre-list {
@@ -171,8 +171,6 @@ nav button {
   font-size: 14px ;
 }
 
-
-
 .genre-content.genre-aktif {
   background-color: #2681e6;
   color: #ffff;
@@ -182,7 +180,7 @@ nav button {
   display: none;
   flex-direction: column;
   margin: 15px auto;
-  width: 80%;
+  width: 85%;
 }
 
 .genre-btn {

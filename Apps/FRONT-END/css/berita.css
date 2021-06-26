@@ -299,7 +299,7 @@ nav {
 
     .sidebar h3 {
         margin: 40px auto ;
-        margin-top: -30px ;
+        margin-top: 30px ;
     }
 
     .telstream h3 {
@@ -419,7 +419,7 @@ nav {
     .sidebar h3 {
         margin : 0 auto ;
         margin-top : 0px ;
-        margin-bottom: 50px ;
+        margin-bottom: 15px ;
         font-size: 15px ;
     }
 

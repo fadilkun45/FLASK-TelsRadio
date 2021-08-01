@@ -1,3 +1,20 @@
+const form = document.querySelector(".toggle-chat form");
+const toggles = document.querySelector(".toggle-close");
+
+toggles.addEventListener('click',function(){
+  form.classList.toggle('closed')
+  form.parentElement.classList.toggle('style')
+  toggles.classList.toggle('open')
+})
+
+form.addEventListener('submit',function(e){
+  e.preventDefault()
+  alert("terimakasih lagu " + form.querySelector("input").value + " telah dikirim dan akan segera kami setel")
+})
+
+
+
+
 const Playbtn = document.querySelector("#play");
 const Time = document.querySelector(".time");
 const Status = document.querySelector(".status");
@@ -37,8 +54,7 @@ function tes() {
 let musik = "https://live.tomcatsquad.web.id:8443/stream";
 let audio = new Audio();
 audio.src = musik;
-audio.play()
-Playbtn.innerHTML = `<img src="img/radio play.png">`;
+
 
 
 Playbtn.addEventListener("click", () => {

@@ -1,3 +1,13 @@
+const form = document.querySelector(".toggle-chat form");
+const toggles = document.querySelector(".toggle-close");
+
+toggles.addEventListener('click',function(){
+  form.classList.toggle('closed')
+  form.parentElement.classList.toggle('style')
+  toggles.classList.toggle('open')
+})
+
+
 const Playbtn = document.querySelector("#play");
 const Time = document.querySelector(".time");
 const Status = document.querySelector(".status");
@@ -60,5 +70,5 @@ audio.addEventListener("timeupdate", () => {
 });
 
 if(document.documentElement.clientWidth > 800 ){
-  Playbtn.innerHTML = `<img src="img/radio pause.png">`;
+  Playbtn.innerHTML = `<img src="static/assets/img/radio pause.png">`;
 } 

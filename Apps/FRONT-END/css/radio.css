@@ -82,36 +82,39 @@ footer {
 }
 
 .toggle-chat {
-    background-color: #3f7cc2;
+    background-color: #2681E6;
     border-radius: 4px;
     font-size: 15px;
-    color: #f3f3f3;
+    color: #FFFFFF;
     position: fixed;
-    bottom: 40px;
-    right: 10px;
+    bottom: 200px;
     text-align: center;
     line-height: 30px;
-    color: white;
     padding: 3px 10px ;
+    transform: rotate(90deg);
+    right: -46px ;
   }
   
   .toggle-chat form {
       display: flex ;
       flex-direction: column ;
       align-items: center ;
-      background-color: #FEFEFE ;
       margin: 10px;
         padding: 5px 10px ;
     }
 
     .toggle-chat form label {
-        color: #000;
+        color: #132943;
         font-size: 17px ;
     }
 
     .toggle-chat input {
         margin-top: 16px ;
         width: 80% ;
+        border: 1px #BFBFBF solid ;
+        border-radius: 28px ;
+        padding: 5px 8px ;
+        color : #BFBFBF ;
     }
 
     .toggle-chat input:focus {
@@ -122,30 +125,43 @@ footer {
         border-radius: 3px ;
         padding : 3px ;
         height: 30px ;
+        width: 80% ;
         display: flex ;
+        border-radius: 28px ;
+        padding: 5px 8px ;
         justify-content: center;
         align-items: center;
+        background-color: #2681E6;
     }
 
     .toggle-chat .toggle-close {
         cursor: pointer ;
     }
 
+
     .toggle-chat .toggle-close.open {
         width: 50% ;
         margin: auto ;
-        background-color: #FEFEFE ;
         border-radius: 4px ;
+
     }
 
     .toggle-chat .toggle-close.open::after {
        content: 'tutup';
-       color: #000 ;
+       color: #2681E6 ;
 
     }
 
      .toggle-chat .toggle-close::after {
-       content: 'req lagu disini';
+       content: 'req lagu Disini' ;
+    }
+
+    .toggle-chat.fix {
+        transform: rotate(0deg);
+        right: 10px ;
+        background-color: #FFFFFF ;
+        box-shadow: 0px 0px 42px 0px #2C2C2C14;
+        border-radius: 20px ;
     }
 
 
@@ -202,6 +218,7 @@ footer {
         line-height: 30px;
         font-size: 11px ;
         width: 80px ;
+        right: -35px ;
       }
 
       .toggle-chat form label {

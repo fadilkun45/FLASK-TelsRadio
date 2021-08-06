@@ -153,8 +153,9 @@ footer {
     }
 
     .toggle-chat .toggle-close.open::after {
-       content: 'tutup';
+       content: 'x';
        color: #2681E6 ;
+       font-size: 30px;
 
     }
 

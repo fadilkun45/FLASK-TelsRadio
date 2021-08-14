@@ -1,10 +1,13 @@
 const form = document.querySelector(".toggle-chat form");
 const toggles = document.querySelector(".toggle-close");
+const toggleElement = document.querySelector(".toggle-chat");
+
 
 toggles.addEventListener('click',function(){
   form.classList.toggle('closed')
   form.parentElement.classList.toggle('style')
   toggles.classList.toggle('open')
+  toggleElement.classList.toggle('fix')
 })
 
 form.addEventListener('submit',function(e){

@@ -131,7 +131,7 @@ footer {
         border-radius: 3px ;
         padding : 3px ;
         height: 30px ;
-        width: 80% ;
+        width: 40% ;
         display: flex ;
         border-radius: 28px ;
         padding: 5px 8px ;
@@ -149,7 +149,6 @@ footer {
         width: 50% ;
         margin: auto ;
         border-radius: 4px ;
-
     }
 
     .toggle-chat .toggle-close.open::after {
@@ -160,7 +159,7 @@ footer {
     }
 
      .toggle-chat .toggle-close::after {
-       content: 'req lagu Disini' ;
+       content: 'Request Lagu' ;
     }
 
     .toggle-chat.fix {
